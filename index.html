@@ -1,7 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Meginthevalley's Gaming Website</title>
+<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
+<!-- link to external style sheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <!-- Viewport added to make the website responsive -->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<script src="meganlavalley.js"></script>
+	<header>
+	  <div class="positionLeft"><a title="Click this image to get to the Homepage!" href="Homepage.html" tabindex="0">
+	    <img class= "positionLeft" src="LaughingMeg.png" alt="Cat with headphones on logo/Homepage link" >
+	    <!-- The image is one of my twitch emotes that was made for me by a friend and they said that I have the rights to use it since it was made for my channel.-->
+	  </a></div>
+	  <h1 class="websiteHeading"><a id="backToTop">Welcome to meginthevalley's website!</a></h1>
+	    <!-- A welcome to the website heading -->
+	  <nav>
+	    <a class="sections floatRight" title="Click here to see the Multiplayer Games!" 
+	    href="Multiplayer.html" tabindex="0">Multiplayer</a>
+		<a class="sections floatRight" title="Click here to see the Indie Games!" 
+	    href="Indie.html" tabindex="0">Indie</a>
+		<a class="sections floatRight" title="Click here to see the RPG's!" 
+	    href="RPG.html" tabindex="0">RPG</a>
+		<a class="sections floatRight" title="Click here to see the Dungeon Crawlers!" 
+	    href="DungeonCrawlers.html" tabindex="0">Dungeon</a>
+	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
+	  </nav>
+	</header>
+	<main class="mainContent">
+	<!-- Everything between the header and footer of the webpage -->
+	 <h2 class="nameOfPage">Homepage</h2>
+	 <!-- The title of the webpage the user is currently on -->
+	   <section class="section1">
+	   <!-- The first section of 3 in the main part of the webpage -->
+	     <h3 class="subHeading1">About this website</h3>
+		   <p class="main">Hello everyone and welcome to my website! 
+		   The purpose of this website is to give everyone recommendations of some of my top games for each of the categories listed.
+		   Each category will have a total of 3 games that I would recommend trying if you like that specific category of game. These games will not be in any set order.
+		   This is not a ranking site. I love all of the games that I have mentioned on this site, in no particular order. Below are lists of the games that you will find in each category.</p>
+		    <div><!-- Div that holds all of the lists -->
+			<div class="lists"><!-- Div for Dungeon Crawler list -->
+			<h3 class="categories">Dungeon Crawler</h3>
+			   <ul>
+		         <li>Hades</li>
+				 <li>Diablo</li>
+				 <li>Rune Factory</li>
+				 </ul>
+			 </div>
+			 <div class="lists"><!-- Div for RPG list -->
+			 <h3 class="categories">RPG</h3>
+			   <ul>
+		         <li>The Elder Scrolls games</li>
+				 <li>Breath of the Wild</li>
+				 <li>Fire Emblem: Three Houses</li>
+			    </ul>
+			</div>
+			<div class="lists"><!-- Div for Indie list -->
+			<h3 class="categories">Indie</h3>
+			   <ul>
+		         <li>Stardew Valley</li>
+				 <li>Undertale</li>
+				 <li>Celeste</li>
+			    </ul>
+			</div>
+			<div class="lists"><!-- Div for Multiplayer list -->
+			<h3 class="categories">Multiplayer</h3>
+			   <ul>
+		         <li>Super Smash Bros. Ultimate</li>
+				 <li>Jackbox Party Packs</li>
+				 <li>Left 4 Dead 2</li>
+			    </ul>
+			</div>
+			</div>
+			<p class="main">These are all games/series that I have thoroughly enjoyed and I hope that these recommendations
+			give you all something new to enjoy. I will have short videos where I state each game and the consoles it is on in every section of the website. If you feel that I have missed some important 
+			games for these categories then feel free to seek the contact info on this homepage or reach me through the email link in the footer of each webpage. If you decide to play any 
+			of these games due to my reccomendation then you may also contact me so we can talk about them! I really enjoy
+			sharing the things that I am passionate about with the people in my life and people I don't know as well. Please refrain
+			from using the contact methods provided for anything other than talking about this website or my streams.
+			Thank you all for visiting this website and I hope it helps you find some games or even rekindle your love for games you've already played.
+			</p><br/>
+	   </section>
+	   <section class="section2">
+	   <!-- The second section of 3 in the main part of the webpage -->
+	   <h3 class="subHeading2">About Me</h3>
+	     <picture>
+		 <img id="floatLeftPic" onmouseover="changePicture()" onmouseout="changeBack()" src="Megan.jpg"
+		 alt="A photo of Megan. She has purple hair.">
+		 <!-- An image that is set to change to a different image when hovered over via Javascript. -->
+		 
+		 </picture>
+		 <!-- An image of me that is set to float left of the text in the paragraph -->
+	       <p class="main">
+	       My name is Megan, I am 24 years old and I have been an avid gamer since I was approximately 4 years old.
+	       I may not be the best at video games but I thoroughly enjoy playing them. I like many more games and genres than
+	       just the ones listed on this site. Currently, I only usually have the time to play games 2-3 times a week.
+	       The reason for this is that I am working part-time and I'm in college. When I do play games you can
+	       usually catch me streaming them on twitch. The degree I am working towards is also related to gaming.
+	       My major in college is Informatics with a concentration in Game Design and Development. It has
+	       always been a dream of mine to work with video games. I'm hoping when I get out of school to 
+	       make games and voice act in my own video games (being a voice actress is also a dream of mine).
+	       In the meantime, I just started working at a company that produces labels. They produce labels from
+	       start up to corporate companies. It's very interesting work, I did not expect to enjoy it as much as I do.
+		   If I am not working, gaming, or studying then I am most likely watching anime or shows with my friends. 
+		   Another big thing about me is I'm a huge advocate for mental health. As someone who has struggled with my mental health in the past,
+		   it's important to know that there is nothing wrong with struggling with your mental health.
+		   If you are reading this and enjoy this site then be sure to contact me 
+	       via my email! Please let me know if you would like to see recommendations of more types of games! Thank you all again for visiting my site.
+	       </p><br/>
+	   </section>
+	   <section class="section3">
+	   <!-- The third section of 3 in the main part of the webpage -->
+	   <h3 class="subHeading1">Contact Information</h3>
+	     <p class="main">
+		 Below is a table for my contact information. It has my username listed on one side and the account
+		 that username belongs to on the other side. I will also be including some social media accounts
+		 in case that is your preferred method of contact. Feel free to reach me on any of these accounts.
+		 Please refrain from contacting me about information that does not pertain to this website or my streaming.
+		 </p><br/>
+		 <table>
+		 <!-- Contact label with links located at each username -->
+		 <!-- Each link in the table is set to different colors based on the links status -->
+		   <tr>
+		     <th>Username</th>
+			 <th>Location</th>
+			</tr>
+			 <tr>
+			   <td><a class="pages" title="Send an email to Megan" href="mailto:meginthevalley13@gmail.com" tabindex="0">meginthevalley13@gmail.com</a></td>
+			   <td>Gmail</td>
+			 </tr>
+			 <tr>
+			   <td><a class="pages" title="Join Megan's discord" href="https://discord.gg/fEYZ4sFr" target="_blank" tabindex="0">meginthevalley#3874</a></td>
+			   <td>Discord</td>
+			 </tr>
+			 <tr>
+			   <td><a class="pages" title="Follow Megan on Twitch" href="https://twitch.tv/meginthevalley" target="_blank" tabindex="0">meginthevalley</a></td>
+			   <td>Twitch</td>
+			 </tr>
+			 <tr>
+			   <td><a class="pages" title="Follow Megan on YouTube" href="https://www.youtube.com/channel/UCyXvSmaReu7IjS0U6NoCmWw" target="_blank" tabindex="0">meginthevalley</a></td>
+			   <td>YouTube</td>
+			 </tr>
+		 </table>
+		 <br/>
+	   </section>
+	</main>
+	<footer>
+	<br/><aside class="positionLeftFoot"><p class="question">What's your favorite of the game categories listed?</p>
+	<!-- An aside for the javascript question located in the left side of the footer. -->
+	<p><input type="text" title="Type your favorite here!" id="inputBox" onkeyup="lowerCase()" tabindex="0" /> </p>
+	<!-- A user input text box that changes to lower case when the user finishes pressing the key so the Javascript code can be read properly. -->
+	<p><input class="buttonBox" type="button" title="Click here when you've answered one of the 4 types" 
+	value= "Submit my answer!" onclick="footerHomepage()" tabindex="0"/></p>
+	<!-- A button that when pressed preforms the Javascript function for the footer of this page. An alert box will pop up with a
+	remark to the users answer. -->
+	</aside>
+	<h3 class="footerLink"><a class="pages" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
+	<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
+	<p class="footerText">Email: <a class="pages" title="Send an email to Megan" href="mailto:meginthevalley13@gmail.com" tabindex="0">meginthevalley13@gmail.com</a>
+	<!-- The class for the email link is also mainly used for the mobile format to position it on the right. -->
+	</p>
+	</footer>
 </body>
 </html>

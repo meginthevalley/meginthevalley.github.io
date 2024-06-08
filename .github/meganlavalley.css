@@ -1,0 +1,409 @@
+body{
+	background-color:Black;
+}
+/* Changes the color of the website */
+header{
+    background-color:#d4d4f7;
+	padding: 20px 0px 8%;
+	text-align:center;
+	font-size:3vw;
+	width:100%;
+	max-width:100%;
+}
+/* class for the header element */
+.websiteHeading{
+	text-shadow:2px 2px #bb90bb;
+	font-size:4vw;
+}
+/* heading for the website */
+.positionLeft{
+	position:fixed;
+	left:2px;
+	max-width:18%;
+	height:12%;
+}
+/* A class specifically made for positioning left */
+.floatRight{
+	float:right;
+}
+/* A class made to float elements to the right */
+.floatLeft{
+	float:left;
+}
+/* A class made specifically to float things left */
+#floatLeftPic{
+	float:left;
+	width:33%;
+	height:90%;
+	max-width:33%;
+}
+/* An id for my picture on the homepage that floats left(changes in mobile so it
+needed a separate class from other things that float left */
+a.sections:link, a.sections:visited {
+	background-color:Indigo;
+	color:White;
+	border:2px solid Black;
+	width:24.25%;
+	padding: 10px 0px 10px;
+	max-width:25%;
+	text-decoration:underline;
+	font-size:2vw;
+}
+/* For a nav link that has or hasn't been visited */
+a.sections:hover, a.sections:active {
+	color:Black;
+	background-color:Aquamarine;
+	border:2px double MediumPurple;
+}
+/* For a nav link being hovered/moused over or a nav link that has been selected */
+a.pages:link {
+	color:Navy;
+}
+/* For a link that hasn't been visited yet */
+a.pages:visited {
+	color:#990099;
+}
+/* For a link that has been visited */
+a.pages:hover {
+	color:#FF3399;
+}
+/* For a link being hovered/moused over */
+a.pages:active {
+	color:#000066;
+}
+/* For a link that has been selected */
+.nameOfPage{
+	margin:auto;
+	text-align:center;
+	box-sizing:border-box;
+	width:25%;
+	background-color:#d4d4f7;
+	border:2px double White;
+	padding: 2px;
+	font-size:3.3vw;
+	max-width:25%;
+}
+/* headings for The current section of the webpage that you are on */
+h3.subHeading1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:3.5vw;
+	text-shadow:2px 2px Aquamarine;
+}
+/* sub headings for about this website section and contact info section of the homepage */
+p.main{
+	font-size:1.3vw;
+	max-width:100%;
+	
+
+}
+/* A class to make paragraph font size larger */
+p.main:hover{
+	background-color:White;
+}
+/* A class to make each paragraph white when hovered over */
+ul{
+	list-style-type:circle;
+	font-size:1vw;
+	padding:2px;
+	list-style-position:inside;
+	
+}
+/* sets the style of the lists in the website */
+div.lists:hover{
+	background-color:White;
+}
+/* A class to make each div list change color when hovered over */
+div.lists{
+	float:left;
+	width:25%
+}
+/* A div class to make the lists of games in the homepage float next to each other */
+h3.categories{
+	font-size:1.3vw;
+	text-decoration:underline;
+}
+/* A class of header for the categories of the lists */
+li{
+	font-size:1.1vw;
+}
+/* Changes the font size for lists in the homepage */
+.mainContent{
+	width:100%;
+	margin:auto;
+	height:90%;
+	background-color:MediumPurple;
+	text-align:center;
+	padding:23px 0px 23px 0px;
+
+}
+/* Element that holds all content between the header and footer */
+video.meg{
+	max-width:75%;
+	height:15%;
+	min-width:50%;
+}
+/* A class for the videos on every webpage but the homepage webpages */
+.section1{
+	text-align:center;
+	margin:auto;
+	background-color:#ddccff;
+	width:95%;
+	height:33%;
+	line-height:2;
+	padding:0px 10px;
+}
+/* First section of 3 in the main contents of the webpage */
+.section2{
+	text-align:center;
+	margin:auto;
+	width:95%;
+	background-color:LightSteelBlue;
+	height:33%;
+	line-height:2;
+	padding:0px 10px;
+}
+/* Second section of 3 in the main contents of the webpage */
+h3.subHeading2{
+	text-align:center;
+	text-decoration:underline;
+	font-size:3.5vw;
+	text-shadow:2px 2px MediumPurple;
+}
+/* class for the about me part of the homepage (the color of the text shadow is the only change from similar headings */
+.section3{
+	text-align:center;
+	margin:auto;
+	width:95%;
+	background-color:#CC99FF;
+	height:33%;
+	line-height:2;
+	padding:0px 10px;
+}
+/* Last section of 3 in the main contents of the webpage */
+table{
+	width:90%;
+	border: solid;
+	margin:auto;
+	font-size:2vw;
+	background-color:PaleTurquoise;
+}
+/* This is a class for the table in the contact info section of the homepage */
+th, td{
+	border:2px solid black;
+}
+/* this class sets the borders for the inside of the table */
+th:hover{
+	background-color:Black;
+	color:White;
+}
+/* this class makes this section of the table change color when you hover over it */
+td:hover{
+	background-color:AliceBlue;
+	color:Indigo;
+}
+/* this class makes this section of the table change color when you hover over it */
+footer{
+	background-color:#d4d4f7;
+	padding:0px 0px 5% 0px;
+	text-align:center;
+	font-size:1vw;
+	height:100%;
+}
+/* footer of the webpage */
+p.question{
+	font-size:1.2vw;
+}
+/* a class for the question in the footer of each page */
+.positionLeftFoot{
+	position:absolute;
+	left:1.2vw;
+}
+/* For the footer question of each webpage */
+h3.footerLink{
+	font-size:2vw;
+}
+#inputBox{
+	width:55%;
+	font-size:1vw;
+}
+/* An id for the user input at the bottom of each page */
+.buttonBox{
+	font-size:1vw;
+}
+/* A class for the button at the bottom of each page */
+@media only screen and (max-width: 575px){ /*Accessibility code for mobile */
+/* I copied everything in the style sheet to the media portion and edited from there so that I could see everything lined up 
+   as it was easier for me to view and edit the code this way. I removed the comments though since the code is 
+   still for the same areas as the above code. Any extra classes added have comments such as the footerLink
+   and the footerText. They were mainly added specifically for the media portion.*/
+	a.sections:link, a.sections:visited {
+	background-color:Indigo;
+	color:White;
+	border:2px solid Black;
+	padding:0px 30%;
+	text-decoration:underline;
+	margin:auto;
+	width:40%;
+	max-width:40%;
+	text-align:center;
+	
+}
+a.sections:hover, a.sections:active {
+	color:Black;
+	background-color:Aquamarine;
+	border:2px double MediumPurple;
+}
+.positionLeft{
+	position:fixed;
+	left:5px;
+	max-width:15%;
+	height:10%;
+}
+header{
+    background-color:#d4d4f7;
+	padding:30px 3px 75px;
+	font-size:2.25vw;
+	width:100%;
+	max-width:100%;
+}
+.floatRight{
+	float:right;
+	clear:both;
+}
+.websiteHeading{
+	text-shadow:1px 1px #bb90bb;	
+	text-align:center;
+}
+.nameOfPage{
+	margin:auto;
+	text-align:center;
+	box-sizing:border-box;
+	width:35%;
+	background-color:#d4d4f7;
+	border:2px double White;
+	padding: 2px;
+	max-width:25%;
+	font-size:3.2vw;
+}
+h3.subHeading1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:3.5vw;
+	text-shadow:1px 1px Aquamarine;
+}
+.mainContent{
+	width:100%;
+	margin:auto;
+	height:100%;
+	background-color:MediumPurple;
+	text-align:center;
+	padding:23px 3px 18px;
+	height:100%;
+}
+p.main{
+	font-size:1.6vw;
+}
+#floatLeftPic{
+	float:left;
+	width:25%;
+	height:auto;
+	max-width:25%;
+}
+ul{
+	list-style-type:circle;
+	font-size:1vw;
+	padding:2px;
+	list-style-position:inside;
+	
+}
+li{
+	font-size:1vw;
+}
+div.lists{
+	float:left;
+	width:25%
+}
+.section1{
+	text-align:center;
+	margin:auto;
+	background-color:#ddccff;
+	width:85%;
+	max-width:85%;
+	height:33%;
+	line-height:2;
+	padding:0px 10px;
+}
+h3.categories{
+	font-size:1.4vw;
+	text-decoration:underline;
+}
+video.meg{
+	height:160px;
+}
+.section2{
+	text-align:center;
+	margin:auto;
+	width:85%;
+	background-color:LightSteelBlue;
+	height:33%;
+	line-height:2;
+	padding:0px 10px;
+	max-width:85%;
+}
+h3.subHeading2{
+	text-align:center;
+	text-decoration:underline;
+	font-size:3.5vw;
+	text-shadow:1px 1px MediumPurple;
+}
+.section3{
+	text-align:center;
+	margin:auto;
+	width:85%;
+	background-color:#CC99FF;
+	height:33%;
+	line-height:2;
+	padding:0px 10px;
+	max-width:85%;
+}
+table{
+	width:30%;
+	border: solid;
+	margin:auto;
+	font-size:3.5vw;
+	background-color:PaleTurquoise;
+}
+footer{
+	background-color:#d4d4f7;
+	padding:0px 3px 80px;
+	width:100%;
+	height:100%;
+}
+.positionLeftFoot{
+	position:absolute;
+	left:10px;
+}
+p.question{
+	font-size:1.8vw;
+}
+p.footerText{
+	position:absolute;
+	right:10px;
+	font-size:2vw;
+}
+/* A class for mobile to make the email link go to the right */
+h3.footerLink{
+	position:absolute;
+	right:15px;
+	font-size:4.2vw;
+}
+/* A class for the intrapage link to go to the right on mobile */
+#inputBox{
+	width:45%;
+	font-size:1.4vw;
+}
+.buttonBox{
+	font-size:1.4vw;
+}
+}
