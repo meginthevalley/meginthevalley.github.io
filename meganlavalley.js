@@ -31,7 +31,7 @@ function changePicture(){
 	//This function is used to change the picture on the home page when moused over on 
 }
 function changeBack(){
-	document.getElementById("floatLeftPic").src = "Megan.jpg";
+	document.getElementById("floatLeftPic").src = "Megan3.jpg";
 	//This function is used to change back the picture on the homepage when the mouse is no longer on it
 }
 function footerDungeon(){
