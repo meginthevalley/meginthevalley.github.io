@@ -10,57 +10,71 @@
 <body>
 <script src="meganlavalley.js"></script>
 	<header>
-	  <h1 class="websiteHeading"><a id="backToTop">Welcome to Megan LaValley's Website!</a></h1>
+	  <h1 class="websiteHeading"><a id="backToTop">About Megan</a></h1>
 	    <!-- A welcome to the website heading -->
 	  <nav>
 		<ul class="navBar">
-			<li class="floatLeft"><a class="sections active" title="Click here to go to the home page!" 
-			href="index.html" tabindex="0">Home</a></li>
-	    	<li class="floatLeft"><a class="sections" title="Click here to see Megan's Portfolio!" 
-	     		href="Portfolio.html" tabindex="0">Portfolio</a></li>
+			<li class="floatLeft"><a class="sections" title="Click here to go to the home page!" 
+				href="index.html" tabindex="0">Home</a></li>
+			<li class="floatLeft"><a class="sections" title="Click here to see Megan's Portfolio!" 
+				href="Portfolio.html" tabindex="0">Portfolio</a></li>
 			<li class="floatLeft"><a class="sections" title="Click here to see info about Megan!" 
-	    		href="About.html" tabindex="0">About Megan</a></li>
+				href="About.html" tabindex="0">About Megan</a></li>
 			<li class="floatLeft"><a class="sections" title="Click here to see the Megan's Education!" 
-	   			href="Education.html" tabindex="0">Education</a></li>
+				href="Education.html" tabindex="0">Education</a></li>
+			<li class="floatRight"><a class="sections" title="Click here to go to Megan's LinkedIn!" 
+				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
+				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a></li>
+			<li class="floatRight"><a class="sections" title="Click here to go to Megan's GitHub!" 
+				href="https://github.com/meginthevalley" target="_blank" 
+				tabindex="0"><img id="logos" src="Github.png"></img></a></li>
 	</ul>
-	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
+			<!-- Navigation links for the other pages of the website -->
 	  </nav>
 	</header>
 	<main class="mainContent">
 	<!-- Everything between the header and footer of the webpage -->
-	 <h2 class="nameOfPage">Homepage</h2>
-	 <!-- The title of the webpage the user is currently on -->
 	   <section class="section1">
 	   <!-- The first section of 3 in the main part of the webpage -->
-	     <h3 class="subHeading1">About this website</h3>
-		   <p class="main"> Welcome to Megan LaValley's Portfolio Site. 
-			This site was made to display Megan's work and accomplishments.</p>
-		    <div><!-- Div that holds all of the lists -->
-			<div class="lists"><!-- Div for Coding Languages -->
-			<h3 class="categories">Coding Languages</h3>
-			   <ul>
-		         <li>C#</li>
-				 <li>Python</li>
-				 <li>HTML</li>
-				 <li>CSS</li>
-				 <li>JavaScript</li>
-				 </ul>
-			 </div>
-			 <div class="lists"><!-- Div for Engines & Software -->
-			 <h3 class="categories">Engines & Software</h3>
-			   <ul>
-		         <li>Unity</li>
-				 <li>Unreal Engine</li>
-				 <li>SourceTree</li>
-				 <li>GitHub</li>
-				 <li>Twine</li>
-			    </ul>
-			</div>
-			</div>
-			<br/>
+	   <div class="clearfix">
+		<picture>
+			<img id="floatRightPic" onmouseover="changeAboutPicture()" onmouseout="changeAboutBack()" 
+			src="Megan4.jpg" alt="A photo of Megan from her time at UAlbany.">
+			<!-- An image that is set to change to a different image when hovered over via Javascript. -->
+			</picture>
+		<h2 class="subHeading2">Bachelor's of Science</h2>
+	   <p class="main"> Megan graduated from the University at Albany in May 2024. <br>
+		Her major was Informatics with a concentration in Game Design and Development.<br>
+		Her GPA when she graduated was 3.82 which led her to graduating Summa Cum Laude.</p>
+		</div>
+		 <div class="clearfix"><!-- Div that holds all of the lists -->
 			<div>
-			<p class="main"> Listed above are coding languages and software that Megan has worked with.</p>
-			</div>
+				<p class="hiddenForSpace">This is just some <br> empty space... 
+					nothing to see here.</p>
+				<p class="main">Listed below are coding languages and 
+					software that Megan has worked with.</p>
+				</div>
+		 <div class="lists2"><!-- Div for Coding Languages -->
+		 <h3 class="categories">Coding Languages</h3>
+			<ul>
+			  <li>C#</li>
+			  <li>Python</li>
+			  <li>HTML</li>
+			  <li>CSS</li>
+			  <li>JavaScript</li>
+			  </ul>
+		  </div>
+		  <div class="lists2"><!-- Div for Engines & Software -->
+		  <h3 class="categories">Engines and Software</h3>
+			<ul>
+			  <li>Unity</li>
+			  <li>Unreal Engine</li>
+			  <li>SourceTree</li>
+			  <li>GitHub</li>
+			  <li>Twine</li>
+			 </ul>
+		 </div>
+		 </div>
 	   </section>
 	</main>
 	<footer>
