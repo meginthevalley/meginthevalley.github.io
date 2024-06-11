@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Megan LaValley's Portfolio</title>
-<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
-<!-- link to external style sheet -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- <!-- Viewport added to make the website responsive -->
+	<title>Megan LaValley's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
+	<!-- link to external style sheet -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 	<!-- Viewport added to make the website responsive -->
+ 	<meta name="author" content="Megan LaValley">
 </head>
 <body>
 <script src="meganlavalley.js"></script>
 	<header>
 	  <h1 class="websiteHeading"><a id="backToTop">Portfolio</a></h1>
+	  <nav>
+		<ul class="navBar">
+			<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
+				href="index.html" tabindex="0">Home</a></li>
+			<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
+				href="Portfolio.html" tabindex="0">Portfolio</a></li>
+			<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
+				href="About.html" tabindex="0">About Megan</a></li>
+			<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
+				href="Resume.html" tabindex="0">Resume</a></li>
+			<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
+				href="Contact.html" tabindex="0">Contact</a></a></li>
+	</ul>
+	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
+	  </nav>
 	    <!-- A welcome to the website heading -->
 		<div>
 			<button class="portfolio" onclick="unityFunction()">Unity</button>
@@ -20,21 +36,6 @@
 			<button class="portfolio" onclick="miscFunction()">Miscellaneous</button>
 		</div>
 		<!-- Holds all buttons to get to different parts of the page-->
-	  <nav>
-		<ul class="navBar">
-			<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-				href="index.html" tabindex="0">Home</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-				href="Portfolio.html" tabindex="0">Portfolio</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-				href="About.html" tabindex="0">About Megan</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Education!" 
-				href="Education.html" tabindex="0">Education</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-				href="Contact.html" tabindex="0">Contact</a></a></li>
-	</ul>
-	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
-	  </nav>
 	</header>
 	<main class="mainContent">
 	<!-- Everything between the header and footer of the webpage -->
@@ -47,12 +48,41 @@
 	   <section class="section1">
 	   <!-- The first section of 3 in the main part of the webpage -->
 	     <h3 class="subHeading1">Cat-astrophe!</h3>
-		    <div class="gallery">
+		 	<div>
+		 		<div class="gallery floatLeft">
+					<a target="_blank" href="Cat1.PNG">
+			  			<img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
+					</a>
+					<div class="imageDescription">This is the dining room. Here the player could teleport onto chairs to knock things off the table. 
+						Furniture assets are made by Megan and all  some assets are from turbo squid.
+					</div>
+		  		</div>
+		  		<div class="gallery floatLeft">
+					<a target="_blank" href="Cat2.PNG">
+			  			<img src="Cat2.PNG" alt="A pic from Cat-astrophe!">
+					</a>
+					<div class="imageDescription">The living room. Here the player could teleport onto surfaces to knock down objects.
+						Most of the objects are from TurboSquid besides for the remote and furniture which were made by Megan.
+					</div>
+	  			</div>
+	  			<div class="gallery floatLeft">
+					<a target="_blank" href="Cat3.png">
+		  				<img src="Cat3.png" alt="A pic from Cat-astrophe!">
+					</a>
+					<div class="imageDescription">This image is part of the kitchen scene. The player is playing with a <span title="yum!" style = "color:yellow;">banana</span>.
+						The banana in this scene is from TurboSquid. All other objects in this scene are made by Megan.
+					</div>
+  				</div>
+  				<div class="gallery floatLeft">
+					<a target="_blank" href="Cat4.png">
+	  					<img src="Cat4.png" alt="A pic from Cat-astrophe!">
+					</a>
+					<div class="imageDescription">Here the player can be seen playing in the <span title="EW!" style ="color:Brown;">litterbox</span>. 
+						They could really rack up points here. All objects in this scene were made by Megan. 
+						Players' reported having the most fun in this <span title="odd?">area</span>.</div>
+				</div>
 			</div>
-			<br/>
-			<div>
-			<p class="main">Type Text here</p>
-			</div>
+			<div class="clearfix"></div>
 	   </section>
 	   </div>
 

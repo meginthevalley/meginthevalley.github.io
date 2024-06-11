@@ -109,3 +109,67 @@ function miscFunction(){
 }
 
 //FUNCTIONS FOR SWITCHING BETWEEN PORTFOLIO PIECES (FINISHED)
+
+//FUNCTIONS FOR SWITCHING BETWEEN RESUME PIECES
+
+function profileFunction(){
+	if (document.getElementById("Profile").style.display === "block"){
+		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+	else{
+		document.getElementById("Profile").style.display ="block";
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+}
+
+function skillsFunction(){
+	if (document.getElementById("Skills").style.display === "block"){
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+	else{
+		document.getElementById("Skills").style.display ="block";
+		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+}
+
+function educationFunction(){
+	if (document.getElementById("Education").style.display === "block"){
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+	else{
+		document.getElementById("Education").style.display ="block";
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+}
+
+function workFunction(){
+	if (document.getElementById("Work").style.display === "block"){
+		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Work").style.display = "none";
+	}
+	else{
+		document.getElementById("Work").style.display ="block";
+		document.getElementById("Skills").style.display = "none";
+		document.getElementById("Education").style.display = "none";
+		document.getElementById("Profile").style.display = "none";
+	}
+}
+
+//FUNCTIONS FOR SWITCHING BETWEEN RESUME PIECES (FINISHED)
