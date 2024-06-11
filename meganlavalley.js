@@ -173,3 +173,63 @@ function workFunction(){
 }
 
 //FUNCTIONS FOR SWITCHING BETWEEN RESUME PIECES (FINISHED)
+
+//UNHIDE AND HIDE GALLERY IMAGES
+
+//CAT-ASTROPHE GALLERY
+
+	//TURN ON PHOTO GALLERY
+		function photoCat(){
+			if (document.getElementById("photoCatGallery").style.display === "block"){
+				document.getElementById("videoCatGallery").style.display = "none";
+				document.getElementById("photoCatGallery").style.display = "none";
+			}
+			else{
+				document.getElementById("photoCatGallery").style.display = "block";
+				document.getElementById("videoCatGallery").style.display = "none";
+			}
+		}
+
+	//TURN ON VIDEO GALLERY
+		function videoCat(){
+				if (document.getElementById("videoCatGallery").style.display === "block"){
+					document.getElementById("photoCatGallery").style.display = "none";
+					document.getElementById("videoCatGallery").style.display = "none";
+				}
+				else{
+					document.getElementById("photoCatGallery").style.display = "none";
+					document.getElementById("videoCatGallery").style.display = "block";
+				}
+			}
+	//CAT PIC 1 GALLERY
+		function showCat1(){
+			document.getElementById("cat1pic").style.display = "block";
+			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat3pic").style.display = "none";
+			document.getElementById("cat4pic").style.display = "none";
+		}
+
+	//CAT PIC 2 GALLERY
+		function showCat2(){
+			document.getElementById("cat2pic").style.display = "block";
+			document.getElementById("cat1pic").style.display = "none";
+			document.getElementById("cat3pic").style.display = "none";
+			document.getElementById("cat4pic").style.display = "none";
+		}
+
+	//CAT PIC 3 GALLERY
+		function showCat3(){
+			document.getElementById("cat3pic").style.display = "block";
+			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat1pic").style.display = "none";
+			document.getElementById("cat4pic").style.display = "none";
+		}
+
+	//CAT PIC 4 GALLERY
+		function showCat4(){
+			document.getElementById("cat4pic").style.display = "block";
+			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat3pic").style.display = "none";
+			document.getElementById("cat1pic").style.display = "none";
+		}
+

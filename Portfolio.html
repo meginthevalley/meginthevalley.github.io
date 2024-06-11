@@ -48,39 +48,47 @@
 	   <section class="section1">
 	   <!-- The first section of 3 in the main part of the webpage -->
 	     <h3 class="subHeading1">Cat-astrophe!</h3>
-		 	<div>
-		 		<div class="gallery floatLeft">
-					<a target="_blank" href="Cat1.PNG">
+		 
+		 <button class="portfolio" onclick="photoCat()">Photo Gallery</button>
+		 <button class="portfolio" onclick="videoCat()">Video Gallery</button>
+		 
+		 <p class="hiddenForSpace">I think <br> coding is fun.</p>
+		 	<div id="photoCatGallery">
+				<div id="cat1pic" class="outerLayer" onclick="showCat2()">
+		 		<div  class="gallery">
 			  			<img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
-					</a>
-					<div class="imageDescription">This is the dining room. Here the player could teleport onto chairs to knock things off the table. 
-						Furniture assets are made by Megan and all  some assets are from turbo squid.
+					<div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
+						Furniture assets are made by Megan and all other assets are from turbo squid.
 					</div>
 		  		</div>
-		  		<div class="gallery floatLeft">
-					<a target="_blank" href="Cat2.PNG">
+				</div>
+				<div id="cat2pic" class="outerLayer"onclick="showCat3()">
+		  		<div class="gallery">
 			  			<img src="Cat2.PNG" alt="A pic from Cat-astrophe!">
-					</a>
-					<div class="imageDescription">The living room. Here the player could teleport onto surfaces to knock down objects.
+					<div class="imageDescription">The living room. Here, the player could teleport onto surfaces to knock down objects.
 						Most of the objects are from TurboSquid besides for the remote and furniture which were made by Megan.
 					</div>
 	  			</div>
-	  			<div class="gallery floatLeft">
-					<a target="_blank" href="Cat3.png">
+				</div>
+				<div id="cat3pic" class="outerLayer" onclick="showCat4()">
+	  			<div  class="gallery">
 		  				<img src="Cat3.png" alt="A pic from Cat-astrophe!">
-					</a>
 					<div class="imageDescription">This image is part of the kitchen scene. The player is playing with a <span title="yum!" style = "color:yellow;">banana</span>.
 						The banana in this scene is from TurboSquid. All other objects in this scene are made by Megan.
 					</div>
   				</div>
-  				<div class="gallery floatLeft">
-					<a target="_blank" href="Cat4.png">
+				</div>
+				<div id="cat4pic" class="outerLayer" onclick="showCat1()">
+  				<div  class="gallery">
 	  					<img src="Cat4.png" alt="A pic from Cat-astrophe!">
-					</a>
 					<div class="imageDescription">Here the player can be seen playing in the <span title="EW!" style ="color:Brown;">litterbox</span>. 
 						They could really rack up points here. All objects in this scene were made by Megan. 
 						Players' reported having the most fun in this <span title="odd?">area</span>.</div>
 				</div>
+			</div>
+			</div>
+			<div class="clearfix"></div>
+			<div id="videoCatGallery">
 			</div>
 			<div class="clearfix"></div>
 	   </section>

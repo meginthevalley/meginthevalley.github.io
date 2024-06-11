@@ -285,7 +285,7 @@ td:hover{
 /* this class makes this section of the table change color when you hover over it */
 footer{
 	background-image:linear-gradient(#98aeff,#f0f0f0);
-	padding:5% 0px 7% 0px;
+	padding:0 0px 0% 0px;
 	text-align:center;
 	font-size:1.3vw;
 	height:auto;
@@ -341,7 +341,20 @@ button.portfolio:active {
 .hiddenForSpace{
 	visibility:hidden;
 }
-#Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, #Skills{
+#Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
+#Skills, #photoCatGallery, #videoCatGallery{
+	display: none;
+}
+#cat1pic{
+	display:block;
+}
+#cat2pic{
+	display:none;
+}
+#cat3pic{
+	display:none;
+}
+#cat4pic{
 	display:none;
 }
 #logos{
@@ -350,18 +363,26 @@ button.portfolio:active {
 a.footer{
 	padding:2%;
 }
+div.outerLayer{
+	padding: 0 6px;
+	width: 30%;
+	height:auto;
+	margin:auto;
+}
 div.gallery {
+	border-radius: 15px;
 	border: 1px solid #ccc;
-	width:24.5%;
+	transition: opacity 2s;
   }
   
   div.gallery:hover {
-	border: 1px solid #777;
+	opacity: 60%;
   }
   
   div.gallery img {
 	width: 100%;
 	height: auto;
+	border-radius: 15px;
   }
   div.imageDescription {
 	padding: 15px;
