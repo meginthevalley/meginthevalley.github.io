@@ -1,7 +1,7 @@
 body{
 	background-color:Black;
 	font-family:'Tahoma';
-	height:auto;
+	height:100%;
 }
 /* Changes the color of the website */
 header{
@@ -34,6 +34,11 @@ header{
 .floatLeft{
 	float:left;
 }
+.floatLeftNav{
+	float:left;
+	width:20%;
+}
+
 /* A class made specifically to float things left */
 #floatLeftPic{
 	float:left;
@@ -294,6 +299,7 @@ footer{
 	text-align:center;
 	font-size:1.3vw;
 	height:auto;
+	align-content: center;
 }
 /* footer of the webpage */
 p.question{
@@ -345,12 +351,12 @@ button.portfolio:active {
 .hiddenForSpace{
 	visibility:hidden;
 }
-#Unity{
-	display:none;
-}
-#Unreal{
+#Unity, #Unreal, #Websites, #Art, #Misc{
 	display:none;
 }
 #logos{
 	padding-top: 5px;
+}
+a.footer{
+	padding:2%;
 }
