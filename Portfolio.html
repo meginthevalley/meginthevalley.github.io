@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Megan LaValley's Portfolio</title>
+	<title>Megan LaValley</title>
 	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
 	<!-- link to external style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -44,11 +44,22 @@
 
 	<div id="Unity">
 	 <h2 class="nameOfPage">Unity</h2>
+	 <p class="hiddenForSpace">I think <br> coding is fun.</p>
+	 <button class="portfolio" onclick="Catastrophe()">Cat-astrophe!</button>
+	 <button class="portfolio" onclick="WineTime()">Wine-Time</button>
+	 <button class="portfolio" onclick="Wolfjam()">Wolfjam Hackathon</button>
 	 <!-- The title of the webpage the user is currently on -->
-	   <section class="section1">
+	   <section id=showCatSection class="section1">
 	   <!-- The first section of 3 in the main part of the webpage -->
 	     <h3 class="subHeading1">Cat-astrophe!</h3>
-		 
+		 <p class="main"><i>Cat-astrophe!</i> was made in April of 2023 and it is 
+			a VR Game made in Unity (2021.3.17f1). <i>Cat-astrophe!</i> was an independent 
+			project <br> that was made for Megan's first class working in Unity.
+			For this game, Megan used an older version of unity so she needed 
+			to manually create <br> the locomotion system for player movement.
+			Megan had created many assets using unity primitives including
+			the furniture,<br> the litter box (and everything in it), and the remote. 
+			All other small assets came from TurboSquid.</p>
 		 <button class="portfolio" onclick="photoCat()">Photo Gallery</button>
 		 <button class="portfolio" onclick="videoCat()">Video Gallery</button>
 		 
@@ -92,6 +103,81 @@
 			</div>
 			<div class="clearfix"></div>
 	   </section>
+	   <section id=showWineSection class="section1">
+		<!-- The first section of 3 in the main part of the webpage -->
+		  <h3 class="subHeading1">Wine Time</h3>
+		  <p class="main"><i>Wine-Time</i> was made in October and November of 2023 and it is 
+			a VR Game made in Unity (2021.3.17f1). <i>Wine-Time</i> was an independent 
+			project <br> that was made for Megan's Serious Games class. <i>Wine-Time</i> is a winery 
+			simulator where the player would serve the customers and try to pour the right amount to
+			receive a better review. At the end of the game the review is calculated and if you receive 
+			more than 3 stars, you get to keep your job. For this game, Megan used an older version of Unity 
+			so she used <br> the locomotion system she had created previously in <i>Cat-astrophe!</i> for player movement.
+			Megan had created all of the assets for <i>Wine-Time</i> except for the glasses (from TurboSquid) and the music 
+			(from the Unity assets Store).</p>
+		  <button class="portfolio" onclick="photoWine()">Photo Gallery</button>
+		  <button class="portfolio" onclick="videoWine()">Video Gallery</button>
+		  
+		  <p class="hiddenForSpace">I think <br> coding is fun.</p>
+			  <div id="photoWineGallery">
+				<p class="main">All pictures seen here are from mid-process. The final product only had slight changes like the 
+					environment having a roof, minor adjustments to customer text and scoring system.
+				</p>
+				 <div id="wine1pic" class="outerLayer" onclick="showWine2()">
+				  <div  class="gallery">
+						   <img src="wine1.jpg" alt="A pic from Wine-Time.">
+					 <div class="imageDescription"> The first customer and their order. Megan decided to create a cat customer to
+						slightly reference her time on <i>Cat-astrophe!</i>. Megan made everything in this scene except the glasses.
+						Even the pictures on the wall are from photo's she had taken.
+					 </div>
+				   </div>
+				 </div>
+				 <div id="wine2pic" class="outerLayer"onclick="showWine3()">
+				   <div class="gallery">
+						   <img src="wine2.jpg" alt="A pic from Wine-Time.">
+					 <div class="imageDescription">This is a capture of the environment. The objects in the room were mainly made to
+						be entertaining for the player. Megan wanted players' to be able to grab objects and have fun in the room 
+						for if they wanted a break from serving wine.
+					 </div>
+				   </div>
+				 </div>
+				 <div id="wine3pic" class="outerLayer" onclick="showWine4()">
+				   <div  class="gallery">
+						   <img src="wine3.jpg" alt="A pic from Wine-Time.">
+					 <div class="imageDescription"> Displayed here is another view of the environment where you can see shelves that held wine bottles.
+						This was made purely for the players' enjoyment. Many players loved just going to the back and playing with the wine on these shelves.
+					 </div>
+				   </div>
+				 </div>
+				 <div id="wine4pic" class="outerLayer" onclick="showWine1()">
+				   <div  class="gallery">
+						   <img src="wine4.jpg" alt="A pic from Wine-Time.">
+					 <div class="imageDescription">This is the wine cooler. Here players would grab a bottle to pour Wine into the players' glass.
+						Megan coded the wine to go back into the bottle whenever it hit a surface or glass. This way the player would not need to 
+						worry about running out of wine.
+					 </div>
+				 </div>
+			 </div>
+			 </div>
+			 <div class="clearfix"></div>
+			 <div id="videoWineGallery">
+			 </div>
+			 <div class="clearfix"></div>
+		</section>
+		<section id=showWolfSection class="section1">
+			<!-- The first section of 3 in the main part of the webpage -->
+			  <h3 class="subHeading1">Wolfjam Hackathon</h3>
+			  <p class="main"></p>
+			  
+			  <p class="hiddenForSpace">I think <br> coding is fun.</p>
+				 <div class="clearfix"></div>
+				 <div class="outerLayerVideo">
+						<video alt="A video of the spot the difference minigame." width="100%" controls>
+							<source src="SpotTheDifference.mp4" type="video/mp4">
+						</video>
+				</div>
+				 <div class="clearfix"></div>
+			</section>
 	   </div>
 
 	   <div id="Unreal">

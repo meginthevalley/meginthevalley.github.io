@@ -174,7 +174,48 @@ function workFunction(){
 
 //FUNCTIONS FOR SWITCHING BETWEEN RESUME PIECES (FINISHED)
 
-//UNHIDE AND HIDE GALLERY IMAGES
+//BUTTONS TO SHOW EACH PORTFOLIO SHOWPIECE
+
+function Catastrophe(){
+	if (document.getElementById("showCatSection").style.display === "block"){
+		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
+	}
+	else{
+		document.getElementById("showCatSection").style.display = "block";
+		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
+	}
+}
+
+function WineTime(){
+	if (document.getElementById("showWineSection").style.display === "block"){
+		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
+	}
+	else{
+		document.getElementById("showWineSection").style.display = "block";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
+	}
+}
+function Wolfjam(){
+	if (document.getElementById("showWolfSection").style.display === "block"){
+		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
+	}
+	else{
+		document.getElementById("showWolfSection").style.display = "block";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWineSection").style.display = "none";
+	}
+}
+
+
+//BUTTONS TO SHOW EACH PORTFOLIO SHOWPIECE (FINISHED)
 
 //CAT-ASTROPHE GALLERY
 
@@ -233,3 +274,63 @@ function workFunction(){
 			document.getElementById("cat1pic").style.display = "none";
 		}
 
+//CAT-ASTROPHE GALLERY (FINISHED)
+
+//WINE-TIME GALLERY
+
+	//TURN ON PHOTO GALLERY
+	function photoWine(){
+		if (document.getElementById("photoWineGallery").style.display === "block"){
+			document.getElementById("videoWineGallery").style.display = "none";
+			document.getElementById("photoWineGallery").style.display = "none";
+		}
+		else{
+			document.getElementById("photoWineGallery").style.display = "block";
+			document.getElementById("videoWineGallery").style.display = "none";
+		}
+	}
+
+//TURN ON VIDEO GALLERY
+	function videoCat(){
+			if (document.getElementById("videoWineGallery").style.display === "block"){
+				document.getElementById("photoWineGallery").style.display = "none";
+				document.getElementById("videoWineGallery").style.display = "none";
+			}
+			else{
+				document.getElementById("photoWineGallery").style.display = "none";
+				document.getElementById("videoWineGallery").style.display = "block";
+			}
+		}
+//WINE PIC 1 GALLERY
+	function showWine1(){
+		document.getElementById("wine1pic").style.display = "block";
+		document.getElementById("wine2pic").style.display = "none";
+		document.getElementById("wine3pic").style.display = "none";
+		document.getElementById("wine4pic").style.display = "none";
+	}
+
+//WINE PIC 2 GALLERY
+	function showWine2(){
+		document.getElementById("wine2pic").style.display = "block";
+		document.getElementById("wine1pic").style.display = "none";
+		document.getElementById("wine3pic").style.display = "none";
+		document.getElementById("wine4pic").style.display = "none";
+	}
+
+//WINE PIC 3 GALLERY
+	function showWine3(){
+		document.getElementById("wine3pic").style.display = "block";
+		document.getElementById("wine2pic").style.display = "none";
+		document.getElementById("wine1pic").style.display = "none";
+		document.getElementById("wine4pic").style.display = "none";
+	}
+
+//WINE PIC 4 GALLERY
+	function showWine4(){
+		document.getElementById("wine4pic").style.display = "block";
+		document.getElementById("wine2pic").style.display = "none";
+		document.getElementById("wine3pic").style.display = "none";
+		document.getElementById("wine1pic").style.display = "none";
+	}
+
+//WINE-TIME GALLERY FINISHED

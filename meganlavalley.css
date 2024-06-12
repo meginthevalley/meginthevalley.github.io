@@ -342,20 +342,20 @@ button.portfolio:active {
 	visibility:hidden;
 }
 #Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
-#Skills, #photoCatGallery, #videoCatGallery{
+#Skills, #showWolfSection {
 	display: none;
 }
-#cat1pic{
-	display:block;
-}
-#cat2pic{
+#photoCatGallery, #videoCatGallery, #showCatSection, #cat2pic, 
+#cat3pic, #cat4pic{
 	display:none;
 }
-#cat3pic{
-	display:none;
+
+#photoWineGallery, #videoWineGallery, #showWineSection, #wine2pic, 
+#wine3pic, #wine4pic{
+	display: none;
 }
-#cat4pic{
-	display:none;
+#wine1pic #cat1pic{
+	display: block;
 }
 #logos{
 	padding-top: 5px;
@@ -366,6 +366,12 @@ a.footer{
 div.outerLayer{
 	padding: 0 6px;
 	width: 30%;
+	height:auto;
+	margin:auto;
+}
+div.outerLayerVideo{
+	padding: 0 6px;
+	width: 40%;
 	height:auto;
 	margin:auto;
 }
