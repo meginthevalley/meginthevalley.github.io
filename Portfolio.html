@@ -65,7 +65,7 @@
 		 
 		 <p class="hiddenForSpace">I think <br> coding is fun.</p>
 		 	<div id="photoCatGallery">
-				<div id="cat1pic" class="outerLayer" onclick="showCat2()">
+				<div id="cat1pic" class="outerLayer">
 		 		<div  class="gallery">
 			  			<img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
 					<div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
@@ -73,7 +73,7 @@
 					</div>
 		  		</div>
 				</div>
-				<div id="cat2pic" class="outerLayer"onclick="showCat3()">
+				<div id="cat2pic" class="outerLayer">
 		  		<div class="gallery">
 			  			<img src="Cat2.PNG" alt="A pic from Cat-astrophe!">
 					<div class="imageDescription">The living room. Here, the player could teleport onto surfaces to knock down objects.
@@ -81,7 +81,7 @@
 					</div>
 	  			</div>
 				</div>
-				<div id="cat3pic" class="outerLayer" onclick="showCat4()">
+				<div id="cat3pic" class="outerLayer">
 	  			<div  class="gallery">
 		  				<img src="Cat3.png" alt="A pic from Cat-astrophe!">
 					<div class="imageDescription">This image is part of the kitchen scene. The player is playing with a <span title="yum!" style = "color:yellow;">banana</span>.
@@ -89,7 +89,7 @@
 					</div>
   				</div>
 				</div>
-				<div id="cat4pic" class="outerLayer" onclick="showCat1()">
+				<div id="cat4pic" class="outerLayer">
   				<div  class="gallery">
 	  					<img src="Cat4.png" alt="A pic from Cat-astrophe!">
 					<div class="imageDescription">Here the player can be seen playing in the <span title="EW!" style ="color:Brown;">litterbox</span>. 
@@ -97,9 +97,43 @@
 						Players' reported having the most fun in this <span title="odd?">area</span>.</div>
 				</div>
 			</div>
+		 	<button class="portfolio" onclick="previousPhotoCat()">Previous</button>
+			 <button class="portfolio" onclick="nextPhotoCat()">Next</button>
 			</div>
 			<div class="clearfix"></div>
 			<div id="videoCatGallery">
+				<div id="cat1vid" class="outerLayerVideo">
+					<div class="gallery">
+						<video alt="First video from Cat-astrophe!" width="100%" controls>
+							<source src="Catastrophe1.mp4" type="video/mp4">
+						</video>
+						<div class="imageDescription">
+							
+						</div>
+				</div>
+				</div>
+				<div class="outerLayerVideo">
+					<div id="cat2vid" class="gallery">
+						<video alt="Second video from Cat-astrophe!" width="100%" controls>
+							<source src="Catastrophe2.mp4" type="video/mp4">
+						</video>
+						<div class="imageDescription">
+							
+						</div>
+				</div>
+				</div>
+				<div class="outerLayerVideo">
+					<div id="cat3vid" class="gallery">
+						<video alt="Third video from Cat-astrophe!" width="100%" controls>
+							<source src="Catastrophe3.mp4" type="video/mp4">
+						</video>
+						<div class="imageDescription">
+							
+						</div>
+				</div>
+				</div>
+				<button class="portfolio" onclick="previousVideoCat()">Previous</button>
+			 <button class="portfolio" onclick="nextVideoCat()">Next</button>
 			</div>
 			<div class="clearfix"></div>
 	   </section>
@@ -123,7 +157,7 @@
 				<p class="main">All pictures seen here are from mid-process. The final product only had slight changes like the 
 					environment having a roof, minor adjustments to customer text and scoring system.
 				</p>
-				 <div id="wine1pic" class="outerLayer" onclick="showWine2()">
+				 <div id="wine1pic" class="outerLayer">
 				  <div  class="gallery">
 						   <img src="wine1.jpg" alt="A pic from Wine-Time.">
 					 <div class="imageDescription"> The first customer and their order. Megan decided to create a cat customer to
@@ -132,7 +166,7 @@
 					 </div>
 				   </div>
 				 </div>
-				 <div id="wine2pic" class="outerLayer"onclick="showWine3()">
+				 <div id="wine2pic" class="outerLayer">
 				   <div class="gallery">
 						   <img src="wine2.jpg" alt="A pic from Wine-Time.">
 					 <div class="imageDescription">This is a capture of the environment. The objects in the room were mainly made to
@@ -141,7 +175,7 @@
 					 </div>
 				   </div>
 				 </div>
-				 <div id="wine3pic" class="outerLayer" onclick="showWine4()">
+				 <div id="wine3pic" class="outerLayer">
 				   <div  class="gallery">
 						   <img src="wine3.jpg" alt="A pic from Wine-Time.">
 					 <div class="imageDescription"> Displayed here is another view of the environment where you can see shelves that held wine bottles.
@@ -149,7 +183,7 @@
 					 </div>
 				   </div>
 				 </div>
-				 <div id="wine4pic" class="outerLayer" onclick="showWine1()">
+				 <div id="wine4pic" class="outerLayer">
 				   <div  class="gallery">
 						   <img src="wine4.jpg" alt="A pic from Wine-Time.">
 					 <div class="imageDescription">This is the wine cooler. Here players would grab a bottle to pour Wine into the players' glass.
@@ -158,10 +192,20 @@
 					 </div>
 				 </div>
 			 </div>
-			 </div>
+			<button class="portfolio" onclick="previousPhotoWine()">Previous</button>
+			<button class="portfolio" onclick="nextPhotoWine()">Next</button>
+			</div>
 			 <div class="clearfix"></div>
 			 <div id="videoWineGallery">
-			 </div>
+				<div class="outerLayerVideo">
+					<div id="wine1vid" class="gallery">
+						<video alt="A video from Wine-Time." width="100%" controls>
+							<source src="WineTime.mp4" type="video/mp4">
+						</video>
+						<div class="imageDescription">
+							
+						</div>
+				</div>
 			 <div class="clearfix"></div>
 		</section>
 		<section id=showWolfSection class="section1">
@@ -172,9 +216,14 @@
 			  <p class="hiddenForSpace">I think <br> coding is fun.</p>
 				 <div class="clearfix"></div>
 				 <div class="outerLayerVideo">
+					<div class="gallery">
 						<video alt="A video of the spot the difference minigame." width="100%" controls>
 							<source src="SpotTheDifference.mp4" type="video/mp4">
 						</video>
+						<div class="imageDescription">
+
+						</div>
+				</div>
 				</div>
 				 <div class="clearfix"></div>
 			</section>
@@ -183,16 +232,61 @@
 	   <div id="Unreal">
 		<h2 class="nameOfPage">Unreal Engine</h2>
 		<!-- The title of the webpage the user is currently on -->
-		  <section class="section1">
-		  <!-- The first section of 3 in the main part of the webpage -->
-			<h3 class="subHeading1">Hide & Go Squeak!</h3>
-			   <div class="gallery">
-			   </div>
-			   <br/>
-			   <div>
-			   <p class="main">Type Text here</p>
-			   </div>
-		  </section>
+		<section class="section1">
+			<!-- The first section of 3 in the main part of the webpage -->
+			  <h3 class="subHeading1">Hide & Go Squeak!</h3>
+			  <p class="main"><i>Hide & Go Squeak!</i> was made in April of 2024 and it is 
+				a VR Game made in Unreal Engine 5. <i>Hide & Go Squeak!</i> was a team 
+				project <br> that was made for Megan's AR/VR class. </p>
+			  <button class="portfolio" onclick="photoSqueak()">Photo Gallery</button>
+			  <button class="portfolio" onclick="videoSqueak()">Video Gallery</button>
+			  
+			  <p class="hiddenForSpace">I think <br> coding is fun.</p>
+				  <div id="photoSqueakGallery">
+					 <div id="squeak1pic" class="outerLayer">
+					  <div  class="gallery">
+							   <img src="Mouse1.jpeg" alt="A pic from Hide & Go Squeak!">
+						 <div class="imageDescription"> 
+
+						 </div>
+					   </div>
+					 </div>
+					 <div id="squeak2pic" class="outerLayer">
+					   <div class="gallery">
+							   <img src="Mouse2.jpeg" alt="A pic from Hide & Go Squeak!">
+						 <div class="imageDescription">
+
+						 </div>
+					   </div>
+					 </div>
+					 <div id="squeak3pic" class="outerLayer">
+					   <div  class="gallery">
+							   <img src="Mouse4.jpeg" alt="A pic from Hide & Go Squeak!">
+						 <div class="imageDescription"> 
+
+						 </div>
+					   </div>
+					 </div>
+					 <div id="squeak4pic" class="outerLayer">
+					   <div  class="gallery">
+							   <img src="Mouse5.jpeg" alt="A pic from Hide & Go Squeak!">
+						 <div class="imageDescription">
+
+						 </div>
+					 </div>
+				 </div>
+				 <div id="squeak5pic" class="outerLayer">
+					<div  class="gallery">
+							<img src="Mouse6.jpeg" alt="A pic from Hide & Go Squeak!">
+					  <div class="imageDescription">
+						 
+					  </div>
+				  </div>
+			  </div>
+				<button class="portfolio" onclick="previousPhotoSqueak()">Previous</button>
+				<button class="portfolio" onclick="nextPhotoSqueak()">Next</button>
+				</div>
+				 <div class="clearfix"></div>
 		  </div>
 
 		  <div id="Websites">

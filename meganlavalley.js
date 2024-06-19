@@ -242,43 +242,111 @@ function Wolfjam(){
 					document.getElementById("videoCatGallery").style.display = "block";
 				}
 			}
-	//CAT PIC 1 GALLERY
-		function showCat1(){
+
+	//NEXT CAT PHOTO
+
+		function nextPhotoCat(){
+			if(document.getElementById("cat4pic").style.display === "block"){
 			document.getElementById("cat1pic").style.display = "block";
-			document.getElementById("cat2pic").style.display = "none";
 			document.getElementById("cat3pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
+			document.getElementById("cat2pic").style.display = "none";
+			}
+			else if(document.getElementById("cat3pic").style.display === "block"){
+				document.getElementById("cat4pic").style.display = "block";
+				document.getElementById("cat1pic").style.display = "none";
+				document.getElementById("cat3pic").style.display = "none";
+				document.getElementById("cat2pic").style.display = "none";
+			}
+			else if(document.getElementById("cat2pic").style.display === "block"){
+				document.getElementById("cat3pic").style.display = "block";
+				document.getElementById("cat1pic").style.display = "none";
+				document.getElementById("cat4pic").style.display = "none";
+				document.getElementById("cat2pic").style.display = "none";
+			}
+			else{
+				document.getElementById("cat2pic").style.display = "block";
+				document.getElementById("cat3pic").style.display = "none";
+				document.getElementById("cat4pic").style.display = "none";
+				document.getElementById("cat1pic").style.display = "none";
+			}
 		}
 
-	//CAT PIC 2 GALLERY
-		function showCat2(){
+	//PREVIOUS CAT PHOTO
+
+	function previousPhotoCat(){
+		if(document.getElementById("cat1pic").style.display === "block"){
+			document.getElementById("cat4pic").style.display = "block";
+			document.getElementById("cat3pic").style.display = "none";
+			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat1pic").style.display = "none";
+		}
+		else if(document.getElementById("cat2pic").style.display === "block"){
+			document.getElementById("cat1pic").style.display = "block";
+			document.getElementById("cat3pic").style.display = "none";
+			document.getElementById("cat4pic").style.display = "none";
+			document.getElementById("cat2pic").style.display = "none";
+		}
+		else if(document.getElementById("cat3pic").style.display === "block"){
 			document.getElementById("cat2pic").style.display = "block";
 			document.getElementById("cat1pic").style.display = "none";
 			document.getElementById("cat3pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
 		}
-
-	//CAT PIC 3 GALLERY
-		function showCat3(){
+		else{
 			document.getElementById("cat3pic").style.display = "block";
-			document.getElementById("cat2pic").style.display = "none";
 			document.getElementById("cat1pic").style.display = "none";
+			document.getElementById("cat2pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
 		}
+	}
 
-	//CAT PIC 4 GALLERY
-		function showCat4(){
-			document.getElementById("cat4pic").style.display = "block";
-			document.getElementById("cat2pic").style.display = "none";
-			document.getElementById("cat3pic").style.display = "none";
-			document.getElementById("cat1pic").style.display = "none";
+	//NEXT CAT VIDEO
+
+	function nextVideoCat(){
+		if(document.getElementById("cat3vid").style.display === "block"){
+			document.getElementById("cat1vid").style.display = "block";
+			document.getElementById("cat3vid").style.display = "none";
+			document.getElementById("cat2vid").style.display = "none";
 		}
+		else if(document.getElementById("cat2vid").style.display === "block"){
+			document.getElementById("cat3vid").style.display = "block";
+			document.getElementById("cat1vid").style.display = "none";
+			document.getElementById("cat2vid").style.display = "none";
+		}
+		else{
+			document.getElementById("cat2vid").style.display = "block";
+			document.getElementById("cat3vid").style.display = "none";
+			document.getElementById("cat1vid").style.display = "none";
+		}
+	}
+	
+		//PREVIOUS CAT VIDEO
+	
+		function previousVideoCat(){
+				if(document.getElementById("cat1vid").style.display === "block"){
+				document.getElementById("cat3vid").style.display = "block";
+				document.getElementById("cat2vid").style.display = "none";
+				document.getElementById("cat1vid").style.display = "none";
+				}
+				else if(document.getElementById("cat2vid").style.display === "block"){
+					document.getElementById("cat1vid").style.display = "block";
+					document.getElementById("cat3vid").style.display = "none";
+					document.getElementById("cat2vid").style.display = "none";
+				}
+				else{
+					document.getElementById("cat2vid").style.display = "block";
+					document.getElementById("cat1vid").style.display = "none";
+					document.getElementById("cat3vid").style.display = "none";
+				}
+			}
 
 //CAT-ASTROPHE GALLERY (FINISHED)
 
 //WINE-TIME GALLERY
 
 	//TURN ON PHOTO GALLERY
+
 	function photoWine(){
 		if (document.getElementById("photoWineGallery").style.display === "block"){
 			document.getElementById("videoWineGallery").style.display = "none";
@@ -290,8 +358,9 @@ function Wolfjam(){
 		}
 	}
 
-//TURN ON VIDEO GALLERY
-	function videoCat(){
+	//TURN ON VIDEO GALLERY
+
+	function videoWine(){
 			if (document.getElementById("videoWineGallery").style.display === "block"){
 				document.getElementById("photoWineGallery").style.display = "none";
 				document.getElementById("videoWineGallery").style.display = "none";
@@ -301,36 +370,253 @@ function Wolfjam(){
 				document.getElementById("videoWineGallery").style.display = "block";
 			}
 		}
-//WINE PIC 1 GALLERY
-	function showWine1(){
-		document.getElementById("wine1pic").style.display = "block";
-		document.getElementById("wine2pic").style.display = "none";
-		document.getElementById("wine3pic").style.display = "none";
-		document.getElementById("wine4pic").style.display = "none";
+
+	//NEXT WINE PHOTO
+
+	function nextPhotoWine(){
+		if(document.getElementById("wine4pic").style.display === "block"){
+			document.getElementById("wine1pic").style.display = "block";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+		}
+		else if(document.getElementById("wine3pic").style.display === "block"){
+			document.getElementById("wine4pic").style.display = "block";
+			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+		}
+		else if(document.getElementById("wine2pic").style.display === "block"){
+			document.getElementById("wine3pic").style.display = "block";
+			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+		}
+		else{
+			document.getElementById("wine2pic").style.display = "block";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine1pic").style.display = "none";
+		}
 	}
 
-//WINE PIC 2 GALLERY
-	function showWine2(){
-		document.getElementById("wine2pic").style.display = "block";
-		document.getElementById("wine1pic").style.display = "none";
-		document.getElementById("wine3pic").style.display = "none";
-		document.getElementById("wine4pic").style.display = "none";
+	//PREVIOUS WINE PHOTO
+
+	function previousPhotoWine(){
+		if(document.getElementById("wine1pic").style.display === "block"){
+			document.getElementById("wine4pic").style.display = "block";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine1pic").style.display = "none";
+		}
+		else if(document.getElementById("wine2pic").style.display === "block"){
+			document.getElementById("wine1pic").style.display = "block";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+		}
+		else if(document.getElementById("wine3pic").style.display === "block"){
+			document.getElementById("wine2pic").style.display = "block";
+			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+		}
+		else{
+			document.getElementById("wine3pic").style.display = "block";
+			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+		}
 	}
 
-//WINE PIC 3 GALLERY
-	function showWine3(){
-		document.getElementById("wine3pic").style.display = "block";
-		document.getElementById("wine2pic").style.display = "none";
-		document.getElementById("wine1pic").style.display = "none";
-		document.getElementById("wine4pic").style.display = "none";
+	//NEXT WINE VIDEO
+
+	function nextVideoWine(){
+		if(document.getElementById("wine2vid").style.display === "block"){
+			document.getElementById("wine1vid").style.display = "block";
+			document.getElementById("wine2vid").style.display = "none";
+		}
+		else{
+			document.getElementById("wine2vid").style.display = "block";
+			document.getElementById("wine1vid").style.display = "none";
+		}
 	}
 
-//WINE PIC 4 GALLERY
-	function showWine4(){
-		document.getElementById("wine4pic").style.display = "block";
-		document.getElementById("wine2pic").style.display = "none";
-		document.getElementById("wine3pic").style.display = "none";
-		document.getElementById("wine1pic").style.display = "none";
-	}
+	//PREVIOUS WINE VIDEO
 
+	function previousVideoWine(){
+		if(document.getElementById("wine2vid").style.display === "block"){
+			document.getElementById("wine1vid").style.display = "block";
+			document.getElementById("wine2vid").style.display = "none";
+		}
+		else{
+			document.getElementById("wine2vid").style.display = "block";
+			document.getElementById("wine1vid").style.display = "none";
+		}
+	}
 //WINE-TIME GALLERY FINISHED
+
+//HIDE AND GO SQUEAK! GALLERY STARTED
+
+	//TURN ON PHOTO GALLERY
+
+	function photoSqueak(){
+		if (document.getElementById("photoSqueakGallery").style.display === "block"){
+			document.getElementById("videoSqueakGallery").style.display = "none";
+			document.getElementById("photoSqueakGallery").style.display = "none";
+		}
+		else{
+			document.getElementById("photoSqueakGallery").style.display = "block";
+			document.getElementById("videoSqueakGallery").style.display = "none";
+		}
+	}
+
+	//TURN ON VIDEO GALLERY
+
+	function videoSqueak(){
+			if (document.getElementById("videoSqueakGallery").style.display === "block"){
+				document.getElementById("photoSqueakGallery").style.display = "none";
+				document.getElementById("videoSqueakGallery").style.display = "none";
+			}
+			else{
+				document.getElementById("photoSqueakGallery").style.display = "none";
+				document.getElementById("videoSqueakGallery").style.display = "block";
+			}
+		}
+
+	//NEXT SQUEAK PHOTO
+
+	function nextPhotoSqueak(){
+		if(document.getElementById("squeak4pic").style.display === "block"){
+			document.getElementById("squeak5pic").style.display = "block";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak1pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak3pic").style.display === "block"){
+			document.getElementById("squeak4pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak5pic").style.display === "block"){
+			document.getElementById("squeak1pic").style.display = "block";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak2pic").style.display === "block"){
+			document.getElementById("squeak3pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+		}
+		else{
+			document.getElementById("squeak2pic").style.display = "block";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak1pic").style.display = "none";
+		}
+	}
+
+	//PREVIOUS SQUEAK PHOTO
+
+	function previousPhotoSqueak(){
+		if(document.getElementById("squeak1pic").style.display === "block"){
+			document.getElementById("squeak5pic").style.display = "block";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak2pic").style.display === "block"){
+			document.getElementById("squeak1pic").style.display = "block";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak3pic").style.display === "block"){
+			document.getElementById("squeak2pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("sqeuak5pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak5pic").style.display === "block"){
+			document.getElementById("squeak4pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+		}
+		else{
+			document.getElementById("squeak3pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+		}
+	}
+
+	//SQUEAK VIDEO
+
+	function VideoSqueakButtons(){
+		if(document.getElementById("squeak2vid").style.display === "block"){
+			document.getElementById("squeak1vid").style.display = "block";
+			document.getElementById("squeak2vid").style.display = "none";
+		}
+		else{
+			document.getElementById("squeak2vid").style.display = "block";
+			document.getElementById("squeak1vid").style.display = "none";
+		}
+	}
+
+//HIDE AND GO SQUEAK! GALLERY (FINISHED)
+
+//BUTTONS TO SHOW EACH WORK EXPERIENCE PIECE (STARTED)
+
+function PeerEducator(){
+	if (document.getElementById("peerSection").style.display === "block"){
+		document.getElementById("peerSection").style.display = "none";
+		document.getElementById("communitySection").style.display = "none";
+		document.getElementById("internSection").style.display = "none";
+	}
+	else{
+		document.getElementById("peerSection").style.display = "block";
+		document.getElementById("communitySection").style.display = "none";
+		document.getElementById("internSection").style.display = "none";
+	}
+}
+
+function CommunityManager(){
+	if (document.getElementById("communitySection").style.display === "block"){
+		document.getElementById("peerSection").style.display = "none";
+		document.getElementById("communitySection").style.display = "none";
+		document.getElementById("internSection").style.display = "none";
+	}
+	else{
+		document.getElementById("communitySection").style.display = "block";
+		document.getElementById("peerSection").style.display = "none";
+		document.getElementById("internSection").style.display = "none";
+	}
+}
+function Intern(){
+	if (document.getElementById("internSection").style.display === "block"){
+		document.getElementById("peerSection").style.display = "none";
+		document.getElementById("communitySection").style.display = "none";
+		document.getElementById("internSection").style.display = "none";
+	}
+	else{
+		document.getElementById("internSection").style.display = "block";
+		document.getElementById("peerSection").style.display = "none";
+		document.getElementById("communitySection").style.display = "none";
+	}
+}
+
+
+//BUTTONS TO SHOW EACH WORK EXPERIENCE PIECE (FINISHED)

@@ -292,23 +292,10 @@ footer{
 	align-content: center;
 }
 /* footer of the webpage */
-p.question{
-	font-size:1.2vw;
-}
-/* a class for the question in the footer of each page */
-.positionLeftFoot{
-	position:absolute;
-	left:1.2vw;
-}
-/* For the footer question of each webpage */
+
 h3.footerLink{
 	font-size:2vw;
 }
-#inputBox{
-	width:55%;
-	font-size:1vw;
-}
-/* An id for the user input at the bottom of each page */
 .buttonBox{
 	font-size:1vw;
 }
@@ -338,15 +325,22 @@ button.portfolio:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 .hiddenForSpace{
 	visibility:hidden;
 }
+
 #Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
 #Skills, #showWolfSection {
 	display: none;
 }
+
+#peerSection, #communitySection, #internSection{
+	display:none;
+}
+
 #photoCatGallery, #videoCatGallery, #showCatSection, #cat2pic, 
-#cat3pic, #cat4pic{
+#cat3pic, #cat4pic, #cat2vid, #cat3vid{
 	display:none;
 }
 
@@ -354,35 +348,41 @@ button.portfolio:active {
 #wine3pic, #wine4pic{
 	display: none;
 }
-#wine1pic #cat1pic{
+
+#wine1pic, #cat1pic, #cat1vid, #squeak1pic{
 	display: block;
 }
+
+#photoSqueakGallery, #videoSqueakGallery, #squeak2pic, 
+#squeak3pic, #squeak4pic, #squeak5pic{
+	display: none;
+}
+
 #logos{
 	padding-top: 5px;
 }
+
 a.footer{
 	padding:2%;
 }
+
 div.outerLayer{
 	padding: 0 6px;
 	width: 30%;
 	height:auto;
 	margin:auto;
 }
+
 div.outerLayerVideo{
 	padding: 0 6px;
 	width: 40%;
 	height:auto;
 	margin:auto;
 }
+
 div.gallery {
 	border-radius: 15px;
-	border: 1px solid #ccc;
-	transition: opacity 2s;
-  }
-  
-  div.gallery:hover {
-	opacity: 60%;
+	border: 2px solid #ccc;
   }
   
   div.gallery img {
@@ -390,6 +390,13 @@ div.gallery {
 	height: auto;
 	border-radius: 15px;
   }
+
+  div.gallery video {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+  }
+
   div.imageDescription {
 	padding: 15px;
 	text-align: center;
