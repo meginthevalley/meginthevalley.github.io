@@ -38,12 +38,15 @@ header{
 	float:left;
 	width:20%;
 }
-
+img.boxShadow{
+	box-shadow: 0 0 5px 5px #666;
+}
 /* A class made specifically to float things left */
 #floatLeftPic{
 	float:left;
 	width:auto;
 	height:auto;
+	box-shadow: 0 0 10px 10px #666;
 	max-width:33%;
 	border-radius: 15%;
 }
@@ -51,6 +54,7 @@ header{
 	float:right;
 	width:auto;
 	height:auto;
+	box-shadow: 0 0 10px 10px #666;
 	max-width:33%;
 	border-radius: 15%;
 }
@@ -62,19 +66,16 @@ header{
 /* An id for my picture on the homepage that floats left(changes in mobile so it
 needed a separate class from other things that float left */
 a.sections2:link, a.sections2:visited {
-	background-color:Black;
 	color:White;
 	text-decoration: none;
 }
 /* For a nav link that has or hasn't been visited */
 a.sections2:hover{
 	color:Black;
-	background-color:White;
 	text-decoration: none;
 }
 a.sections2:active {
 	color:Black;
-	background-color:White;
 	text-decoration: none;
 }
 a.sections:link, a.sections:visited {
@@ -133,13 +134,16 @@ a.pagesTop:active {
 .nameOfPage{
 	margin:auto;
 	text-align:center;
+	text-shadow:0 5px 2px #3c3c3c;
 	color:white;
 	box-sizing:border-box;
-	width:25%;
-	border:2px double black;
-	padding: 2px;
+	width:auto;
+	border:20px solid transparent;
+	border-image: url("border.png") 30 round;
+	border-image-repeat: stretch;
+	padding: 15px;
 	font-size:3.3vw;
-	max-width:25%;
+	max-width:35%;
 }
 /* headings for The current section of the webpage that you are on */
 h3.subHeading1{
@@ -219,12 +223,7 @@ li{
 }
 
 /* Element that holds all content between the header and footer */
-video.meg{
-	max-width:75%;
-	height:15%;
-	min-width:50%;
-}
-/* A class for the videos on every webpage but the homepage webpages */
+
 .section1{
 	text-align:center;
 	margin:auto;
@@ -263,24 +262,44 @@ h3.subHeading2{
 /* Last section of 3 in the main contents of the webpage */
 table{
 	width:90%;
-	border: solid;
 	margin:auto;
 	font-size:2vw;
-	background-color:PaleTurquoise;
+	box-shadow: 0 0 5px 10px #666;
+	background-image:linear-gradient(#0046ff,#c1d1f9);
 }
 /* This is a class for the table in the contact info section of the homepage */
 th, td{
-	border:2px solid black;
+	border:10px solid transparent;
+	border-image: url("border.png") 30 round;
+	border-image-repeat: stretch;
 }
 /* this class sets the borders for the inside of the table */
 th:hover{
-	background-color:Black;
-	color:White;
+	background-color:White;
+	color:Black;
 }
 /* this class makes this section of the table change color when you hover over it */
 td:hover{
-	background-color:AliceBlue;
-	color:Indigo;
+	background-color:White;
+	color:Black;
+}
+a.contact:link {
+	height:100%;
+	width:100%;
+	display:block;
+	color:Navy;
+}
+/* For a link that hasn't been visited yet */
+a.contact:visited {
+	color:navy;
+}
+/* For a link that has been visited */
+a.contact:hover {
+	color:#00a3cc;
+}
+/* For a link being hovered/moused over */
+a.contact:active {
+	color:navy;
 }
 /* this class makes this section of the table change color when you hover over it */
 footer{
@@ -312,7 +331,7 @@ display: inline-block;
   background-color: Navy;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 7px 5px #555;
 }
 button.portfolio:hover {
 	background-color: #fff;
@@ -322,7 +341,7 @@ button.portfolio:hover {
 button.portfolio:active {
   background-color: #fff;
   color: Navy;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 4px #444444;
   transform: translateY(4px);
 }
 
@@ -331,7 +350,7 @@ button.portfolio:active {
 }
 
 #Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
-#Skills, #showWolfSection {
+#Skills, #showWolfSection, #recommendSection, #thisSiteSection {
 	display: none;
 }
 
@@ -349,7 +368,11 @@ button.portfolio:active {
 	display: none;
 }
 
-#wine1pic, #cat1pic, #cat1vid, #squeak1pic{
+#peer2vid, #showPeerSection, #peer3vid, #peer4vid{
+	display: none;
+}
+
+#wine1pic, #cat1pic, #cat1vid, #squeak1pic, #blend1pic, #piskel1pic, #portfolio1pic, #peer1vid {
 	display: block;
 }
 
@@ -357,6 +380,22 @@ button.portfolio:active {
 #squeak3pic, #squeak4pic, #squeak5pic{
 	display: none;
 }
+
+#portfolio2pic, 
+#portfolio3pic, #portfolio4pic, #portfolio5pic{
+	display:none;
+}
+
+ #blendSection, #blend2pic, 
+#blend3pic, #blend4pic{
+	display:none;
+}
+
+#piskelSection, #piskel2pic, 
+#piskel3pic, #piskel4pic, #piskel5pic{
+	display:none;
+}
+
 
 #logos{
 	padding-top: 5px;
@@ -383,6 +422,7 @@ div.outerLayerVideo{
 div.gallery {
 	border-radius: 15px;
 	border: 2px solid #ccc;
+	box-shadow: 0 0 5px 3px #666;
   }
   
   div.gallery img {

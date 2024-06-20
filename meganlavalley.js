@@ -181,11 +181,13 @@ function Catastrophe(){
 		document.getElementById("showWineSection").style.display = "none";
 		document.getElementById("showCatSection").style.display = "none";
 		document.getElementById("showWolfSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
 	}
 	else{
 		document.getElementById("showCatSection").style.display = "block";
 		document.getElementById("showWineSection").style.display = "none";
 		document.getElementById("showWolfSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
 	}
 }
 
@@ -194,11 +196,13 @@ function WineTime(){
 		document.getElementById("showWineSection").style.display = "none";
 		document.getElementById("showCatSection").style.display = "none";
 		document.getElementById("showWolfSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
 	}
 	else{
 		document.getElementById("showWineSection").style.display = "block";
 		document.getElementById("showCatSection").style.display = "none";
 		document.getElementById("showWolfSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
 	}
 }
 function Wolfjam(){
@@ -206,11 +210,27 @@ function Wolfjam(){
 		document.getElementById("showWineSection").style.display = "none";
 		document.getElementById("showCatSection").style.display = "none";
 		document.getElementById("showWolfSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
 	}
 	else{
 		document.getElementById("showWolfSection").style.display = "block";
 		document.getElementById("showCatSection").style.display = "none";
 		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
+	}
+}
+function GamePeer(){
+	if (document.getElementById("showPeerSection").style.display === "block"){
+		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
+		document.getElementById("showPeerSection").style.display = "none";
+	}
+	else{
+		document.getElementById("showPeerSection").style.display = "block";
+		document.getElementById("showCatSection").style.display = "none";
+		document.getElementById("showWineSection").style.display = "none";
+		document.getElementById("showWolfSection").style.display = "none";
 	}
 }
 
@@ -456,6 +476,70 @@ function Wolfjam(){
 	}
 //WINE-TIME GALLERY FINISHED
 
+
+//PEER EDUCATION GALLERY (STARTED)
+
+	//NEXT PEER VIDEO
+
+	function nextVideoPeer(){
+		if(document.getElementById("peer1vid").style.display === "block"){
+			document.getElementById("peer2vid").style.display = "block";
+			document.getElementById("peer3vid").style.display = "none";
+			document.getElementById("peer4vid").style.display = "none";
+			document.getElementById("peer1vid").style.display = "none";
+		}
+		else if(document.getElementById("peer2vid").style.display === "block"){
+			document.getElementById("peer3vid").style.display = "block";
+			document.getElementById("peer4vid").style.display = "none";
+			document.getElementById("peer1vid").style.display = "none";
+			document.getElementById("peer2vid").style.display = "none";
+		}
+		else if(document.getElementById("peer3vid").style.display === "block"){
+			document.getElementById("peer4vid").style.display = "block";
+			document.getElementById("peer1vid").style.display = "none";
+			document.getElementById("peer2vid").style.display = "none";
+			document.getElementById("peer3vid").style.display = "none";
+		}
+		else{
+			document.getElementById("peer1vid").style.display = "block";
+			document.getElementById("peer2vid").style.display = "none";
+			document.getElementById("peer3vid").style.display = "none";
+			document.getElementById("peer4vid").style.display = "none";
+		}
+	}
+
+	//PREVIOUS PEER VIDEO
+
+	function previousVideoPeer(){
+		if(document.getElementById("peer1vid").style.display === "block"){
+			document.getElementById("peer4vid").style.display = "block";
+			document.getElementById("peer1vid").style.display = "none";
+			document.getElementById("peer2vid").style.display = "none";
+			document.getElementById("peer3vid").style.display = "none";
+		}
+		else if(document.getElementById("peer2vid").style.display === "block"){
+			document.getElementById("peer1vid").style.display = "block";
+			document.getElementById("peer2vid").style.display = "none";
+			document.getElementById("peer3vid").style.display = "none";
+			document.getElementById("peer4vid").style.display = "none";
+		}
+		else if(document.getElementById("peer3vid").style.display === "block"){
+			document.getElementById("peer2vid").style.display = "block";
+			document.getElementById("peer1vid").style.display = "none";
+			document.getElementById("peer3vid").style.display = "none";
+			document.getElementById("peer4vid").style.display = "none";
+		}
+		else{
+			document.getElementById("peer3vid").style.display = "block";
+			document.getElementById("peer1vid").style.display = "none";
+			document.getElementById("peer2vid").style.display = "none";
+			document.getElementById("peer4vid").style.display = "none";
+		}
+	}
+
+//PEER EDUCATION GALLERY (FINISHED)
+
+
 //HIDE AND GO SQUEAK! GALLERY STARTED
 
 	//TURN ON PHOTO GALLERY
@@ -577,6 +661,210 @@ function Wolfjam(){
 	}
 
 //HIDE AND GO SQUEAK! GALLERY (FINISHED)
+
+
+//BUTTONS TO SHOW EACH WEBSITE (STARTED)
+
+function Recommend(){
+	if (document.getElementById("recommendSection").style.display === "block"){
+		document.getElementById("thisSiteSection").style.display = "none";
+		document.getElementById("recommendSection").style.display = "none";
+	}
+	else{
+		document.getElementById("recommendSection").style.display = "block";
+		document.getElementById("thisSiteSection").style.display = "none";
+		
+	}
+}
+
+function ThisOne(){
+	if (document.getElementById("thisSiteSection").style.display === "block"){
+		document.getElementById("thisSiteSection").style.display = "none";
+		document.getElementById("recommendSection").style.display = "none";
+	}
+	else{
+		document.getElementById("thisSiteSection").style.display = "block";
+		document.getElementById("recommendSection").style.display = "none";
+	}
+}
+
+//BUTTONS TO SHOW EACH WEBSITE (FINISHED)
+
+
+//BUTTONS TO SHOW EACH ART SECTION (STARTED)
+
+function Blender(){
+	if (document.getElementById("blendSection").style.display === "block"){
+		document.getElementById("blendSection").style.display = "none";
+		document.getElementById("piskelSection").style.display = "none";
+	}
+	else{
+		document.getElementById("blendSection").style.display = "block";
+		document.getElementById("piskelSection").style.display = "none";
+		
+	}
+}
+
+function Piskel(){
+	if (document.getElementById("piskelSection").style.display === "block"){
+		document.getElementById("blendSection").style.display = "none";
+		document.getElementById("piskelSection").style.display = "none";
+	}
+	else{
+		document.getElementById("piskelSection").style.display = "block";
+		document.getElementById("blendSection").style.display = "none";
+	}
+}
+
+//BUTTONS TO SHOW EACH ART SECTION (FINISHED)
+
+
+//BLENDER GALLERY (STARTED)
+
+	//NEXT BLENDER PHOTO
+
+	function nextPhotoBlend(){
+		if(document.getElementById("blend4pic").style.display === "block"){
+			document.getElementById("blend1pic").style.display = "block";
+			document.getElementById("blend3pic").style.display = "none";
+			document.getElementById("blend4pic").style.display = "none";
+			document.getElementById("blend2pic").style.display = "none";
+		}
+		else if(document.getElementById("blend3pic").style.display === "block"){
+			document.getElementById("blend4pic").style.display = "block";
+			document.getElementById("blend1pic").style.display = "none";
+			document.getElementById("blend3pic").style.display = "none";
+			document.getElementById("blend2pic").style.display = "none";
+		}
+		else if(document.getElementById("blend2pic").style.display === "block"){
+			document.getElementById("blend3pic").style.display = "block";
+			document.getElementById("blend1pic").style.display = "none";
+			document.getElementById("blend4pic").style.display = "none";
+			document.getElementById("blend2pic").style.display = "none";
+		}
+		else{
+			document.getElementById("blend2pic").style.display = "block";
+			document.getElementById("blend3pic").style.display = "none";
+			document.getElementById("blend4pic").style.display = "none";
+			document.getElementById("blend1pic").style.display = "none";
+		}
+	}
+
+	//PREVIOUS BLENDER PHOTO
+
+	function previousPhotoBlend(){
+		if(document.getElementById("blend1pic").style.display === "block"){
+			document.getElementById("blend4pic").style.display = "block";
+			document.getElementById("blend3pic").style.display = "none";
+			document.getElementById("blend2pic").style.display = "none";
+			document.getElementById("blend1pic").style.display = "none";
+		}
+		else if(document.getElementById("blend2pic").style.display === "block"){
+			document.getElementById("blend1pic").style.display = "block";
+			document.getElementById("blend3pic").style.display = "none";
+			document.getElementById("blend4pic").style.display = "none";
+			document.getElementById("blend2pic").style.display = "none";
+		}
+		else if(document.getElementById("blend3pic").style.display === "block"){
+			document.getElementById("blend2pic").style.display = "block";
+			document.getElementById("blend1pic").style.display = "none";
+			document.getElementById("blend3pic").style.display = "none";
+			document.getElementById("blend4pic").style.display = "none";
+		}
+		else{
+			document.getElementById("blend3pic").style.display = "block";
+			document.getElementById("blend1pic").style.display = "none";
+			document.getElementById("blend2pic").style.display = "none";
+			document.getElementById("blend4pic").style.display = "none";
+		}
+	}
+
+//BLENDER GALLERY(FINISHED)
+
+
+//PISKEL GALLERY (STARTED)
+
+	//NEXT PISKEL PHOTO
+
+	function nextPhotoPiskel(){
+		if(document.getElementById("piskel4pic").style.display === "block"){
+			document.getElementById("piskel5pic").style.display = "block";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel1pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel3pic").style.display === "block"){
+			document.getElementById("piskel4pic").style.display = "block";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel5pic").style.display === "block"){
+			document.getElementById("piskel1pic").style.display = "block";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel2pic").style.display === "block"){
+			document.getElementById("piskel3pic").style.display = "block";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+		}
+		else{
+			document.getElementById("piskel2pic").style.display = "block";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel1pic").style.display = "none";
+		}
+	}
+
+	//PREVIOUS PISKEL PHOTO
+
+	function previousPhotoPiskel(){
+		if(document.getElementById("piskel1pic").style.display === "block"){
+			document.getElementById("piskel5pic").style.display = "block";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel2pic").style.display === "block"){
+			document.getElementById("piskel1pic").style.display = "block";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel3pic").style.display === "block"){
+			document.getElementById("piskel2pic").style.display = "block";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel5pic").style.display === "block"){
+			document.getElementById("piskel4pic").style.display = "block";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+		}
+		else{
+			document.getElementById("piskel3pic").style.display = "block";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+		}
+	}
+
+//PISKEL GALLERY (FINISHED)
+
 
 //BUTTONS TO SHOW EACH WORK EXPERIENCE PIECE (STARTED)
 

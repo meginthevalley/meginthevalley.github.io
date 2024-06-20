@@ -33,7 +33,9 @@
 			<button class="portfolio" onclick="unrealFunction()">Unreal Engine</button>
 			<button class="portfolio" onclick="websitesFunction()">Websites</button>
 			<button class="portfolio" onclick="artFunction()">Art</button>
-			<button class="portfolio" onclick="miscFunction()">Miscellaneous</button>
+			<!-- To be added later
+			 <button class="portfolio" onclick="miscFunction()">Miscellaneous</button> 
+			 -->
 		</div>
 		<!-- Holds all buttons to get to different parts of the page-->
 	</header>
@@ -43,13 +45,15 @@
 	 <p class="hiddenForSpace">I <br> think <br> coding <br> is <br> fun.</p>
 
 	<div id="Unity">
+		<!-- Add descriptions and maybe add a section for the peer education videos -->
 	 <h2 class="nameOfPage">Unity</h2>
 	 <p class="hiddenForSpace">I think <br> coding is fun.</p>
 	 <button class="portfolio" onclick="Catastrophe()">Cat-astrophe!</button>
 	 <button class="portfolio" onclick="WineTime()">Wine-Time</button>
 	 <button class="portfolio" onclick="Wolfjam()">Wolfjam Hackathon</button>
+	 <button class="portfolio" onclick="GamePeer()">Peer Education</button>
 	 <!-- The title of the webpage the user is currently on -->
-	   <section id=showCatSection class="section1">
+	   <section id="showCatSection" class="section1">
 	   <!-- The first section of 3 in the main part of the webpage -->
 	     <h3 class="subHeading1">Cat-astrophe!</h3>
 		 <p class="main"><i>Cat-astrophe!</i> was made in April of 2023 and it is 
@@ -137,7 +141,7 @@
 			</div>
 			<div class="clearfix"></div>
 	   </section>
-	   <section id=showWineSection class="section1">
+	   <section id="showWineSection" class="section1">
 		<!-- The first section of 3 in the main part of the webpage -->
 		  <h3 class="subHeading1">Wine Time</h3>
 		  <p class="main"><i>Wine-Time</i> was made in October and November of 2023 and it is 
@@ -208,7 +212,7 @@
 				</div>
 			 <div class="clearfix"></div>
 		</section>
-		<section id=showWolfSection class="section1">
+		<section id="showWolfSection" class="section1">
 			<!-- The first section of 3 in the main part of the webpage -->
 			  <h3 class="subHeading1">Wolfjam Hackathon</h3>
 			  <p class="main"></p>
@@ -227,9 +231,63 @@
 				</div>
 				 <div class="clearfix"></div>
 			</section>
+			<section id="showPeerSection" class="section1">
+				<!-- The first section of 3 in the main part of the webpage -->
+				  <h3 class="subHeading1">Peer Education</h3>
+				  <p class="main"></p>
+				  
+				  <p class="hiddenForSpace">I think <br> coding is fun.</p>
+				  <div class="clearfix"></div>
+				  <div>
+					  <div id="peer1vid" class="outerLayerVideo">
+						  <div class="gallery">
+							  <video alt="First assignment made to help students." width="100%" controls>
+								  <source src="RollBall.mp4" type="video/mp4">
+							  </video>
+							  <div class="imageDescription">
+								  
+							  </div>
+					  </div>
+					  </div>
+					  <div class="outerLayerVideo">
+						  <div id="peer2vid" class="gallery">
+							  <video alt="Simple animation demo." width="100%" controls>
+								  <source src="Animation Example.mp4" type="video/mp4">
+							  </video>
+							  <div class="imageDescription">
+								  
+							  </div>
+					  </div>
+					  </div>
+					  <div class="outerLayerVideo">
+						  <div id="peer3vid" class="gallery">
+							  <video alt="Simple FPS demo." width="100%" controls>
+								  <source src="FPS Demo.mp4" type="video/mp4">
+							  </video>
+							  <div class="imageDescription">
+								  
+							  </div>
+					  </div>
+					  </div>
+					  <div class="outerLayerVideo">
+						<div id="peer4vid" class="gallery">
+							<video alt="Menu demo with controller support." width="100%" controls>
+								<source src="MenuDemo.mp4" type="video/mp4">
+							</video>
+							<div class="imageDescription">
+								
+							</div>
+					</div>
+					</div>
+					<button class="portfolio" onclick="previousVideoPeer()">Previous</button>
+				   	<button class="portfolio" onclick="nextVideoPeer()">Next</button>
+				  </div>
+					 <div class="clearfix"></div>
+				</section>
 	   </div>
 
 	   <div id="Unreal">
+		<!-- Add descriptions and take/add videos -->
 		<h2 class="nameOfPage">Unreal Engine</h2>
 		<!-- The title of the webpage the user is currently on -->
 		<section class="section1">
@@ -289,41 +347,184 @@
 				 <div class="clearfix"></div>
 		  </div>
 
-		  <div id="Websites">
+		<div id="Websites">
+			<!-- Work more on this section including descriptions and pics of the finished portfolio site and coding to switch between those pics-->
 			<h2 class="nameOfPage">Websites</h2>
+			<p class="hiddenForSpace">I think <br> coding is fun.</p>
+	 		<button class="portfolio" onclick="ThisOne()">This Site</button>
+	 		<button class="portfolio" onclick="Recommend()">Gaming Recommendation Site</button>
 			<!-- The title of the webpage the user is currently on -->
-			  <section class="section1">
-			  <!-- The first section of 3 in the main part of the webpage -->
-				<h3 class="subHeading1">Gaming Recommendation Site</h3>
-				   <div class="gallery">
-				   </div>
-				   <br/>
-				   <div>
-				   <p class="main">Type Text here</p>
-				   </div>
-			  </section>
+			  <section id="recommendSection" class="section1">
+				  <h3 class="subHeading1">Gaming Recommendation Site</h3>
+				  <p class="main"></p>
+				  
+				  <p class="hiddenForSpace">I think <br> coding is fun.</p>
+					 <div class="clearfix"></div>
+					 <div class="outerLayerVideo">
+						<div class="gallery">
+							<video alt="A video explaining Megan's Gaming Site." width="100%" controls>
+								<source src="GamingSite.mp4" type="video/mp4">
+							</video>
+							<div class="imageDescription">
+	
+							</div>
+					</div>
+					</div>
+					 <div class="clearfix"></div>
+				</section>
+				<section id="thisSiteSection" class="section1">
+					<h3 class="subHeading1">Megan's Portfolio Site</h3>
+					<p class="main"></p>
+					<p class="hiddenForSpace">I think <br> coding is fun.</p>
+					<div class="clearfix"></div>
+					<div>
+						<div id="portfolio1pic" class="outerLayer">
+						 <div  class="gallery">
+								  <img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
+							<div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
+								Furniture assets are made by Megan and all other assets are from turbo squid.
+							</div>
+						  </div>
+						</div>
+						<div id="portfolio2pic" class="outerLayer">
+						  <div class="gallery">
+								  <img src="Cat2.PNG" alt="A pic from Cat-astrophe!">
+							<div class="imageDescription">The living room. Here, the player could teleport onto surfaces to knock down objects.
+								Most of the objects are from TurboSquid besides for the remote and furniture which were made by Megan.
+							</div>
+						  </div>
+						</div>
+						<div id="portfolio3pic" class="outerLayer">
+						  <div  class="gallery">
+								  <img src="Cat3.png" alt="A pic from Cat-astrophe!">
+							<div class="imageDescription">This image is part of the kitchen scene. The player is playing with a <span title="yum!" style = "color:yellow;">banana</span>.
+								The banana in this scene is from TurboSquid. All other objects in this scene are made by Megan.
+							</div>
+						  </div>
+						</div>
+						<div id= "portfolio4pic" class="outerLayer">
+						  <div  class="gallery">
+								  <img src="Cat4.png" alt="A pic from Cat-astrophe!">
+							<div class="imageDescription">Here the player can be seen playing in the <span title="EW!" style ="color:Brown;">litterbox</span>. 
+								They could really rack up points here. All objects in this scene were made by Megan. 
+								Players' reported having the most fun in this <span title="odd?">area</span>.</div>
+						</div>
+					</div>
+					 <button class="portfolio" onclick="previousPhotoPortfolio()">Previous</button>
+					 <button class="portfolio" onclick="nextPhotoPortfolio()">Next</button>
+					</div>
+					
+
+					   <div class="clearfix"></div>
+				  </section>
 			  </div>
 
 			  <div id="Art">
+				<!-- Add descriptions and maybe blender animations -->
 				<h2 class="nameOfPage">Art</h2>
 				<!-- The title of the webpage the user is currently on -->
-				  <section class="section1">
+				<p class="hiddenForSpace">I think <br> coding is fun.</p>
+				<button class="portfolio" onclick="Blender()">Blender</button>
+				<button class="portfolio" onclick="Piskel()">Piskel</button>
+				  <section id="blendSection" class="section1">
 				  <!-- The first section of 3 in the main part of the webpage -->
 					<h3 class="subHeading1">Blender</h3>
-					   <div class="gallery">
-					   </div>
-					   <br/>
-					   <div>
-					   <p class="main">Type Text here</p>
-					   </div>
+					<p class="main"></p>
+					<p class="hiddenForSpace">I think <br> coding is fun.</p>
+					<div class="clearfix"></div>
+					<div>
+						<div id="blend1pic" class="outerLayer">
+						 <div  class="gallery">
+								  <img src="CatPawBeginning.PNG" alt="A pic of the prototype cat paw from Cat-astrophe!">
+							<div class="imageDescription">
+							</div>
+						  </div>
+						</div>
+						<div id="blend2pic" class="outerLayer">
+						  <div class="gallery">
+								  <img src="CatPawFinished.PNG" alt="A pic of the finished paw design from Cat-astrophe!">
+							<div class="imageDescription">
+							</div>
+						  </div>
+						</div>
+						<div id="blend3pic" class="outerLayer">
+						  <div  class="gallery">
+								  <img src="Trash.PNG" alt="A pic of a piece of trash made for Hide & Go Squeak!">
+							<div class="imageDescription">
+							</div>
+						  </div>
+						</div>
+						<div id= "blend4pic" class="outerLayer">
+						  <div  class="gallery">
+								  <img src="Bottle.PNG" alt="A pic of the bottle made for Wine-Time.">
+							<div class="imageDescription">
+								
+							</div>
+						</div>
+					</div>
+					 <button class="portfolio" onclick="previousPhotoBlend()">Previous</button>
+					 <button class="portfolio" onclick="nextPhotoBlend()">Next</button>
+					</div>
+					   <div class="clearfix"></div>
 				  </section>
+				  <section id="piskelSection" class="section1">
+					<!-- The first section of 3 in the main part of the webpage -->
+					  <h3 class="subHeading1">Piskel</h3>
+					  <p class="main"></p>
+					  <p class="hiddenForSpace">I think <br> coding is fun.</p>
+					  <div class="clearfix"></div>
+					  <div>
+						  <div id="piskel1pic" class="outerLayer">
+						   <div  class="gallery">
+									<img src="Ghost Cat.png" alt="A pixel pic of a ghost cat that Megan made.">
+							  <div class="imageDescription">
+							  </div>
+							</div>
+						  </div>
+						  <div id="piskel2pic" class="outerLayer">
+							<div class="gallery">
+									<img src="Scary Fairy.png" alt="A pixel pic of a 'Scary Fairy' that Megan made.">
+							  <div class="imageDescription">
+							  </div>
+							</div>
+						  </div>
+						  <div id="piskel3pic" class="outerLayer">
+							<div  class="gallery">
+									<img src="Sanji2.png" alt="A pixel pic of Sanji from One Piece.">
+							  <div class="imageDescription">
+							  </div>
+							</div>
+						  </div>
+						  <div id= "piskel4pic" class="outerLayer">
+							<div  class="gallery">
+									<img src="Chopper.gif" alt="A pixel gif of Tony Tony Chopper from One Piece.">
+							  <div class="imageDescription">
+								  
+							  </div>
+						  </div>
+					  </div>
+					  <div id= "piskel5pic" class="outerLayer">
+						<div  class="gallery">
+								<img src="Mobster Squirrel.gif" alt="A pixel gif of a mobster squirrel that Megan made.">
+						  <div class="imageDescription">
+							  
+						  </div>
+					  </div>
+				  </div>
+					   <button class="portfolio" onclick="previousPhotoPiskel()">Previous</button>
+					   <button class="portfolio" onclick="nextPhotoPiskel()">Next</button>
+					  </div>
+						 <div class="clearfix"></div>
+					</section>
 				  </div>
 
+				 <!-- To be added later.
 				  <div id="Misc">
+					 Do this section with bee simulator, anxiety dilemma, potion pandemonium and any other relevant works. 
 					<h2 class="nameOfPage">Miscellaneous</h2>
-					<!-- The title of the webpage the user is currently on -->
-					  <section class="section1">
-					  <!-- The first section of 3 in the main part of the webpage -->
+
+					  <section id="anxietySection" class="section1">
+					
 						<h3 class="subHeading1">Anxiety Dilemma</h3>
 						   <div class="gallery">
 						   </div>
@@ -332,7 +533,8 @@
 						   <p class="main">Type Text here</p>
 						   </div>
 					  </section>
-					  </div>
+					  </div> 
+					  -->
 	</main>
 
 	<footer>
@@ -352,5 +554,6 @@
 					<p>@2024 Megan LaValley</p>
 				</div>			
 	</footer>
+
 </body>
 </html>
