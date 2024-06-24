@@ -460,9 +460,8 @@ div.gallery {
 	border-radius: 15px;
   }
 
-  div.gallery video {
-	width: 100%;
-	height: auto;
+  div.gallery iframe {
+	width:100%;
 	border-radius: 15px;
   }
 
