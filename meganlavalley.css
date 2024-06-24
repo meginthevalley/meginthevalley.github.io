@@ -44,18 +44,18 @@ img.boxShadow{
 /* A class made specifically to float things left */
 #floatLeftPic{
 	float:left;
-	width:auto;
+	width:25%;
 	height:auto;
 	box-shadow: 0 0 10px 10px #666;
-	max-width:33%;
+	max-width:25%;
 	border-radius: 15%;
 }
 #floatRightPic{
 	float:right;
-	width:auto;
+	width:25%;
 	height:auto;
 	box-shadow: 0 0 10px 10px #666;
-	max-width:33%;
+	max-width:25%;
 	border-radius: 15%;
 }
 #homeImage{
@@ -85,7 +85,7 @@ a.sections:link, a.sections:visited {
 	width:25%;
 	padding: 14px 25px;
 	max-width:25%;
-	font-size:2vw;
+	font-size:1.8vw;
 	text-decoration: none;
 }
 /* For a nav link that has or hasn't been visited */
@@ -138,6 +138,7 @@ a.pagesTop:active {
 	color:white;
 	box-sizing:border-box;
 	width:auto;
+	height:auto;
 	border:20px solid transparent;
 	border-image: url("border.png") 30 round;
 	border-image-repeat: stretch;
@@ -155,11 +156,34 @@ h3.subHeading1{
 /* sub headings for about this website section and contact info section of the homepage */
 p.main{
 	font-size:1.3vw;
+	width:70%;
 	max-width:100%;
+	margin:auto;
 	text-align:center;
 }
 /* A class to make paragraph font size larger */
-
+p.about{
+	font-size:1.3vw;
+	width:auto;
+	max-width:100%;
+	margin:auto;
+	text-align:center;
+}
+p.education{
+	font-size:1.3vw;
+	width:auto;
+	max-width:100%;
+	margin:auto;
+	text-align:center;
+}
+div.aboutContainer{
+	width:70%;
+	margin-right:50%;
+}
+div.educationContainer{
+	width:65%;
+	margin-left:30%;
+}
 ul{
 	list-style-type:circle;
 	font-size:1vw;
@@ -201,6 +225,7 @@ div.lists2{
 	float:left;
 	width:50%;
 }
+
 /* A div class to make the lists of games in the homepage float next to each other */
 h3.categories{
 	font-size:1.3vw;
@@ -244,13 +269,17 @@ li{
 	display: block;
 }
 /* Second section of 3 in the main contents of the webpage */
-h3.subHeading2{
+h2.subHeading2{
 	text-align:center;
 	text-decoration:none;
-	font-size:3.5vw;
-	text-shadow:2px 2px MediumPurple;
+	font-size:2vw;
 }
 /* class for the about me part of the homepage (the color of the text shadow is the only change from similar headings */
+h2.references{
+	text-align:center;
+	text-decoration:none;
+	font-size:1.5vw;
+}
 .section3{
 	text-align:center;
 	margin:auto;
@@ -324,7 +353,7 @@ html{
 button.portfolio{
 display: inline-block;
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
   color: #fff;
