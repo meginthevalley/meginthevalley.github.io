@@ -34,8 +34,8 @@
 	   <section class="section1">
 	   <!-- The first section of 3 in the main part of the webpage -->
 	   <div class="clearfix">
-		<picture>
-			<img id="floatRightPic" onmouseover="changeAboutPicture()" onmouseout="changeAboutBack()" 
+		<picture >
+			<img class="aboutPics" id="floatRightPic" onmouseover="changeAboutPicture()" onmouseout="changeAboutBack()" 
 			src="Megan4.jpg" alt="A photo of Megan from her time at UAlbany.">
 			<!-- An image that is set to change to a different image when hovered over via Javascript. -->
 			</picture>
@@ -63,7 +63,7 @@
 	<footer>
 		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
 		<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
-		<div>
+		<div class="footerScale">
 			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
 				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
 				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a>
@@ -73,6 +73,7 @@
 			<a class="footer" title="Click here to go to Megan's GitHub!" 
 				href="https://github.com/meginthevalley" target="_blank" 
 				tabindex="0"><img id="logos" src="Github.png"></img></a>
+			</div>
 				<div>
 					<p>@2024 Megan LaValley</p>
 				</div>			

@@ -1,7 +1,8 @@
 body{
 	background-color:Black;
 	font-family:'Tahoma';
-	height:100%;
+	height: auto;
+	width:auto;
 }
 /* Changes the color of the website */
 header{
@@ -428,6 +429,8 @@ button.portfolio:active {
 
 #logos{
 	padding-top: 5px;
+	width:3%;
+	height:auto;
 }
 
 a.footer{
@@ -470,3 +473,11 @@ div.gallery {
 	text-align: center;
 	font-size:0.9vw;
   }
+img.aboutPics{
+	margin-top:12%;
+  }
+div.FooterScale{
+	margin:auto;
+	width:2%;
+	max-width:10%;
+}
