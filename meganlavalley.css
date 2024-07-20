@@ -327,19 +327,19 @@ a.contact:link {
 	height:100%;
 	width:100%;
 	display:block;
-	color:Navy;
+	color:rgb(0, 0, 153);
 }
 /* For a link that hasn't been visited yet */
 a.contact:visited {
-	color:navy;
+	color:rgb(0, 0, 153);
 }
 /* For a link that has been visited */
 a.contact:hover {
-	color:#00a3cc;
+	color:rgb(91, 0, 196);
 }
 /* For a link being hovered/moused over */
 a.contact:active {
-	color:navy;
+	color:rgb(91, 0, 196);
 }
 /* this class makes this section of the table change color when you hover over it */
 footer{
