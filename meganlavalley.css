@@ -226,7 +226,17 @@ div.lists2{
 	float:left;
 	width:50%;
 }
-
+div.certs{
+	float:left;
+	width:50%;
+	transition: 1s;
+}
+div.certs:hover{
+	opacity: 75%;
+}
+#certImage{
+	border-radius: 15%;
+}
 /* A div class to make the lists of games in the homepage float next to each other */
 h3.categories{
 	font-size:1.3vw;
@@ -389,12 +399,12 @@ button.portfolio:active {
 }
 
 #photoCatGallery, #videoCatGallery, #showCatSection, #cat2pic, 
-#cat3pic, #cat4pic, #cat2vid, #cat3vid{
+#cat3pic, #cat4pic, #cat5pic, #cat2vid, #cat3vid{
 	display:none;
 }
 
 #photoWineGallery, #videoWineGallery, #showWineSection, #wine2pic, 
-#wine3pic, #wine4pic{
+#wine3pic, #wine4pic, #wine5pic{
 	display: none;
 }
 
@@ -430,6 +440,12 @@ button.portfolio:active {
 #logos{
 	padding-top: 5px;
 	width:3%;
+	height:auto;
+}
+
+#logos2{
+	padding-top: 5px;
+	width:5%;
 	height:auto;
 }
 

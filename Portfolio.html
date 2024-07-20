@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
 	<title>Megan LaValley</title>
+	<!-- Megan's style sheet -->
 	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
-	<!-- link to external style sheet -->
+	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 	<!-- Viewport added to make the website responsive -->
+	<!-- The author of this website, that's me!!!-->
  	<meta name="author" content="Megan LaValley">
 </head>
+
+
 <body>
+
+<!-- Megan's JavaScript-->
 <script src="meganlavalley.js"></script>
+
 	<header>
 	  <h1 class="websiteHeading"><a id="backToTop">Portfolio</a></h1>
+	  <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
 	  <nav>
 		<ul class="navBar">
 			<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
@@ -25,9 +32,9 @@
 			<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
 				href="Contact.html" tabindex="0">Contact</a></a></li>
 	</ul>
-	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
+	    
 	  </nav>
-	    <!-- A welcome to the website heading -->
+	    <!-- Holds all buttons to get to different parts of the page-->
 		<div>
 			<button class="portfolio" onclick="unityFunction()">Unity</button>
 			<button class="portfolio" onclick="unrealFunction()">Unreal Engine</button>
@@ -37,24 +44,31 @@
 			 <button class="portfolio" onclick="miscFunction()">Miscellaneous</button> 
 			 -->
 		</div>
-		<!-- Holds all buttons to get to different parts of the page-->
+		
 	</header>
-	<main class="mainContent">
+
 	<!-- Everything between the header and footer of the webpage -->
+	<main class="mainContent">
+	
 
 	 <p class="hiddenForSpace">I think <br> coding is fun.</p>
 
+	<!-- The Unity portion of Megans' portfolio -->
 	<div id="Unity">
-		<!-- Add descriptions and maybe add a section for the peer education videos -->
-	 <h2 class="nameOfPage">Unity</h2>
-	 <p class="hiddenForSpace">I think <br> coding is fun.</p>
-	 <button class="portfolio" onclick="Catastrophe()">Cat-astrophe!</button>
-	 <button class="portfolio" onclick="WineTime()">Wine-Time</button>
-	 <button class="portfolio" onclick="Wolfjam()">Wolfjam Hackathon</button>
-	 <button class="portfolio" onclick="GamePeer()">Peer Education</button>
-	 <!-- The title of the webpage the user is currently on -->
+
+	 	<h2 class="nameOfPage">Unity</h2>
+
+	 	<p class="hiddenForSpace">I think <br> coding is fun.</p>
+
+		<!-- Buttons to lead to each section of the Unity portion of Megan's portfolio -->
+	 	<button class="portfolio" onclick="Catastrophe()">Cat-astrophe!</button>
+	 	<button class="portfolio" onclick="WineTime()">Wine-Time</button>
+	 	<button class="portfolio" onclick="Wolfjam()">Wolfjam Hackathon</button>
+	 	<button class="portfolio" onclick="GamePeer()">Peer Education</button>
+
+	 	<!-- The section dedicated the Megans' game Cat-astrophe! -->
 	   <section id="showCatSection" class="section1">
-	   <!-- The first section of 3 in the main part of the webpage -->
+	   
 	     <h3 class="subHeading1">Cat-astrophe!</h3>
 		 <p class="main"><i>Cat-astrophe!</i> was made in April of 2023 and it is 
 			a VR Game made in Unity (2021.3.17f1). <i>Cat-astrophe!</i> was an independent 
@@ -71,9 +85,8 @@
 		 	<div id="photoCatGallery">
 				<div id="cat1pic" class="outerLayer">
 		 		<div  class="gallery">
-			  			<img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
-					<div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
-						Furniture assets are made by Megan and all other assets are from turbo squid.
+			  			<img src="Cat Loop.png" alt="A pic from Cat-astrophe!">
+					<div class="imageDescription">
 					</div>
 		  		</div>
 				</div>
@@ -101,6 +114,14 @@
 						Players' reported having the most fun in this <span title="odd?">area</span>.</div>
 				</div>
 			</div>
+			<div id="cat5pic" class="outerLayer">
+				<div  class="gallery">
+						 <img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
+				   <div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
+					   Furniture assets are made by Megan and all other assets are from turbo squid.
+				   </div>
+				 </div>
+			   </div>
 		 	<button class="portfolio" onclick="previousPhotoCat()">Previous</button>
 			 <button class="portfolio" onclick="nextPhotoCat()">Next</button>
 			</div>
@@ -143,8 +164,11 @@
 			</div>
 			<div class="clearfix"></div>
 	   </section>
+
+
+	   <!-- The section dedicated to Megan's game Wine-Time -->
 	   <section id="showWineSection" class="section1">
-		<!-- The first section of 3 in the main part of the webpage -->
+		
 		  <h3 class="subHeading1">Wine Time</h3>
 		  <p class="main"><i>Wine-Time</i> was made in October and November of 2023 and it is 
 			a VR Game made in Unity (2021.3.17f1). <i>Wine-Time</i> was an independent 
@@ -165,10 +189,8 @@
 				</p>
 				 <div id="wine1pic" class="outerLayer">
 				  <div  class="gallery">
-						   <img src="wine1.jpg" alt="A pic from Wine-Time.">
-					 <div class="imageDescription"> The first customer and their order. Megan decided to create a cat customer to
-						slightly reference her time on <i>Cat-astrophe!</i>. Megan made everything in this scene except the glasses.
-						Even the pictures on the wall are from photo's she had taken.
+						   <img src="Wine Loop.png" alt="A pic from Wine-Time.">
+					 <div class="imageDescription">
 					 </div>
 				   </div>
 				 </div>
@@ -198,6 +220,15 @@
 					 </div>
 				 </div>
 			 </div>
+			 <div id="wine5pic" class="outerLayer">
+				<div  class="gallery">
+						 <img src="wine1.jpg" alt="A pic from Wine-Time.">
+				   <div class="imageDescription"> The first customer and their order. Megan decided to create a cat customer to
+					  slightly reference her time on <i>Cat-astrophe!</i>. Megan made everything in this scene except the glasses.
+					  Even the pictures on the wall are from photo's she had taken.
+				   </div>
+				 </div>
+			   </div>
 			<button class="portfolio" onclick="previousPhotoWine()">Previous</button>
 			<button class="portfolio" onclick="nextPhotoWine()">Next</button>
 			</div>
@@ -216,8 +247,11 @@
 				</div>
 			 <div class="clearfix"></div>
 		</section>
+
+
+		 <!-- The section dedicated to Megan's Wolfjam Hackathon Minigame -->
 		<section id="showWolfSection" class="section1">
-			<!-- The first section of 3 in the main part of the webpage -->
+
 			  <h3 class="subHeading1">Wolfjam Hackathon</h3>
 			  <p class="main">
 				This minigame was made for the Wolfjam Hackathon that Megan participated in. The hackathon took place for one day in November of 2023. For this event,
@@ -242,10 +276,18 @@
 				</div>
 				 <div class="clearfix"></div>
 			</section>
+
+
+			 <!-- The section dedicated to Megan's time as a Peer Educator at UAlbany  -->
 			<section id="showPeerSection" class="section1">
+
 				<!-- The first section of 3 in the main part of the webpage -->
 				  <h3 class="subHeading1">Peer Education</h3>
-				  <p class="main"></p>
+				  <p class="main"> In Megan's last semester at UAlbany (Spring 2024), she worked as a peer educator for the Game Design & Development 2 class.
+					This class consisted of helping students with their Unity projects and repositories. More about this position can be found in the Resume section of this website.
+					Below are some videos Megan had thrown together to help students with frequently asked questions and to go over what the students had learned in class so they would not feel 
+					lost if they fell behind. These videos are quite lengthy but each one links to Megan's YouTube where she has posted about her projects.
+				  </p>
 				  
 				  <p class="hiddenForSpace">I think <br> coding is fun.</p>
 				  <div class="clearfix"></div>
@@ -256,7 +298,8 @@
 							title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							  <div class="imageDescription">
-								  
+								  This demo was used to help students with their first project which was an introduction to Unity for many of the students.
+								  Megan tried to go over basics that were covered in class with a few extra add ons and explanations as to what each line of code means.
 							  </div>
 					  </div>
 					  </div>
@@ -266,7 +309,9 @@
 							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							  <div class="imageDescription">
-								  
+								  This video goes over simple animation in Unity (no Blender required). This was the content of the class from the week this was published. 
+								  Many students had questions on this topic so Megan had decided to make a video to help since not everyone was able to go to office hours. 
+								  This video mainly goes over the animator since many students were able to view copies of the code with comments so there were less questions on that topic.
 							  </div>
 					  </div>
 					  </div>
@@ -276,7 +321,8 @@
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							  <div class="imageDescription">
-								  
+								  This is the First-Person Shooter demo that was used to help students with the corresponding assignment. This is only a simple demo to help with some mechanics
+								   that students had questions on. It was up to students to find ways to enhance their game and make it fun for their projects.
 							  </div>
 					  </div>
 					  </div>
@@ -286,7 +332,11 @@
 							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<div class="imageDescription">
-								
+								This last video was a menu demo Megan had done to present and have the students follow along with in class. She later posted the video to YouTube 
+								for students who were receiving help with their projects during this time. The menu demo was meant to be simple and easy to follow. Megan had already written
+								out the code so rather than write it live on the video, she copy and pasted the code over by bits with the comments so she could then explain the code while 
+								students were writing. This helped the students to understand what the code did as they were typing it out and testing it for themselves. The menu goes over 
+								controller support, volume settings, and switching between menus.
 							</div>
 					</div>
 					</div>
@@ -297,11 +347,15 @@
 				</section>
 	   </div>
 
+	    <!-- The Unreal Engine portion of Megans' portfolio -->
 	   <div id="Unreal">
+
 		<!-- Add descriptions and take/add videos -->
 		<h2 class="nameOfPage">Unreal Engine</h2>
-		<!-- The title of the webpage the user is currently on -->
+
+		 <!-- The section dedicated to Megan's game Hide & Go Squeak! -->
 		<section class="section1">
+
 			<!-- The first section of 3 in the main part of the webpage -->
 			  <h3 class="subHeading1">Hide & Go Squeak!</h3>
 			  <p class="main"><i>Hide & Go Squeak!</i> was made in April of 2024 and it is 
@@ -314,7 +368,7 @@
 				  <div id="photoSqueakGallery">
 					 <div id="squeak1pic" class="outerLayer">
 					  <div  class="gallery">
-							   <img src="Mouse1.jpg" alt="A pic from Hide & Go Squeak!">
+							   <img src="Squeak Loop.png" alt="A pic from Hide & Go Squeak!">
 						 <div class="imageDescription"> 
 
 						 </div>
@@ -346,7 +400,7 @@
 				 </div>
 				 <div id="squeak5pic" class="outerLayer">
 					<div  class="gallery">
-							<img src="Mouse6.jpg" alt="A pic from Hide & Go Squeak!">
+							<img src="Mouse1.jpg" alt="A pic from Hide & Go Squeak!">
 					  <div class="imageDescription">
 						 
 					  </div>
@@ -358,16 +412,32 @@
 				 <div class="clearfix"></div>
 		  </div>
 
+
+		<!-- The Websites portion of Megans' portfolio -->
 		<div id="Websites">
+
 			<!-- Work more on this section including descriptions and pics of the finished portfolio site and coding to switch between those pics-->
 			<h2 class="nameOfPage">Websites</h2>
+
 			<p class="hiddenForSpace">I think <br> coding is fun.</p>
+
+			<!-- Buttons to switch between the websites Megan has created -->
 	 		<button class="portfolio" onclick="ThisOne()">This Site</button>
 	 		<button class="portfolio" onclick="Recommend()">Gaming Recommendation Site</button>
-			<!-- The title of the webpage the user is currently on -->
+
+			<!-- The section dedicated to Megans' Gaming Recommendation Site -->
 			  <section id="recommendSection" class="section1">
+
 				  <h3 class="subHeading1">Gaming Recommendation Site</h3>
-				  <p class="main"></p>
+				  <p class="main">This is the first website Megan had created. It was for a class in the Fall of 2021. For this project, Megan had decided to make a brief gaming recommendation website.
+					 Megan was a Twitch streamer at the time and has always loved video games so she thought it would be a fun website to make. She tried to keep the color scheme close to the colors for 
+					 her Twitch logo. <br><br>
+					 There are many things Megan would change about this site if it was made today instead of years ago. One big change would be the videos used in the tabs. On the server 
+					 that the website was being posted to there was a size limit that Megan had not realized until last minute and had to quickly make shorter videos. Megan would also add more games, different games, 
+					 more game options, a way for users to get to each game without scrolling, and more if it were done today. 
+					 <br><br>The video below gives a brief overview of the site. In the future, Megan would love to remake this site with the changes listed above and post it to it's own custom domain.
+					  Listed below the video is a link to the site in it's state from 2021 if you would like to visit it and check it out!
+				  </p>
 				  
 				  <p class="hiddenForSpace">I think <br> coding is fun.</p>
 					 <div class="clearfix"></div>
@@ -377,13 +447,21 @@
 							title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
 							picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<div class="imageDescription">
-	
+								The site in the video is optomized for mobile but the optimization in the site could use work since it was Megan's first website. Overall, 
+								Megan was happy with the final result at the time and learned a lot from that experience.<br>
+								Want to get to the site? Click on the image below!<br> <a title="Click here to go to Megan's Gaming Recommendation Website!" 
+								href="https://www.albany.edu/~ML436757/Homepage.html" target="_blank" 
+								tabindex="0"><img id="logos2" src="LaughingMeg.png"></img></a>
 							</div>
 					</div>
 					</div>
 					 <div class="clearfix"></div>
 				</section>
+
+
+				<!-- The section dedicated to This Site! -->
 				<section id="thisSiteSection" class="section1">
+
 					<h3 class="subHeading1">Megan's Portfolio Site</h3>
 					<p class="main"></p>
 					<p class="hiddenForSpace">I think <br> coding is fun.</p>
@@ -391,36 +469,39 @@
 					<div>
 						<div id="portfolio1pic" class="outerLayer">
 						 <div  class="gallery">
-								  <img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
-							<div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
-								Furniture assets are made by Megan and all other assets are from turbo squid.
+								  <img src="HomeForSite.PNG" alt="A pic of the first home screen of this site.">
+							<div class="imageDescription">Add
 							</div>
 						  </div>
 						</div>
 						<div id="portfolio2pic" class="outerLayer">
 						  <div class="gallery">
-								  <img src="Cat2.PNG" alt="A pic from Cat-astrophe!">
-							<div class="imageDescription">The living room. Here, the player could teleport onto surfaces to knock down objects.
-								Most of the objects are from TurboSquid besides for the remote and furniture which were made by Megan.
+								  <img src="PortfolioThisSite.PNG" alt="A pic of the Portfolio page towards the end of the process.">
+							<div class="imageDescription">Add
 							</div>
 						  </div>
 						</div>
 						<div id="portfolio3pic" class="outerLayer">
+							<div  class="gallery">
+							  <img src="AboutForThisSite.png" alt="A pic of the Resume page towards the end of the process.">
+							  <div class="imageDescription">Add
+							  </div>
+							</div>
+						</div>
+						<div id="portfolio4pic" class="outerLayer">
 						  <div  class="gallery">
-								  <img src="Cat3.png" alt="A pic from Cat-astrophe!">
-							<div class="imageDescription">This image is part of the kitchen scene. The player is playing with a <span title="yum!" style = "color:yellow;">banana</span>.
-								The banana in this scene is from TurboSquid. All other objects in this scene are made by Megan.
+							<img src="ResumeForThisSite.png" alt="A pic of the Resume page towards the end of the process.">
+							<div class="imageDescription">Add
 							</div>
 						  </div>
 						</div>
-						<div id= "portfolio4pic" class="outerLayer">
+						<div id= "portfolio5pic" class="outerLayer">
 						  <div  class="gallery">
-								  <img src="Cat4.png" alt="A pic from Cat-astrophe!">
-							<div class="imageDescription">Here the player can be seen playing in the <span title="EW!" style ="color:Brown;">litterbox</span>. 
-								They could really rack up points here. All objects in this scene were made by Megan. 
-								Players' reported having the most fun in this <span title="odd?">area</span>.</div>
+								  <img src="ContactForThisSite.png" alt="A pic of the Contact page towards the end of the process.">
+							<div class="imageDescription">Add</div>
 						</div>
 					</div>
+					<div>
 					 <button class="portfolio" onclick="previousPhotoPortfolio()">Previous</button>
 					 <button class="portfolio" onclick="nextPhotoPortfolio()">Next</button>
 					</div>
@@ -430,17 +511,27 @@
 				  </section>
 			  </div>
 
-			  <div id="Art">
+
+		<!-- The Art portion of Megans' portfolio -->
+		<div id="Art">
+
 				<!-- Add descriptions and maybe blender animations -->
 				<h2 class="nameOfPage">Art</h2>
-				<!-- The title of the webpage the user is currently on -->
+
 				<p class="hiddenForSpace">I think <br> coding is fun.</p>
+
+				<!-- Buttons to switch between Megans' 3D and pixel art -->
 				<button class="portfolio" onclick="Blender()">Blender</button>
 				<button class="portfolio" onclick="Piskel()">Piskel</button>
-				  <section id="blendSection" class="section1">
-				  <!-- The first section of 3 in the main part of the webpage -->
+
+
+				<!-- The section dedicated to Megans' work in Blender -->
+				<section id="blendSection" class="section1">
+
 					<h3 class="subHeading1">Blender</h3>
-					<p class="main"></p>
+					<p class="main">Below are some of Megan's Blender projects that she has made for some of her games. Megan is looking to improve on her blender and art skills to 
+						improve her games in the future.
+					</p>
 					<p class="hiddenForSpace">I think <br> coding is fun.</p>
 					<div class="clearfix"></div>
 					<div>
@@ -448,27 +539,30 @@
 						 <div  class="gallery">
 								  <img src="CatPawBeginning.PNG" alt="A pic of the prototype cat paw from Cat-astrophe!">
 							<div class="imageDescription">
+								This was Megan's first attempt at the cat paw for <i>Cat-astrophe!</i> It was the first time Megan had explored Blender and was certainly a learning process.
 							</div>
 						  </div>
 						</div>
 						<div id="blend2pic" class="outerLayer">
 						  <div class="gallery">
 								  <img src="CatPawFinished.PNG" alt="A pic of the finished paw design from Cat-astrophe!">
-							<div class="imageDescription">
+							<div class="imageDescription"> This was Megan's final model that she used for <i>Cat-astrophe!</i> She made both the model and textured it. 
+								The model fit the game in the state it was in but Megan would like to make a new model when she works further on <i>Cat-astrophe!</i>
 							</div>
 						  </div>
 						</div>
 						<div id="blend3pic" class="outerLayer">
 						  <div  class="gallery">
 								  <img src="Trash.PNG" alt="A pic of a piece of trash made for Hide & Go Squeak!">
-							<div class="imageDescription">
+							<div class="imageDescription"> This is just a simple piece of trash that Megan had made for <i>Hide & Go Squeak!</i> 
+								Megan adjusted sizes to make the trash look different so she could use the same model for every piece while making them appear different.
 							</div>
 						  </div>
 						</div>
 						<div id= "blend4pic" class="outerLayer">
 						  <div  class="gallery">
 								  <img src="Bottle.PNG" alt="A pic of the bottle made for Wine-Time.">
-							<div class="imageDescription">
+							<div class="imageDescription">This was a bottle Megan had made for <i>Wine-Time</i>. Megan had made sure to remove the top so little water beads could be poured out of the bottle.
 								
 							</div>
 						</div>
@@ -478,38 +572,47 @@
 					</div>
 					   <div class="clearfix"></div>
 				  </section>
+
+
+				  <!-- The section dedicated to Megans' creations in Piskel -->
 				  <section id="piskelSection" class="section1">
-					<!-- The first section of 3 in the main part of the webpage -->
+					
 					  <h3 class="subHeading1">Piskel</h3>
-					  <p class="main"></p>
+					  <p class="main">Piskel has been Megan's preferred way to make art when she experiments in her free time. Here is some of Megan's piskel art though not included on this site yet is Megan's 
+						bee game which was one of Megan's first games made entirely with her pixel art. This can be found on Megan's itch.io link in her contact page. Currently, Megan has been commissioned to make 
+						pixel art for a twitch streamer which will be added after it's completion. Most of the pixel art currently on this page is from Megan's first attempts that she would love to improve in the future.
+					  </p>
 					  <p class="hiddenForSpace">I think <br> coding is fun.</p>
 					  <div class="clearfix"></div>
 					  <div>
 						  <div id="piskel1pic" class="outerLayer">
 						   <div  class="gallery">
 									<img src="Ghost Cat.png" alt="A pixel pic of a ghost cat that Megan made.">
-							  <div class="imageDescription">
+							  <div class="imageDescription"> This is a simple ghost cat that Megan made for a class project. Megan would like to improve upon this to add to a 2D game in the future with animations!
 							  </div>
 							</div>
 						  </div>
 						  <div id="piskel2pic" class="outerLayer">
 							<div class="gallery">
 									<img src="Scary Fairy.png" alt="A pixel pic of a 'Scary Fairy' that Megan made.">
-							  <div class="imageDescription">
+							  <div class="imageDescription"> This was also for a class project and was one of Megan's first pixel attempts. 
+								Megan had toyed with the idea of animating this an including it in a cut scene in future projects as a nod to one of her first attempts at pixel art.
 							  </div>
 							</div>
 						  </div>
 						  <div id="piskel3pic" class="outerLayer">
 							<div  class="gallery">
 									<img src="Sanji2.png" alt="A pixel pic of Sanji from One Piece.">
-							  <div class="imageDescription">
+							  <div class="imageDescription"> This is a pixel image of Sanji from One Piece that Megan had made. 
+								She looked at a few different angles and references for Sanji's face and decided to go with this angle. 
 							  </div>
 							</div>
 						  </div>
 						  <div id= "piskel4pic" class="outerLayer">
 							<div  class="gallery">
 									<img src="Chopper.gif" alt="A pixel gif of Tony Tony Chopper from One Piece.">
-							  <div class="imageDescription">
+							  <div class="imageDescription"> This is a simple animation made of Tony Tony Chopper from One Piece talking. 
+								This was one of Megan's first attempts at animation so she wanted to keep it relatively simple.
 								  
 							  </div>
 						  </div>
@@ -517,7 +620,8 @@
 					  <div id= "piskel5pic" class="outerLayer">
 						<div  class="gallery">
 								<img src="Mobster Squirrel.gif" alt="A pixel gif of a mobster squirrel that Megan made.">
-						  <div class="imageDescription">
+						  <div class="imageDescription"> This was a "Mobster Squirrel" that Megan created. She really loved the idea of a squirrel shooting accorns and wanted to include it in her bee game but she felt it needed more 
+							work before it was ready to be implemented into a game. She did think the catch phrase "Go Nuts" would've been nice and that lead to ideas of a possible squirrel game for the future.
 							  
 						  </div>
 					  </div>
@@ -548,9 +652,13 @@
 					  -->
 	</main>
 
+
+	<!-- Start of the footer section -->
 	<footer>
+		<!-- The intrapage link to bring the user back to the top of the page -->
 		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
+		
+		<!-- A div containing the logo links to bring users to Megans' various pages -->
 		<div>
 			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
 				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
@@ -561,10 +669,13 @@
 			<a class="footer" title="Click here to go to Megan's GitHub!" 
 				href="https://github.com/meginthevalley" target="_blank" 
 				tabindex="0"><img id="logos" src="Github.png"></img></a>
-				<div>
-					<p>@2024 Megan LaValley</p>
-				</div>			
-	</footer>
+		</div>
 
+		<!-- The year for the creation of this site... to be updated for future iterations -->
+		<div>
+			<p>@2024 Megan LaValley</p>
+		</div>	
+
+	</footer>
 </body>
 </html>

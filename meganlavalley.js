@@ -6,7 +6,7 @@ function changePicture(){
 
 function changeBack(){
 	document.getElementById("floatLeftPic").src = "Megan2.jpg";
-	//This function is used to change back the picture on the EDUCATION when the mouse is no longer on it
+	//This function is used to change back the picture on the EDUCATION page when the mouse is no longer on it
 }
 
 function changeAboutPicture(){
@@ -16,7 +16,7 @@ function changeAboutPicture(){
 
 function changeAboutBack(){
 	document.getElementById("floatRightPic").src = "Megan4.jpg";
-	//This function is used to change back the picture on the ABOUT when the mouse is no longer on it
+	//This function is used to change back the picture on the ABOUT page when the mouse is no longer on it
 }
 
 //FUNCTIONS FOR CHANGING PICTURES (FINISHED)
@@ -205,6 +205,7 @@ function WineTime(){
 		document.getElementById("showPeerSection").style.display = "none";
 	}
 }
+
 function Wolfjam(){
 	if (document.getElementById("showWolfSection").style.display === "block"){
 		document.getElementById("showWineSection").style.display = "none";
@@ -219,6 +220,7 @@ function Wolfjam(){
 		document.getElementById("showPeerSection").style.display = "none";
 	}
 }
+
 function GamePeer(){
 	if (document.getElementById("showPeerSection").style.display === "block"){
 		document.getElementById("showWineSection").style.display = "none";
@@ -267,28 +269,39 @@ function GamePeer(){
 
 		function nextPhotoCat(){
 			if(document.getElementById("cat4pic").style.display === "block"){
-			document.getElementById("cat1pic").style.display = "block";
+			document.getElementById("cat5pic").style.display = "block";
 			document.getElementById("cat3pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
 			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat1pic").style.display = "none";
 			}
 			else if(document.getElementById("cat3pic").style.display === "block"){
 				document.getElementById("cat4pic").style.display = "block";
 				document.getElementById("cat1pic").style.display = "none";
 				document.getElementById("cat3pic").style.display = "none";
 				document.getElementById("cat2pic").style.display = "none";
+				document.getElementById("cat5pic").style.display = "none";
 			}
 			else if(document.getElementById("cat2pic").style.display === "block"){
 				document.getElementById("cat3pic").style.display = "block";
 				document.getElementById("cat1pic").style.display = "none";
 				document.getElementById("cat4pic").style.display = "none";
 				document.getElementById("cat2pic").style.display = "none";
+				document.getElementById("cat5pic").style.display = "none";
+			}
+			else if(document.getElementById("cat5pic").style.display === "block"){
+				document.getElementById("cat1pic").style.display = "block";
+				document.getElementById("cat3pic").style.display = "none";
+				document.getElementById("cat4pic").style.display = "none";
+				document.getElementById("cat2pic").style.display = "none";
+				document.getElementById("cat5pic").style.display = "none";
 			}
 			else{
 				document.getElementById("cat2pic").style.display = "block";
 				document.getElementById("cat3pic").style.display = "none";
 				document.getElementById("cat4pic").style.display = "none";
 				document.getElementById("cat1pic").style.display = "none";
+				document.getElementById("cat5pic").style.display = "none";
 			}
 		}
 
@@ -296,28 +309,39 @@ function GamePeer(){
 
 	function previousPhotoCat(){
 		if(document.getElementById("cat1pic").style.display === "block"){
-			document.getElementById("cat4pic").style.display = "block";
+			document.getElementById("cat5pic").style.display = "block";
 			document.getElementById("cat3pic").style.display = "none";
 			document.getElementById("cat2pic").style.display = "none";
 			document.getElementById("cat1pic").style.display = "none";
+			document.getElementById("cat4pic").style.display = "none";
 		}
 		else if(document.getElementById("cat2pic").style.display === "block"){
 			document.getElementById("cat1pic").style.display = "block";
 			document.getElementById("cat3pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
 			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat5pic").style.display = "none";
 		}
 		else if(document.getElementById("cat3pic").style.display === "block"){
 			document.getElementById("cat2pic").style.display = "block";
 			document.getElementById("cat1pic").style.display = "none";
 			document.getElementById("cat3pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
+			document.getElementById("cat5pic").style.display = "none";
+		}
+		else if(document.getElementById("cat5pic").style.display === "block"){
+			document.getElementById("cat4pic").style.display = "block";
+			document.getElementById("cat1pic").style.display = "none";
+			document.getElementById("cat3pic").style.display = "none";
+			document.getElementById("cat2pic").style.display = "none";
+			document.getElementById("cat5pic").style.display = "none";
 		}
 		else{
 			document.getElementById("cat3pic").style.display = "block";
 			document.getElementById("cat1pic").style.display = "none";
 			document.getElementById("cat2pic").style.display = "none";
 			document.getElementById("cat4pic").style.display = "none";
+			document.getElementById("cat5pic").style.display = "none";
 		}
 	}
 
@@ -363,6 +387,7 @@ function GamePeer(){
 
 //CAT-ASTROPHE GALLERY (FINISHED)
 
+
 //WINE-TIME GALLERY
 
 	//TURN ON PHOTO GALLERY
@@ -395,28 +420,39 @@ function GamePeer(){
 
 	function nextPhotoWine(){
 		if(document.getElementById("wine4pic").style.display === "block"){
-			document.getElementById("wine1pic").style.display = "block";
+			document.getElementById("wine5pic").style.display = "block";
 			document.getElementById("wine3pic").style.display = "none";
 			document.getElementById("wine4pic").style.display = "none";
 			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine1pic").style.display = "none";
 		}
 		else if(document.getElementById("wine3pic").style.display === "block"){
 			document.getElementById("wine4pic").style.display = "block";
 			document.getElementById("wine1pic").style.display = "none";
 			document.getElementById("wine3pic").style.display = "none";
 			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
 		}
 		else if(document.getElementById("wine2pic").style.display === "block"){
 			document.getElementById("wine3pic").style.display = "block";
 			document.getElementById("wine1pic").style.display = "none";
 			document.getElementById("wine4pic").style.display = "none";
 			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
+		}
+		else if(document.getElementById("wine5pic").style.display === "block"){
+			document.getElementById("wine1pic").style.display = "block";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
 		}
 		else{
 			document.getElementById("wine2pic").style.display = "block";
 			document.getElementById("wine3pic").style.display = "none";
 			document.getElementById("wine4pic").style.display = "none";
 			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
 		}
 	}
 
@@ -424,28 +460,39 @@ function GamePeer(){
 
 	function previousPhotoWine(){
 		if(document.getElementById("wine1pic").style.display === "block"){
-			document.getElementById("wine4pic").style.display = "block";
+			document.getElementById("wine5pic").style.display = "block";
 			document.getElementById("wine3pic").style.display = "none";
 			document.getElementById("wine2pic").style.display = "none";
 			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine4pic").style.display = "none";
 		}
 		else if(document.getElementById("wine2pic").style.display === "block"){
 			document.getElementById("wine1pic").style.display = "block";
 			document.getElementById("wine3pic").style.display = "none";
 			document.getElementById("wine4pic").style.display = "none";
 			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
 		}
 		else if(document.getElementById("wine3pic").style.display === "block"){
 			document.getElementById("wine2pic").style.display = "block";
 			document.getElementById("wine1pic").style.display = "none";
 			document.getElementById("wine3pic").style.display = "none";
 			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
+		}
+		else if(document.getElementById("wine5pic").style.display === "block"){
+			document.getElementById("wine4pic").style.display = "block";
+			document.getElementById("wine1pic").style.display = "none";
+			document.getElementById("wine3pic").style.display = "none";
+			document.getElementById("wine2pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
 		}
 		else{
 			document.getElementById("wine3pic").style.display = "block";
 			document.getElementById("wine1pic").style.display = "none";
 			document.getElementById("wine2pic").style.display = "none";
 			document.getElementById("wine4pic").style.display = "none";
+			document.getElementById("wine5pic").style.display = "none";
 		}
 	}
 
@@ -474,6 +521,7 @@ function GamePeer(){
 			document.getElementById("wine1vid").style.display = "none";
 		}
 	}
+
 //WINE-TIME GALLERY FINISHED
 
 
@@ -583,6 +631,7 @@ function GamePeer(){
 			document.getElementById("squeak1pic").style.display = "none";
 			document.getElementById("squeak3pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
 		}
 		else if(document.getElementById("squeak5pic").style.display === "block"){
 			document.getElementById("squeak1pic").style.display = "block";
@@ -689,6 +738,92 @@ function ThisOne(){
 }
 
 //BUTTONS TO SHOW EACH WEBSITE (FINISHED)
+
+
+//PORTFOLIO WEBSITE GALLERY(STARTED)
+
+	//NEXT PORTFOLIO PHOTO
+
+	function nextPhotoPortfolio(){
+		if(document.getElementById("portfolio4pic").style.display === "block"){
+			document.getElementById("portfolio5pic").style.display = "block";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio1pic").style.display = "none";
+		}
+		else if(document.getElementById("portfolio3pic").style.display === "block"){
+			document.getElementById("portfolio4pic").style.display = "block";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+		else if(document.getElementById("portfolio2pic").style.display === "block"){
+			document.getElementById("portfolio3pic").style.display = "block";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+		else if(document.getElementById("portfolio5pic").style.display === "block"){
+			document.getElementById("portfolio1pic").style.display = "block";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+		else{
+			document.getElementById("portfolio2pic").style.display = "block";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+	}
+
+	//PREVIOUS PORTFOLIO PHOTO
+
+	function previousPhotoPortfolio(){
+		if(document.getElementById("portfolio1pic").style.display === "block"){
+			document.getElementById("portfolio5pic").style.display = "block";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";	
+		}
+		else if(document.getElementById("portfolio2pic").style.display === "block"){
+			document.getElementById("portfolio1pic").style.display = "block";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+		else if(document.getElementById("portfolio3pic").style.display === "block"){
+			document.getElementById("portfolio2pic").style.display = "block";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+		else if(document.getElementById("portfolio5pic").style.display === "block"){
+			document.getElementById("portfolio4pic").style.display = "block";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio3pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+		else{
+			document.getElementById("portfolio3pic").style.display = "block";
+			document.getElementById("portfolio1pic").style.display = "none";
+			document.getElementById("portfolio2pic").style.display = "none";
+			document.getElementById("portfolio4pic").style.display = "none";
+			document.getElementById("portfolio5pic").style.display = "none";
+		}
+	}
+
+
+//PORTFOLIO WEBSITE GALLERY(FINISHED)
 
 
 //BUTTONS TO SHOW EACH ART SECTION (STARTED)
