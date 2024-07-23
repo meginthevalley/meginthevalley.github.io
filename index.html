@@ -2,49 +2,71 @@
 <html lang="en">
 <head>
 	<title>Megan LaValley</title>
+	<!-- Megan's style sheet -->
 	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
-	<!-- link to external style sheet -->
+	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 	<!-- Viewport added to make the website responsive -->
+	<!-- The author of this website, that's me!!!-->
  	<meta name="author" content="Megan LaValley">
 </head>
-<body>
-<script src="meganlavalley.js"></script>
-	<header>
-	  <h1 class="websiteHeading"><a id="backToTop">Welcome to Megan LaValley's Website!</a></h1>
-	    <!-- A welcome to the website heading -->
-	  <nav>
-		<ul class="navBar">
-			<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-				href="index.html" tabindex="0">Home</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-				href="Portfolio.html" tabindex="0">Portfolio</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-				href="About.html" tabindex="0">About Megan</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
-				href="Resume.html" tabindex="0">Resume</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-				href="Contact.html" tabindex="0">Contact</a></a></li>
-		</ul>
-	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
-	  </nav>
-	</header>
-	<main class="mainContent">
-	<!-- Everything between the header and footer of the webpage -->
 
+
+<body>
+
+<!-- Megan's JavaScript-->
+<script src="meganlavalley.js"></script>
+
+	<header>
+
+		<!-- A welcome to the website -->
+	  	<h1 class="websiteHeading"><a id="backToTop">Welcome to Megan LaValley's Website!</a></h1>
+
+		<!-- Navigation links for the other pages of the website -->
+	  	<nav>
+
+			<ul class="navBar">
+				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
+					href="index.html" tabindex="0">Home</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
+					href="Portfolio.html" tabindex="0">Portfolio</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
+					href="About.html" tabindex="0">About Megan</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
+					href="Resume.html" tabindex="0">Resume</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
+					href="Contact.html" tabindex="0">Contact</a></a></li>
+			</ul>
+			
+	    </nav>
+
+	</header>
+	
+	
+	<!-- Everything between the header and footer of the webpage -->
+	<main class="mainContent">
+	
+		<!-- The main content of the Home Page of the site -->
 	   <section class="section1">
-	   <!-- The first section of 3 in the main part of the webpage -->
+	   
+		<!-- holds the Home Page image -->
 		<div class="clearfix">
-	   <picture>
-		<img id="homeImage" class="boxShadow" src="HomePlaceholder.PNG" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
-		<!-- An image that is set to change to a different image when hovered over via Javascript. -->
-		</picture>
+	   		<picture>
+				<img id="homeImage" class="boxShadow" src="HomePlaceholder.PNG" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+			</picture>
 		</div>
+
 	   </section>
+
 	</main>
+
+
+	<!-- Start of the footer section -->
 	<footer>
+
+		<!-- The intrapage link to bring the user back to the top of the page -->
 		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
+		
+		<!-- A div containing the logo links to bring users to Megans' various pages -->
 		<div>
 			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
 				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
@@ -55,9 +77,15 @@
 			<a class="footer" title="Click here to go to Megan's GitHub!" 
 				href="https://github.com/meginthevalley" target="_blank" 
 				tabindex="0"><img id="logos" src="Github.png"></img></a>
-				<div>
-					<p>@2024 Megan LaValley</p>
-				</div>			
+		</div>
+
+		<!-- The year for the creation of this site... to be updated for future iterations -->
+		<div>
+			<p>@2024 Megan LaValley</p>
+		</div>	
+
 	</footer>
+
 </body>
+
 </html>

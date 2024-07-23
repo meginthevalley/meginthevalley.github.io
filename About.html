@@ -2,68 +2,95 @@
 <html lang="en">
 <head>
 	<title>Megan LaValley</title>
+	<!-- Megan's style sheet -->
 	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
-	<!-- link to external style sheet -->
+	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 	<!-- Viewport added to make the website responsive -->
+	<!-- The author of this website, that's me!!!-->
  	<meta name="author" content="Megan LaValley">
 </head>
+
+
 <body>
+
+<!-- Megan's JavaScript-->
 <script src="meganlavalley.js"></script>
+
 	<header>
-	  <h1 class="websiteHeading"><a id="backToTop">About Megan</a></h1>
-	    <!-- A welcome to the website heading -->
-	  <nav>
-		<ul class="navBar">
-			<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-				href="index.html" tabindex="0">Home</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-				href="Portfolio.html" tabindex="0">Portfolio</a></li>
-			<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-				href="About.html" tabindex="0">About Megan</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
-				href="Resume.html" tabindex="0">Resume</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-				href="Contact.html" tabindex="0">Contact</a></a></li>
-		</ul>
-			<!-- Navigation links for the other pages of the website -->
-	  </nav>
+
+		<!-- This states which page of the website you are on -->
+	  	<h1 class="websiteHeading"><a id="backToTop">About Megan</a></h1>
+	    
+		<!-- Navigation links for the other pages of the website -->
+	  	<nav>
+
+			<ul class="navBar">
+				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
+					href="index.html" tabindex="0">Home</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
+					href="Portfolio.html" tabindex="0">Portfolio</a></li>
+				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
+					href="About.html" tabindex="0">About Megan</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
+					href="Resume.html" tabindex="0">Resume</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
+					href="Contact.html" tabindex="0">Contact</a></a></li>
+			</ul>
+			
+	  	</nav>
+
 	</header>
-	<main class="mainContent">
+
+
 	<!-- Everything between the header and footer of the webpage -->
-	   <section class="section1">
-	   <!-- The first section of 3 in the main part of the webpage -->
-	   <div class="clearfix">
-		<picture >
-			<img class="aboutPics" id="floatRightPic" onmouseover="changeAboutPicture()" onmouseout="changeAboutBack()" 
-			src="Megan4.jpg" alt="A photo of Megan from her time at UAlbany.">
-			<!-- An image that is set to change to a different image when hovered over via Javascript. -->
-			</picture>
-			<div class="aboutContainer">
-		<h2 class="subHeading2">A Message From Megan</h2>
-	   <p class="about"> Hello everyone! My name is Megan LaValley. Currently, I am 27 years old and I am an
-		aspiring game programmer. I have always been extremely passionate about video games and what better way to 
-		show my passion than by making games! As soon as I was taught programming I knew that it was the right place for me.<br> <br>
-		I recently graduated from UAlbany obtaining a Bachelor's in Informatics with a concentration in Game Design & Development.
-		Since graduating in May 2024, I have been spending time researching for future projects, starting Udemy courses to expand my coding knowledge,
-		 making this website, and creating a discord for NYCWiC (New York Women in Computing). 
-		 I plan on volunteering with them for their conference in 2025 and I am very excited for the opportunity
-		 to give back to a conference that helped me throughout my college journey.<br><br>
+	<main class="mainContent">
+	
+	   	<section class="section1">
 
-		 As for a career, I would love to work in the game development industry. I am passionate about coding and can adapt to new coding languages 
-		 with little to no issues. I currently live in South Glens Falls but I am looking to relocate to the Albany area (both in NY). 
-		 Please contact me through email or LinkedIn if you would like to know more (or even just talk about game development).
+	   		<div class="clearfix">
 
+				<!-- An image of Megan that is set to change to a different image when hovered over via Javascript. -->
+				<picture >
+					<img class="aboutPics" id="floatRightPic" onmouseover="changeAboutPicture()" onmouseout="changeAboutBack()" 
+						src="Megan4.jpg" alt="A photo of Megan from her time at UAlbany.">
+				</picture>
 
-	   </p>
-		</div>
-		</div>
+				<!-- A message from me! Though I suppose everything is a message from me but in this one I talk in first person -->
+				<div class="aboutContainer">
+
+					<h2 class="subHeading2">A Message From Megan</h2>
+
+	   				<p class="about"> Hello everyone! My name is Megan LaValley. Currently, I am 27 years old and I am an
+						aspiring game programmer. I have always been extremely passionate about video games and what better way to 
+						show my passion than by making games! As soon as I was taught programming I knew that it was the right place for me.<br> <br>
+						I recently graduated from UAlbany obtaining a Bachelor's in Informatics with a concentration in Game Design & Development.
+						Since graduating in May 2024, I have been spending time researching for future projects, starting Udemy courses to expand my coding knowledge,
+						making this website, and creating a discord for NYCWiC (New York Women in Computing). 
+		 				I plan on volunteering with them for their conference in 2025 and I am very excited for the opportunity
+		 				to give back to a conference that helped me throughout my college journey.<br><br>
+
+		 				As for a career, I would love to work in the game development industry. I am passionate about coding and can adapt to new coding languages 
+		 				with little to no issues. I currently live in South Glens Falls but I am looking to relocate to the Albany area (both in NY). 
+		 				Please contact me through email or LinkedIn if you would like to know more (or even just talk about game development).
+	   				</p>
+
+				</div>
+
+			</div>
+
 	   </section>
+
 	</main>
+
+
+	<!-- Start of the footer section -->
 	<footer>
+		
+		<!-- The intrapage link to bring the user back to the top of the page -->
 		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
-		<div class="footerScale">
+		
+		<!-- A div containing the logo links to bring users to Megans' various pages -->
+		<div>
 			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
 				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
 				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a>
@@ -73,10 +100,15 @@
 			<a class="footer" title="Click here to go to Megan's GitHub!" 
 				href="https://github.com/meginthevalley" target="_blank" 
 				tabindex="0"><img id="logos" src="Github.png"></img></a>
-			</div>
-				<div>
-					<p>@2024 Megan LaValley</p>
-				</div>			
+		</div>
+
+		<!-- The year for the creation of this site... to be updated for future iterations -->
+		<div>
+			<p>@2024 Megan LaValley</p>
+		</div>	
+
 	</footer>
+
 </body>
+
 </html>

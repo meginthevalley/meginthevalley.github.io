@@ -2,135 +2,193 @@
 <html lang="en">
 <head>
 	<title>Megan LaValley</title>
+	<!-- Megan's style sheet -->
 	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
-	<!-- link to external style sheet -->
+	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 	<!-- Viewport added to make the website responsive -->
+	<!-- The author of this website, that's me!!!-->
  	<meta name="author" content="Megan LaValley">
 </head>
-<body>
-<script src="meganlavalley.js"></script>
-	<header>
-	  <h1 class="websiteHeading"><a id="backToTop">Resume</a></h1>
-	    <!-- A welcome to the website heading -->
-	  <nav>
-		<ul class="navBar">
-			<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-				href="index.html" tabindex="0">Home</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-				href="Portfolio.html" tabindex="0">Portfolio</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-				href="About.html" tabindex="0">About Megan</a></li>
-			<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-				href="Resume.html" tabindex="0">Resume</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-				href="Contact.html" tabindex="0">Contact</a></a></li>
-		</ul>
-	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
-	  </nav>	 
-	  <h2 class="references">References available upon request.</p>
-	  <div>
-		<button class="portfolio" onclick="profileFunction()">Profile</button>
-		<button class="portfolio" onclick="skillsFunction()">Skills</button>
-		<button class="portfolio" onclick="educationFunction()">Education</button>
-		<button class="portfolio" onclick="workFunction()">Work Experience</button>
-		<button class="portfolio" onclick="volunteerFunction()">Volunteering</button>
-	</div>
-	<!-- Holds all buttons to get to different parts of the page-->
-	</header>
-	<main class="mainContent">
-	<!-- Everything between the header and footer of the webpage -->
 
+
+<body>
+
+<!-- Megan's JavaScript-->
+<script src="meganlavalley.js"></script>
+
+	<header>
+
+		<!-- This states which page of the website you are on -->
+	  	<h1 class="websiteHeading"><a id="backToTop">Resume</a></h1>
+	    
+		 <!-- Navigation links for the other pages of the website -->
+	  	<nav>
+
+			<ul class="navBar">
+				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
+					href="index.html" tabindex="0">Home</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
+					href="Portfolio.html" tabindex="0">Portfolio</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
+					href="About.html" tabindex="0">About Megan</a></li>
+				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
+					href="Resume.html" tabindex="0">Resume</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
+					href="Contact.html" tabindex="0">Contact</a></a></li>
+			</ul>
+			
+	  	</nav>
+
+	  	<h2 class="references">References available upon request.</p>
+
+		<!-- Holds all buttons to get to different parts of the page-->
+	  	<div>
+			<button class="portfolio" onclick="profileFunction()">Profile</button>
+			<button class="portfolio" onclick="skillsFunction()">Skills</button>
+			<button class="portfolio" onclick="educationFunction()">Education</button>
+			<button class="portfolio" onclick="workFunction()">Work Experience</button>
+			<button class="portfolio" onclick="volunteerFunction()">Volunteering</button>
+		</div>
+		
+	</header>
+
+
+	<!-- Everything between the header and footer of the webpage -->
+	<main class="mainContent">
+	
 
 		<p class="hiddenForSpace">I think coding is fun.</p>
 		
 		<!-- The Education portion of Megans' Resume -->
-	   <div id="Education">
-		<h2 class="nameOfPage">Education</h2>
+	   	<div id="Education">
+
+			<h2 class="nameOfPage">Education</h2>
+
 			<section class="section1">
-				<!-- The first section of 3 in the main part of the webpage -->
+				
+				<!-- The name of Megan's college -->
 			  	<h3 class="subHeading1">University at Albany</h3>
+
+				<!-- The top half of the Education section -->
 			  	<div class="clearfix">
+
+					<!-- An image of Megan that is set to change to a different image when hovered over via Javascript. -->
 				 	<picture>
 					 	<img id="floatLeftPic" onmouseover="changePicture()" onmouseout="changeBack()" src="Megan2.jpg"
 					 		alt="A photo of Megan from her time at UAlbany.">
-					 	<!-- An image that is set to change to a different image when hovered over via Javascript. -->
 					</picture>
+
+
 					<div class="educationContainer">
-				 	<h2 class="subHeading2">Bachelor's of Science</h2>
-					<p class="education"> Megan graduated from the University at Albany in May 2024.
-				 		Her major was Informatics with a concentration in Game Design and Development.
-				 		Her GPA when she graduated was 3.82 which led her to graduating Summa Cum Laude.</p>
+
+						<!-- Megan's Degree type and information -->
+				 		<h2 class="subHeading2">Bachelor's of Science</h2>
+							<p class="education"> Megan graduated from the University at Albany in May 2024.
+				 			Her major was Informatics with a concentration in Game Design and Development.
+				 			Her GPA when she graduated was 3.82 which led her to graduating Summa Cum Laude.
+							</p>
 					
-				 	<p class="hiddenForSpace">This is just some empty space... 
-					 	nothing to see here.</p>
-				 	<div><!-- Div that holds all of the lists -->
-					 	<div class="lists2"><!-- Div for Coding Languages -->
-					 		<h3 class="categories">Awards</h3>
-								<ul>
-						  			<li>CEHC Dean's Award</li>
-						  			<li>Dean's List Spring 2021 to Spring 2024</li>
-						  		</ul>
-					  	</div>
-					  	<div class="lists2"><!-- Div for Engines & Software -->
-					  		<h3 class="categories">Extra Curriculars</h3>
-								<ul>
-						  			<li>Founding Member of the UAlbany Game Design Club</li>
-						  			<li>Member of the UAlbany Esports League of Legends Team</li>
-						 		</ul>
-					 	</div>
-				 	</div>
-				</div>
+				 			<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
+				 	
+						<!-- Div that holds all of the education related lists -->
+						<div>
+
+							<!-- Div for Megan's Awards-->
+					 		<div class="lists2">
+					 			<h3 class="categories">Awards</h3>
+									<ul>
+						  				<li>CEHC Dean's Award</li>
+						  				<li>Dean's List Spring 2021 to Spring 2024</li>
+						  			</ul>
+					  		</div>
+
+							<!-- Div for Megan's Extra Curricular Activities -->
+					  		<div class="lists2">
+					  			<h3 class="categories">Extra Curriculars</h3>
+									<ul>
+						  				<li>Founding Member of the UAlbany Game Design Club</li>
+						  				<li>Member of the UAlbany Esports League of Legends Team</li>
+						 			</ul>
+					 		</div>
+
+				 		</div>
+
+					</div>
 					
 				 </div>
+
+				<!-- Bottom portion of the Education section -->
 				 <p class="hiddenForSpace">This is just for spacing purposes.</p>
+ 
 				 <p class="main"> Click on Megans' Diploma below to be lead to her UAlbany Merit page!</p>
+
 				 <p class="hiddenForSpace">This is just for spacing purposes.</p>
+
+				 <!-- An image of Megan's Diploma that links to her UAlbany Merit Page -->
 				 <a href="https://meritpages.com/meginthevalley" title="Come visit Megans' Merit Page!" target="_blank" 
 				 	tabindex="0"><img class="boxShadow" src="MeganDiploma.PNG" alt="A photo of Megan's Diploma for verification."></img></a>
+
 			</section>
-		  </div>
+
+		</div>
 
 
 		<!-- The Profile portion of Megans' Resume -->
-		  <div id="Profile">
+		<div id="Profile">
+
 			<h2 class="nameOfPage">Profile</h2>
 			
 			  <section class="section1">
+
 			  	<div class="clearfix" >
+
 			  		<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here</p>
+
+					<!-- Brief summary of Megan -->
 				   	<p class="main">Innovative UAlbany graduate with a passion for programming video games. 
 						Has worked on multiple small projects including VR, 3D, and 2D games. 
 						Thrives in both collaborative and independent environments. Able to easily adapt to new coding 
 						languages. Pursuing a place to leverage analytical and coding experience as a programmer.</p>
+
 				</div>
 
 				<p class="hiddenForSpace">This is just for spacing purposes.</p>
 
+				<!-- A photo of Megan's resume -->
 				<div>
 					<img class="boxShadow" src="Megan's Resume.png" alt="A photo of Megans' resume."></img>
 				</div>
+
 			  </section>
-			  </div>
+
+		</div>
 
 
+		<!-- The Skills portion of Megans' Resume -->
+		<div id="Skills">
 
-			  <div id="Skills">
-				<h2 class="nameOfPage">Skills & Certifications</h2>
-				<!-- The title of the webpage the user is currently on -->
-				  <section class="section1">
-				  <!-- The first section of 3 in the main part of the webpage -->
+			<h2 class="nameOfPage">Skills & Certifications</h2>
+				
+				<section class="section1">
+				
 					<h3 class="subHeading1">Skills</h3>
-					<p class="main"> Listed here are some of the coding languages and software that Megan has used.
-						Currently, she is also taking certification courses for C++, Golang, Redis, Linux, and courses to deepen her knowledge in SQL and C#.
-						The courses she is taking for these are from Udemy and will be updated to the list and certifications when completed.
-					</p>
+
+					<!-- Paragraph talking about certifications Megan is currently working on -->
+						<p class="main"> Listed here are some of the coding languages and software that Megan has used.
+							Currently, she is also taking certification courses for C++, Golang, Redis, Linux, and courses to deepen her knowledge in SQL and C#.
+							The courses she is taking for these are from Udemy and will be updated to the list and certifications when completed.
+						</p>
+
 					<div>
-						<p class="hiddenForSpace">This is just some <br> empty space... 
-							nothing to see here.</p>
+						<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
 					</div>
-				  	<div class="clearfix"><!-- Div that holds all of the lists -->
-				 		<div class="lists2"><!-- Div for Coding Languages -->
+
+					<!-- Div that holds all of the lists for the Skills section -->
+				  	<div class="clearfix">
+
+						<!-- Div for Coding Languages -->
+				 		<div class="lists2">
+
 				 			<h3 class="categories">Coding Languages</h3>
 								<ul>
 					  				<li>C#</li>
@@ -140,8 +198,12 @@
 					  				<li>JavaScript</li>	
 									<li>Blueprints</li>
 					  			</ul>
+
 				  		</div>
-				  		<div class="lists2"><!-- Div for Engines & Software -->
+
+						<!-- Div for Engines & Software -->
+				  		<div class="lists2">
+
 				  			<h3 class="categories">Engines and Software</h3>
 								<ul>
 					  				<li>Unity</li>
@@ -155,199 +217,325 @@
 									<li>Blender</li>
 									<li>Piskel</li>
 					 			</ul>
+
 				 		</div>
 				 	</div>
+
 					 <div>
-						<p class="hiddenForSpace">This is just some <br> empty space... 
-							nothing to see here.</p>
+						<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
 					</div>
-					 <h3 class="subHeading1">Certifications</h3>
-					 <p class="main">Below are Megan's current certifications.</p>
-					 <div>
-						<p class="hiddenForSpace">This is just some <br> empty space... 
-							nothing to see here.</p>
-					</div>
-					 <div class="clearfix"><!-- Div that holds all Certifications -->
-						<div class="certs"><!-- Div for Intro SQL -->
+
+					<!-- The bottom portion of the Skills section that holds Megan's certifications -->
+					<h3 class="subHeading1">Certifications</h3>
+
+					 	<p class="main">Below are Megan's current certifications.</p>
+					 	
+						<div>
+							<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
+						</div>
+
+						<!-- Div that holds all Certifications -->
+					<div class="clearfix">
+						
+						<!-- Div for Intro SQL -->
+						<div class="certs">
 							<a title="Click here to go to Megan's Certification" 
-				href="https://api2.sololearn.com/v2/certificates/CC-PWET74P7/image/png" target="_blank" 
-				tabindex="0"><img id="certImage" class="boxShadow" src="IntroSQL.jpg"></img></a>
-					   </div>
-						<div class="certs"><!-- Div for Intermediate SQL -->
+								href="https://api2.sololearn.com/v2/certificates/CC-PWET74P7/image/png" target="_blank" 
+								tabindex="0"><img id="certImage" class="boxShadow" src="IntroSQL.jpg"></img></a>
+					   	</div>
+
+						<!-- Div for Intermediate SQL -->
+						<div class="certs">
 							<a title="Click here to go to Megan's Certification" 
-				href="https://api2.sololearn.com/v2/certificates/CC-M1TOYJZN/image/png" target="_blank" 
-				tabindex="0"><img id="certImage" class="boxShadow" src="IntermediateSQL.jpg"></img></a>
-					   </div>
+								href="https://api2.sololearn.com/v2/certificates/CC-M1TOYJZN/image/png" target="_blank" 
+								tabindex="0"><img id="certImage" class="boxShadow" src="IntermediateSQL.jpg"></img></a>
+					   	</div>
+
 					</div>
+
 				</section>
-			</div>
+		</div>
 
-				  <div id="Work">
-					<h2 class="nameOfPage">Work Experience</h2>
-					<!-- The title of the webpage the user is currently on -->
+
+		<!-- The Work Experience portion of Megans' Resume -->
+		<div id="Work">
+
+			<h2 class="nameOfPage">Work Experience</h2>
+	
+			<p class="hiddenForSpace">I think <br> coding is fun.</p>
+
+				<!-- Buttons to go to different positions Megan has held -->
+				<button class="portfolio" onclick="PeerEducator()">Game Development: Peer Educator</button>
+				<button class="portfolio" onclick="CommunityManager()">Community Manager</button>
+				<button class="portfolio" onclick="Intern()">Emerging Technologies Intern</button>
+
+
+				<!-- The section dedicated to Megan's time as a Peer Educator -->
+				<section id="peerSection" class="section1">
+
 					<p class="hiddenForSpace">I think <br> coding is fun.</p>
-					<button class="portfolio" onclick="PeerEducator()">Game Development: Peer Educator</button>
-					<button class="portfolio" onclick="CommunityManager()">Community Manager</button>
-					<button class="portfolio" onclick="Intern()">Emerging Technologies Intern</button>
 
-					  <section id="peerSection" class="section1">
-						<p class="hiddenForSpace">I think <br> coding is fun.</p>
-					  <!-- The first section of 3 in the main part of the webpage -->
-						<div class= "jobs clearfix">
-							<div class="jobsHeader clearfix">
+					<!-- The header area for this job-->
+					<div class= "jobs clearfix">
+
+						<div class="jobsHeader clearfix">
+
+							<!-- Employer and title -->
 							<div class="jobsTitle clearfix floatLeft">
 								<h2 class="employer">University at Albany</h2>
 								<h4 class="jobName">Game Development: Peer Educator</h4>
 							</div>
-								<div class="jobsDate clearfix floatRight">
-									<h4 class="date">January 2024 -</h4>
-									<h4 class="date">May 2024</h4>
-								</div>
-							</div>
-							
-						</div>
-						<div class="jobsDescription clearfix"><!-- Div that holds the job description -->
-							<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-									<p class="main">During Megans' time as a Peer Educator, she was able to assist many students with their game development projects in the Unity engine. 
-										Her responsibilities included debugging students' code, helping students with repository issues, giving feedback on student projects, and more. <br><br>
-										Though it was not her responsibility, Megan took it upon herself to make demos for the students that helped them understand assignments that they may have been struggling with. 
-										These demos can be found in the Resume portion of this site in the Unity section. She had also created a video to help students with SourceTree (for repositories). 
-										This video can be found below.	
-									</p>
-						</div>	
-						<p class="hiddenForSpace">I think coding is fun.</p>
-				 		<div class="clearfix"></div>
-				 		<div class="outerLayerVideo">
-						<div class="gallery">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/fujJeDhw1xE?si=UOTmJ1DxnbYtz-qk" title="YouTube video player" 
-							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						<div class="imageDescription">
-							This video is a step-by-step process of making a repository and linking SourceTree with GitHub. Many students' had questions about how to set up their repository. 
-							Megan had decided to make this video to help those students.
-						</div>
-				</div>
-				</div>
-				 <div class="clearfix"></div>
-					  </section>
 
-					  <section id="communitySection" class="section1">
-						<p class="hiddenForSpace">I think <br> coding is fun.</p>
-					  <!-- The first section of 3 in the main part of the webpage -->
-						<div class= "jobs clearfix">
-							<div class="jobsHeader clearfix">
+							<!-- Date that Megan worked at this position -->
+							<div class="jobsDate clearfix floatRight">
+								<h4 class="date">January 2024 -</h4>
+								<h4 class="date">May 2024</h4>
+							</div>
+
+						</div>
+							
+					</div>
+
+					<!-- Div that holds the job description -->
+					<div class="jobsDescription clearfix">
+
+						<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
+
+						<p class="main">During Megans' time as a Peer Educator, she was able to assist many students with their game development projects in the Unity engine. 
+							Her responsibilities included debugging students' code, helping students with repository issues, giving feedback on student projects, and more. <br><br>
+							Though it was not her responsibility, Megan took it upon herself to make demos for the students that helped them understand assignments that they may have been struggling with. 
+							These demos can be found in the Resume portion of this site in the Unity section. She had also created a video to help students with SourceTree (for repositories). 
+							This video can be found below.	
+						</p>
+
+					</div>
+
+					<p class="hiddenForSpace">I think coding is fun.</p>
+
+				 	<div class="clearfix"></div>
+
+					<!-- SourceTree Demo video from Peer Education -->
+				 	<div class="outerLayerVideo">
+
+						<div class="gallery">
+
+							<!-- SourceTree video from YouTube -->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/fujJeDhw1xE?si=UOTmJ1DxnbYtz-qk" title="YouTube video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+
+							<!-- Brief description of the SourceTree video -->
+							<div class="imageDescription">
+								This video is a step-by-step process of making a repository and linking SourceTree with GitHub. Many students' had questions about how to set up their repository. 
+								Megan had decided to make this video to help those students.
+							</div>
+
+						</div>
+
+					</div>
+
+				 	<div class="clearfix"></div>
+
+				</section>
+
+
+				<!-- The section dedicated to Megan's time as a Community Manager-->
+				<section id="communitySection" class="section1">
+
+					<p class="hiddenForSpace">I think <br> coding is fun.</p>
+
+					<!-- The header area for this job-->
+					<div class= "jobs clearfix">
+
+						<div class="jobsHeader clearfix">
+
+							<!-- Employer and title -->
 							<div class="jobsTitle clearfix floatLeft">
 								<h2 class="employer">University at Albany</h2>
 								<h4 class="jobName">Community Manager</h4>
 							</div>
-								<div class="jobsDate clearfix floatRight">
-									<h4 class="date">January 2023 -</h4>
-									<h4 class="date">May 2023</h4>
-								</div>
+
+							<!-- Date that Megan worked at this position -->
+							<div class="jobsDate clearfix floatRight">
+								<h4 class="date">January 2023 -</h4>
+								<h4 class="date">May 2023</h4>
 							</div>
+
+						</div>
 							
+					</div>
+
+					<!-- Div that holds the job description -->
+					<div class="jobsDescription clearfix">
+
+						<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
+
+						<p class="main">
+									As a Community Manager, Megan was responsible for the CEHC (College of Emergency Preparedness, Homeland Security, & Cybersecurity) Game Nights at UAlbany. 
+									This position included management of the discord associated with Game Nights as well as supervising the in-person Game Nights held in the Makerspace. 
+									Megan had also made promotion materials for Game Nights, networked with other clubs at UAlbany, and spread the word about CEHC Game Nights. <br><br>
+									During March, there was an event involving Game Nights that Megan was also in charge of running. The event was related to International Women's Day and all 
+									of the board games used in this event were made by Women. Megan had created promotional materials, learned each game, and ran the board game portion of the event. <br><br>
+									Below you can see the promotional materials from Megans' time as a Community Manager.
+						</p>
+
+					</div>
+
+					<p class="hiddenForSpace">I think coding is fun.</p>
+
+					<!-- Div for the promotional materials gallery -->
+			  		<div>
+
+						<!-- First/starting picture for gallery -->
+				 		<div id="community1pic" class="outerLayer">
+
+				  			<div  class="gallery">
+
+								<!-- Game Night poster image -->
+						   		<img src="GameNight.png" alt="The promotional poster for Game Nights.">
+
+								<!-- Brief description of image-->
+					 			<div class="imageDescription">
+									This was the promotional poster for CEHC Game Nights. Megans' professors/employers information is cut out along with the discord link due to privacy concerns. 
+					 			</div>
+
+				   			</div>
+
+				 		</div>
+
+						<!-- Second picture in the gallery -->
+				 		<div id="community2pic" class="outerLayer">
+
+				   			<div class="gallery">
+
+								<!-- International Women's Day poster image -->
+						   		<img src="WomensDay.png" alt="The promotional poster for the International Women's Day event.">
+
+								<!-- Brief description of image -->
+					 			<div class="imageDescription">
+									This was the promotional poster for the International Women's Day event. Megans' professors/employers information is cut out due to privacy concerns. 
+								</div>
+
+				   			</div>
+
 						</div>
-						<div class="jobsDescription clearfix"><!-- Div that holds the job description -->
-							<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-									<p class="main">
-										As a Community Manager, Megan was responsible for the CEHC (College of Emergency Preparedness, Homeland Security, & Cybersecurity) Game Nights at UAlbany. 
-										This position included management of the discord associated with Game Nights as well as supervising the in-person Game Nights held in the Makerspace. 
-										Megan had also made promotion materials for Game Nights, networked with other clubs at UAlbany, and spread the word about CEHC Game Nights. <br><br>
-										During March, there was an event involving Game Nights that Megan was also in charge of running. The event was related to International Women's Day and all 
-										of the board games used in this event were made by Women. Megan had created promotional materials, learned each game, and ran the board game portion of the event. <br><br>
-										Below you can see the promotional materials from Megans' time as a Community Manager.
-									</p>
+
+						<!-- Buttons to switch between the photos in the gallery -->
+				 		<button class="portfolio" onclick="communityPhotos()">Previous</button>
+						<button class="portfolio" onclick="communityPhotos()">Next</button>	
+
+					</div>
+
+				</section>
+
+
+
+				<section id="internSection" class="section1">
+
+					<p class="hiddenForSpace">I think <br> coding is fun.</p>
+						
+					<!-- The header area for this job-->
+					<div class= "jobs clearfix">
+
+						<div class="jobsHeader clearfix">
+
+							<!-- Employer and title -->
+							<div class="jobsTitle clearfix floatLeft">
+							  	<h2 class="employer">University at Albany</h2>
+								<h4 class="jobName">Emerging Technologies Intern</h4>
+							</div>
+
+							<!-- Date that Megan worked at this position -->
+							<div class="jobsDate clearfix floatRight">
+								<h4 class="date">January 2023 -</h4>
+								<h4 class="date">May 2023</h4>
+							</div>
+
 						</div>
-						<p class="hiddenForSpace">I think coding is fun.</p>
-			  	<div>
-				 <div id="community1pic" class="outerLayer">
-				  <div  class="gallery">
-						   <img src="GameNight.png" alt="The promotional poster for Game Nights.">
-					 <div class="imageDescription">
-						This was the promotional poster for CEHC Game Nights. Megans' professors/employers information is cut out along with the discord link due to privacy concerns. 
-					 </div>
-				   </div>
-				 </div>
-				 <div id="community2pic" class="outerLayer">
-				   <div class="gallery">
-						   <img src="WomensDay.png" alt="The promotional poster for the International Women's Day event.">
-					 <div class="imageDescription">
-						This was the promotional poster for the International Women's Day event. Megans' professors/employers information is cut out due to privacy concerns. 
-					 </div>
-				   </div>
-				 </div>
-				 <button class="portfolio" onclick="communityPhotos()">Previous</button>
-				<button class="portfolio" onclick="communityPhotos()">Next</button>	
-				 </div>
-						</section>
-
-						<section id="internSection" class="section1">
-							<p class="hiddenForSpace">I think <br> coding is fun.</p>
-							<!-- The first section of 3 in the main part of the webpage -->
-							  <div class= "jobs clearfix">
-								  <div class="jobsHeader clearfix">
-								  <div class="jobsTitle clearfix floatLeft">
-									  <h2 class="employer">University at Albany</h2>
-									  <h4 class="jobName">Emerging Technologies Intern</h4>
-								  </div>
-									  <div class="jobsDate clearfix floatRight">
-										  <h4 class="date">January 2023 -</h4>
-										  <h4 class="date">May 2023</h4>
-									  </div>
-								  </div>
 								  
-							  </div>
-							  <div class="jobsDescription clearfix"><!-- Div that holds the job description -->
-								  <p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-										  <p class="main">
-											This internship dealt primarily with the Makerspace at UAlbany. During this internship, Megan would learn about multiple pieces of technological equipment. 
-											The equipment included 3D printers (specifically Prusa printers), the Cricut (including the mug press, iron on, and engravement options), drones, and more. <br><br>
-											After being taught this equipment, it was Megans' responsibility to teach students who weren't interns how to use the equipment when they visited the Makerspace. 
-											It was also important that each intern be motivated to find solutions to fix these pieces of equipment if they needed repair. In order to do this, Megan and her fellow
-											interns needed to have thorough communication with each other to solve these issues.
-										  </p>
-							  </div>	
-							</section>
-					  </div>
+					</div>
 
-				<!-- The Volunteering portion of Megans' Resume -->
-					  <div id="Volunteer">
-						<h2 class="nameOfPage">Volunteering</h2>
+					<!-- Div that holds the job description -->
+					<div class="jobsDescription clearfix">
 
-						 <!-- The section dedicated to Megans' work with NYCWiC -->
-						<section class="section1">
-							<p class="hiddenForSpace">I think <br> coding is fun.</p>
-							<!-- The first section of 3 in the main part of the webpage -->
-							  <div class= "jobs clearfix">
-								  <div class="jobsHeader clearfix">
-								  <div class="jobsTitle clearfix floatLeft">
-									  <h2 class="employer">NYCWiC</h2>
-									  <h4 class="jobName">New York Women in Computing</h4>
-								  </div>
-									  <div class="jobsDate clearfix floatRight">
-										  <h4 class="date">June 2024 -</h4>
-										  <h4 class="date">Present</h4>
-									  </div>
-								  </div>
+						<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
+
+							<p class="main">
+								This internship dealt primarily with the Makerspace at UAlbany. During this internship, Megan would learn about multiple pieces of technological equipment. 
+								The equipment included 3D printers (specifically Prusa printers), the Cricut (including the mug press, iron on, and engravement options), drones, and more. <br><br>
+								After being taught this equipment, it was Megans' responsibility to teach students who weren't interns how to use the equipment when they visited the Makerspace. 
+								It was also important that each intern be motivated to find solutions to fix these pieces of equipment if they needed repair. In order to do this, Megan and her fellow
+								interns needed to have thorough communication with each other to solve these issues.
+						  </p>
+
+					</div>	
+
+				</section>
+
+		</div>
+
+
+		<!-- The Volunteering portion of Megans' Resume -->
+		<div id="Volunteer">
+			<h2 class="nameOfPage">Volunteering</h2>
+
+			<!-- The section dedicated to Megans' work with NYCWiC -->
+			<section class="section1">
+
+				<p class="hiddenForSpace">I think <br> coding is fun.</p>
+				
+				<!-- Header for this volunteer work-->
+				<div class= "jobs clearfix">
+
+					<div class="jobsHeader clearfix">
+
+						<!-- Company abbreviation and full company name -->
+						<div class="jobsTitle clearfix floatLeft">
+							<h2 class="employer">NYCWiC</h2>
+							<h4 class="jobName">New York Women in Computing</h4>
+						</div>
+
+						<!-- Dates that Megan has volunteered here -->
+						<div class="jobsDate clearfix floatRight">
+							<h4 class="date">June 2024 -</h4>
+							<h4 class="date">Present</h4>
+						</div>
+						
+					</div>
 								  
-							  </div>
-							  <div class="jobsDescription clearfix"><!-- Div that holds the job description -->
-								  <p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-										  <p class="main">
-											  Recently, Megan has started to look into volunteering since graduating. The first place Megan has inquired about volunteering is NYCWiC.
-											  Megan attended NYCWiC twice while she was in school and thought it would be great to help out a conference that had really impacted her. 
-											  She believes NYCWiC is an incredible opportunity for students and is excited to help this conference prosper. <br><br>
-											  Currently, Megan is creating a discord server for NYCWiC to increase student engagement. The server would be an ideal place for students to ask wuestions, 
-											  share their NYCWiC experience, and post about projects that they are working on while the conference is not in session. Though Megan has just started her work with NYCWiC, 
-											  she is looking forward to having more opportunities to help increase visibility and support for women in computing.
-										  </p>
-							  </div>	
-						  </section>
+				</div>
+
+				<!-- Div that holds the description of this volunteer work -->
+				<div class="jobsDescription clearfix">
+
+					<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
+
+					<p class="main">
+						Recently, Megan has started to look into volunteering since graduating. The first place Megan has inquired about volunteering is NYCWiC.
+						Megan attended NYCWiC twice while she was in school and thought it would be great to help out a conference that had really impacted her. 
+						She believes NYCWiC is an incredible opportunity for students and is excited to help this conference prosper. <br><br>
+						Currently, Megan is creating a discord server for NYCWiC to increase student engagement. The server would be an ideal place for students to ask wuestions, 
+						share their NYCWiC experience, and post about projects that they are working on while the conference is not in session. Though Megan has just started her work with NYCWiC, 
+						she is looking forward to having more opportunities to help increase visibility and support for women in computing.
+					</p>
+
+				</div>	
+
+			</section>
+
+		</div>
+
 	</main>
-	</main>
+
+
+	<!-- Start of the footer section -->
 	<footer>
+		
+		<!-- The intrapage link to bring the user back to the top of the page -->
 		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
+		
+		<!-- A div containing the logo links to bring users to Megans' various pages -->
 		<div>
 			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
 				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
@@ -358,9 +546,15 @@
 			<a class="footer" title="Click here to go to Megan's GitHub!" 
 				href="https://github.com/meginthevalley" target="_blank" 
 				tabindex="0"><img id="logos" src="Github.png"></img></a>
-				<div>
-					<p>@2024 Megan LaValley</p>
-				</div>			
+		</div>
+
+		<!-- The year for the creation of this site... to be updated for future iterations -->
+		<div>
+			<p>@2024 Megan LaValley</p>
+		</div>	
+
 	</footer>
+
 </body>
+
 </html>

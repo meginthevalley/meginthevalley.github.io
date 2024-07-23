@@ -2,67 +2,101 @@
 <html lang="en">
 <head>
 	<title>Megan LaValley</title>
+	<!-- Megan's style sheet -->
 	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
-	<!-- link to external style sheet -->
+	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- 	<!-- Viewport added to make the website responsive -->
+	<!-- The author of this website, that's me!!!-->
  	<meta name="author" content="Megan LaValley">
 </head>
-<body>
-<script src="meganlavalley.js"></script>
-	<header>
-	  <h1 class="websiteHeading"><a id="backToTop">Contact Information</a></h1>
-	    <!-- A welcome to the website heading -->
-	  <nav>
-		<ul class="navBar">
-			<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-				href="index.html" tabindex="0">Home</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-				href="Portfolio.html" tabindex="0">Portfolio</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-				href="About.html" tabindex="0">About Megan</a></li>
-			<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
-				href="Resume.html" tabindex="0">Resume</a></li>
-			<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-				href="Contact.html" tabindex="0">Contact</a></a></li>
-		</ul>
-	    <!-- Navigation links for the other pages of the website(backwards in the order they are displayed because float right is being used) -->
-	  </nav>
-	</header>
-	<main class="mainContent">
-	<!-- Everything between the header and footer of the webpage -->
 
-	<section class="section1">
-		  <table>
-		  <!-- Contact label with links located at each username -->
-		  <!-- Each link in the table is set to different colors based on the links status -->
-			<tr>
-			  <th>Username</th>
-			  <th>Location</th>
-			 </tr>
-			  <tr>
-				<td ><div><a class="contact" title="Send an email to Megan" href="mailto:meganelavalley@gmail.com" tabindex="0">meganelavalley@gmail.com</a></div></td>
-				<td>Gmail</td>
-			  </tr>
-			  <tr>
-				<td><div><a class="contact" title="Go to Megan's LinkedIn" href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" tabindex="0">Megan LaValley</a></div></td>
-				<td>LinkedIn</td>
-			  </tr>
-			  <tr>
-				<td><div><a class="contact" title="Follow Megan on GitHub" href="https://github.com/meginthevalley" target="_blank" tabindex="0">meginthevalley</a></div></td>
-				<td>GitHub</td>
-			  </tr>
-			  <tr>
-				<td><div><a class="contact" title="View Megan's itch page" href="https://meginthevalley.itch.io/" target="_blank" tabindex="0">meginthevalley</a></div></td>
-				<td>Itch</td>
-			  </tr>
-		  </table>
-		  <br/>
+
+<body>
+
+<!-- Megan's JavaScript-->
+<script src="meganlavalley.js"></script>
+
+	<header>
+
+		<!-- This states which page of the website you are on -->
+	  	<h1 class="websiteHeading"><a id="backToTop">Contact Information</a></h1>
+
+	    <!-- Navigation links for the other pages of the website -->
+	  	<nav>
+
+			<ul class="navBar">
+				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
+					href="index.html" tabindex="0">Home</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
+					href="Portfolio.html" tabindex="0">Portfolio</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
+					href="About.html" tabindex="0">About Megan</a></li>
+				<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
+					href="Resume.html" tabindex="0">Resume</a></li>
+				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
+					href="Contact.html" tabindex="0">Contact</a></a></li>
+			</ul>
+	   
+		</nav>
+
+	</header>
+
+
+	<!-- Everything between the header and footer of the webpage -->
+	<main class="mainContent">
+
+		<section class="section1">
+
+			<!-- Contact table with links located at each username -->
+			<!-- Each link in the table is set to different colors based on the links status -->
+		  	<table>
+		  
+				<!-- Top of the table -->
+				<tr>
+					<th>Username</th>
+					<th>Location</th>
+			 	</tr>
+
+				<!-- Megan's email link -->
+			  	<tr>
+					<td ><div><a class="contact" title="Send an email to Megan" href="mailto:meganelavalley@gmail.com" tabindex="0">meganelavalley@gmail.com</a></div></td>
+					<td>Gmail</td>
+			  	</tr>
+
+				<!-- Megan's LinkedIn link -->
+			  	<tr>
+					<td><div><a class="contact" title="Go to Megan's LinkedIn" href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" tabindex="0">Megan LaValley</a></div></td>
+					<td>LinkedIn</td>
+			  	</tr>
+
+				<!-- Megan's GitHub link -->
+			  	<tr>
+					<td><div><a class="contact" title="Follow Megan on GitHub" href="https://github.com/meginthevalley" target="_blank" tabindex="0">meginthevalley</a></div></td>
+					<td>GitHub</td>
+			  	</tr>
+
+				<!-- Megan's Itch.io link -->
+			  	<tr>
+					<td><div><a class="contact" title="View Megan's itch page" href="https://meginthevalley.itch.io/" target="_blank" tabindex="0">meginthevalley</a></div></td>
+					<td>Itch</td>
+			  	</tr>
+
+		  	</table>
+
+		  	<br/>
+
 		</section>
+
 	</main>
-    <footer>
+
+
+	<!-- Start of the footer section -->
+	<footer>
+
+		<!-- The intrapage link to bring the user back to the top of the page -->
 		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		<!-- The class for this intrapage link is mainly to change the link in a mobile set up. -->
+		
+		<!-- A div containing the logo links to bring users to Megans' various pages -->
 		<div>
 			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
 				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
@@ -73,9 +107,15 @@
 			<a class="footer" title="Click here to go to Megan's GitHub!" 
 				href="https://github.com/meginthevalley" target="_blank" 
 				tabindex="0"><img id="logos" src="Github.png"></img></a>
-				<div>
-					<p>@2024 Megan LaValley</p>
-				</div>			
+		</div>
+
+		<!-- The year for the creation of this site... to be updated for future iterations -->
+		<div>
+			<p>@2024 Megan LaValley</p>
+		</div>	
+
 	</footer>
+
 </body>
+
 </html>
