@@ -118,12 +118,14 @@ function profileFunction(){
 		document.getElementById("Skills").style.display = "none";
 		document.getElementById("Education").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 	else{
 		document.getElementById("Profile").style.display ="block";
 		document.getElementById("Skills").style.display = "none";
 		document.getElementById("Education").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 }
 
@@ -133,12 +135,14 @@ function skillsFunction(){
 		document.getElementById("Profile").style.display = "none";
 		document.getElementById("Education").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 	else{
 		document.getElementById("Skills").style.display ="block";
 		document.getElementById("Profile").style.display = "none";
 		document.getElementById("Education").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 }
 
@@ -148,12 +152,14 @@ function educationFunction(){
 		document.getElementById("Skills").style.display = "none";
 		document.getElementById("Profile").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 	else{
 		document.getElementById("Education").style.display ="block";
 		document.getElementById("Skills").style.display = "none";
 		document.getElementById("Profile").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 }
 
@@ -163,13 +169,32 @@ function workFunction(){
 		document.getElementById("Skills").style.display = "none";
 		document.getElementById("Education").style.display = "none";
 		document.getElementById("Work").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
 	else{
 		document.getElementById("Work").style.display ="block";
 		document.getElementById("Skills").style.display = "none";
 		document.getElementById("Education").style.display = "none";
 		document.getElementById("Profile").style.display = "none";
+		document.getElementById("Volunteer").style.display = "none";
 	}
+}
+
+	function volunteerFunction(){
+		if (document.getElementById("Volunteer").style.display === "block"){
+			document.getElementById("Profile").style.display = "none";
+			document.getElementById("Skills").style.display = "none";
+			document.getElementById("Education").style.display = "none";
+			document.getElementById("Work").style.display = "none";
+			document.getElementById("Volunteer").style.display = "none";
+		}
+		else{
+			document.getElementById("Volunteer").style.display ="block";
+			document.getElementById("Skills").style.display = "none";
+			document.getElementById("Education").style.display = "none";
+			document.getElementById("Profile").style.display = "none";
+			document.getElementById("Work").style.display = "none";
+		}
 }
 
 //FUNCTIONS FOR SWITCHING BETWEEN RESUME PIECES (FINISHED)
@@ -625,6 +650,8 @@ function GamePeer(){
 			document.getElementById("squeak4pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
 			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 		else if(document.getElementById("squeak3pic").style.display === "block"){
 			document.getElementById("squeak4pic").style.display = "block";
@@ -632,9 +659,13 @@ function GamePeer(){
 			document.getElementById("squeak3pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
 			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 		else if(document.getElementById("squeak5pic").style.display === "block"){
-			document.getElementById("squeak1pic").style.display = "block";
+			document.getElementById("squeak6pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 			document.getElementById("squeak5pic").style.display = "none";
 			document.getElementById("squeak4pic").style.display = "none";
 			document.getElementById("squeak3pic").style.display = "none";
@@ -646,6 +677,26 @@ function GamePeer(){
 			document.getElementById("squeak4pic").style.display = "none";
 			document.getElementById("squeak5pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak6pic").style.display === "block"){
+			document.getElementById("squeak7pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak7pic").style.display === "block"){
+			document.getElementById("squeak1pic").style.display = "block";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 		else{
 			document.getElementById("squeak2pic").style.display = "block";
@@ -653,6 +704,8 @@ function GamePeer(){
 			document.getElementById("squeak4pic").style.display = "none";
 			document.getElementById("squeak5pic").style.display = "none";
 			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 	}
 
@@ -660,11 +713,13 @@ function GamePeer(){
 
 	function previousPhotoSqueak(){
 		if(document.getElementById("squeak1pic").style.display === "block"){
-			document.getElementById("squeak5pic").style.display = "block";
+			document.getElementById("squeak7pic").style.display = "block";
 			document.getElementById("squeak3pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
 			document.getElementById("squeak1pic").style.display = "none";
 			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
 		}
 		else if(document.getElementById("squeak2pic").style.display === "block"){
 			document.getElementById("squeak1pic").style.display = "block";
@@ -672,6 +727,8 @@ function GamePeer(){
 			document.getElementById("squeak4pic").style.display = "none";
 			document.getElementById("squeak5pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 		else if(document.getElementById("squeak3pic").style.display === "block"){
 			document.getElementById("squeak2pic").style.display = "block";
@@ -679,6 +736,8 @@ function GamePeer(){
 			document.getElementById("squeak3pic").style.display = "none";
 			document.getElementById("sqeuak5pic").style.display = "none";
 			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 		else if(document.getElementById("squeak5pic").style.display === "block"){
 			document.getElementById("squeak4pic").style.display = "block";
@@ -686,6 +745,26 @@ function GamePeer(){
 			document.getElementById("squeak3pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
 			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak6pic").style.display === "block"){
+			document.getElementById("squeak5pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
+		}
+		else if(document.getElementById("squeak7pic").style.display === "block"){
+			document.getElementById("squeak6pic").style.display = "block";
+			document.getElementById("squeak1pic").style.display = "none";
+			document.getElementById("squeak3pic").style.display = "none";
+			document.getElementById("squeak2pic").style.display = "none";
+			document.getElementById("squeak5pic").style.display = "none";
+			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 		else{
 			document.getElementById("squeak3pic").style.display = "block";
@@ -693,6 +772,8 @@ function GamePeer(){
 			document.getElementById("squeak5pic").style.display = "none";
 			document.getElementById("squeak2pic").style.display = "none";
 			document.getElementById("squeak4pic").style.display = "none";
+			document.getElementById("squeak6pic").style.display = "none";
+			document.getElementById("squeak7pic").style.display = "none";
 		}
 	}
 
@@ -1043,3 +1124,19 @@ function Intern(){
 
 
 //BUTTONS TO SHOW EACH WORK EXPERIENCE PIECE (FINISHED)
+
+
+//BUTTONS FOR COMMUNITY MANAGER PROMOTIONAL MATERIALS (STARTED)
+
+	function communityPhotos(){
+		if(document.getElementById("community1pic").style.display === "block"){
+			document.getElementById("community2pic").style.display = "block";
+			document.getElementById("community1pic").style.display = "none";
+		}
+		else{
+			document.getElementById("community1pic").style.display = "block";
+			document.getElementById("community2pic").style.display = "none";
+		}
+	}
+
+//BUTTONS FOR COMMUNITY MANAGER PROMOTIONAL MATERIALS (FINISHED)

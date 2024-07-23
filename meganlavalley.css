@@ -270,16 +270,7 @@ li{
 	display: block;
 }
 /* First section of 3 in the main contents of the webpage */
-.section2{
-	text-align:center;
-	margin:auto;
-	width:95%;
-	height:33%;
-	line-height:2;
-	padding:0px 10px;
-	display: block;
-}
-/* Second section of 3 in the main contents of the webpage */
+
 h2.subHeading2{
 	text-align:center;
 	text-decoration:none;
@@ -291,14 +282,7 @@ h2.references{
 	text-decoration:none;
 	font-size:1.5vw;
 }
-.section3{
-	text-align:center;
-	margin:auto;
-	width:95%;
-	height:33%;
-	line-height:2;
-	padding:0px 10px;
-}
+
 /* Last section of 3 in the main contents of the webpage */
 table{
 	width:90%;
@@ -327,11 +311,11 @@ a.contact:link {
 	height:100%;
 	width:100%;
 	display:block;
-	color:rgb(0, 0, 153);
+	color:rgb(1, 1, 102);
 }
 /* For a link that hasn't been visited yet */
 a.contact:visited {
-	color:rgb(0, 0, 153);
+	color:rgb(1, 1, 102);
 }
 /* For a link that has been visited */
 a.contact:hover {
@@ -390,11 +374,11 @@ button.portfolio:active {
 }
 
 #Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
-#Skills, #showWolfSection, #recommendSection, #thisSiteSection {
+#Skills, #Volunteer, #showWolfSection, #recommendSection, #thisSiteSection {
 	display: none;
 }
 
-#peerSection, #communitySection, #internSection{
+#peerSection, #communitySection, #internSection, #community2pic{
 	display:none;
 }
 
@@ -412,12 +396,12 @@ button.portfolio:active {
 	display: none;
 }
 
-#wine1pic, #cat1pic, #cat1vid, #squeak1pic, #blend1pic, #piskel1pic, #portfolio1pic, #peer1vid {
+#wine1pic, #cat1pic, #cat1vid, #squeak1pic, #blend1pic, #piskel1pic, #portfolio1pic, #peer1vid, #squeak1vid, #community1pic{
 	display: block;
 }
 
 #photoSqueakGallery, #videoSqueakGallery, #squeak2pic, 
-#squeak3pic, #squeak4pic, #squeak5pic{
+#squeak3pic, #squeak4pic, #squeak5pic, #squeak6pic, #squeak7pic, #squeak2vid{
 	display: none;
 }
 
@@ -496,4 +480,48 @@ div.FooterScale{
 	margin:auto;
 	width:2%;
 	max-width:10%;
+}
+div.jobs{
+	margin:auto;
+	width:70%;
+	max-width:80%;
+	height:fit-content;
+}
+div.jobsHeader{
+	margin:auto;
+	width:95%;
+	max-width:100%;
+	border:10px solid transparent;
+	border-image: url("border.png") 30 round;
+	border-image-repeat: stretch;
+}
+div.jobsTitle{
+	margin: auto;
+	width:50%;
+	max-width:60%;
+}
+div.jobsDate{
+	margin: auto;
+	margin-top: 5%;
+	line-height: 25%;
+	width:30%;
+	max-width:40%;
+}
+ul.jobsList{
+	margin:auto;
+}
+div.jobsDescription{
+	margin:auto;
+	width:75%;
+	max-width:85%;
+	height:fit-content;
+}
+h2.employer{
+	font-size: 1.8vw;
+}
+h4.jobName{
+	font-size: 1.2vw;
+}
+h4.date{
+	font-size: 1vw;
 }
