@@ -1,544 +1,2119 @@
-body{
-	background-color:Black;
-	font-family:'Tahoma';
-	height: auto;
-	width:auto;
-}
-/* Changes the color of the website */
-header{
-    background-image:linear-gradient(#182568,#6e80de);
-	padding: 20px 0px;
-	text-align:center;
-	font-size:3vw;
-	width:100%;
-	max-width:100%;
-	height:auto;
-}
-/* class for the header element */
-.websiteHeading{
-	text-shadow:6px 6px #3c3c3c;
-	font-size:4vw;
-	color: #f0f0f0;
-}
-/* heading for the website */
-.positionLeft{
-	position:fixed;
-	left:15px;
-	max-width:18%;
-	height:12%;
-}
-/* A class specifically made for positioning left */
-.floatRight{
-	float:right;
-}
-/* A class made to float elements to the right */
-.floatLeft{
-	float:left;
-}
-.floatLeftNav{
-	float:left;
-	width:20%;
-}
-img.boxShadow{
-	box-shadow: 0 0 5px 5px #666;
-}
-/* A class made specifically to float things left */
-#floatLeftPic{
-	float:left;
-	width:25%;
-	height:auto;
-	box-shadow: 0 0 10px 10px #666;
-	max-width:25%;
-	border-radius: 15%;
-}
-#floatRightPic{
-	float:right;
-	width:25%;
-	height:auto;
-	box-shadow: 0 0 10px 10px #666;
-	max-width:25%;
-	border-radius: 15%;
-}
-#homeImage{
-	width:90%;
-	height:auto;
-	border-radius: 15%;
-}
-/* An id for my picture on the homepage that floats left(changes in mobile so it
-needed a separate class from other things that float left */
-a.sections2:link, a.sections2:visited {
-	color:White;
-	text-decoration: none;
-}
-/* For a nav link that has or hasn't been visited */
-a.sections2:hover{
-	color:Black;
-	text-decoration: none;
-}
-a.sections2:active {
-	color:Black;
-	text-decoration: none;
-}
-a.sections:link, a.sections:visited {
-	background-color:Black;
-	color:White;
-	border:3px solid Black;
-	width:25%;
-	padding: 14px 25px;
-	max-width:25%;
-	font-size:1.8vw;
-	text-decoration: none;
-}
-/* For a nav link that has or hasn't been visited */
-a.sections:hover{
-	color:Black;
-	background-color:White;
-	text-decoration: none;
-}
-a.sections:active {
-	color:Black;
-	background-color:White;
-	text-decoration: none;
-}
-/* For a nav link being hovered/moused over or a nav link that has been selected */
-a.pages:link {
-	color:Navy;
-}
-/* For a link that hasn't been visited yet */
-a.pages:visited {
-	color:#751aff;
-}
-/* For a link that has been visited */
-a.pages:hover {
-	color:#00a3cc;
-}
-/* For a link being hovered/moused over */
-a.pages:active {
-	color:#751aff;
-}
-a.pagesTop:link {
-	color: #8000ff;
-}
-/* For a link that hasn't been visited yet */
-a.pagesTop:visited {
-	color: #8000ff;
-}
-/* For a link that has been visited */
-a.pagesTop:hover {
-	color:#00a3cc;
-}
-/* For a link being hovered/moused over */
-a.pagesTop:active {
-	color:#751aff;
-}
-/* For a link that has been selected */
-.nameOfPage{
-	margin:auto;
-	text-align:center;
-	text-shadow:0 5px 2px #3c3c3c;
-	color:white;
-	box-sizing:border-box;
-	width:auto;
-	height:auto;
-	border:20px solid transparent;
-	border-image: url("border.png") 30 round;
-	border-image-repeat: stretch;
-	padding: 15px;
-	font-size:3.3vw;
-	max-width:35%;
-}
-/* headings for The current section of the webpage that you are on */
-h3.subHeading1{
-	text-align:center;
-	text-decoration:underline;
-	font-size:3.5vw;
-	text-shadow:2px 2px White;
-}
-/* sub headings for about this website section and contact info section of the homepage */
-p.main{
-	font-size:1.3vw;
-	width:70%;
-	max-width:100%;
-	margin:auto;
-	text-align:center;
-}
-/* A class to make paragraph font size larger */
-p.about{
-	font-size:1.3vw;
-	width:auto;
-	max-width:100%;
-	margin:auto;
-	text-align:center;
-}
-p.education{
-	font-size:1.3vw;
-	width:auto;
-	max-width:100%;
-	margin:auto;
-	text-align:center;
-}
-div.aboutContainer{
-	width:70%;
-	margin-right:50%;
-}
-div.educationContainer{
-	width:65%;
-	margin-left:30%;
-}
-ul{
-	list-style-type:circle;
-	font-size:1vw;
-	padding:2px;
-	list-style-position:inside;	
-}
-ul.navBar{
-	position: fixed;
-	top:0;
-	margin:0;
-	padding:0;
-	overflow:hidden;
-	background-color:Black;
-	width:100%;
-	list-style-type: none;
-	height:auto;
-}
-.clearfix::after {
-	content: "";
-  	clear: both;
-  	display: table;
-}
-
-/* sets the style of the lists in the website */
-div.lists:hover{
-	background-color:White;
-}
-/* A class to make each div list change color when hovered over */
-div.lists{
-	float:left;
-	width:33%;
-}
-/* sets the style of the lists in the website */
-div.lists2:hover{
-	background-color:White;
-}
-/* A class to make each div list change color when hovered over */
-div.lists2{
-	float:left;
-	width:50%;
-}
-div.certs{
-	float:left;
-	width:50%;
-	transition: 1s;
-}
-div.certs:hover{
-	opacity: 75%;
-}
-#certImage{
-	border-radius: 15%;
-}
-/* A div class to make the lists of games in the homepage float next to each other */
-h3.categories{
-	font-size:1.3vw;
-	text-decoration:underline;
-}
-/* A class of header for the categories of the lists */
-li{
-	font-size:1.1vw;
-}
-/* Changes the font size for lists in the homepage */
-.mainContent{
-	width:100%;
-	margin:auto;
-	height:90%;
-	background-image:linear-gradient(#6e80de, #98aeff);
-	text-align:center;
-	padding:23px 0px 23px 0px;
-	height:auto;
-
-}
-
-/* Element that holds all content between the header and footer */
-
-.section1{
-	text-align:center;
-	margin:auto;
-	width:95%;
-	height:33%;
-	line-height:2;
-	padding:0px 10px;
-	display: block;
-}
-/* First section of 3 in the main contents of the webpage */
-
-h2.subHeading2{
-	text-align:center;
-	text-decoration:none;
-	font-size:2vw;
-}
-/* class for the about me part of the homepage (the color of the text shadow is the only change from similar headings */
-h2.references{
-	text-align:center;
-	text-decoration:none;
-	font-size:1.5vw;
-}
-
-/* Last section of 3 in the main contents of the webpage */
-table{
-	width:90%;
-	margin:auto;
-	font-size:2vw;
-	box-shadow: 0 0 5px 10px #666;
-	background-image:linear-gradient(#0046ff,#c1d1f9);
-}
-/* This is a class for the table in the contact info section of the homepage */
-th, td{
-	border:10px solid transparent;
-	border-image: url("border.png") 30 round;
-	border-image-repeat: stretch;
-}
-/* this class sets the borders for the inside of the table */
-th:hover{
-	background-color:White;
-	color:Black;
-}
-/* this class makes this section of the table change color when you hover over it */
-td:hover{
-	background-color:White;
-	color:Black;
-}
-a.contact:link {
-	height:100%;
-	width:100%;
-	display:block;
-	color:rgb(1, 1, 102);
-}
-/* For a link that hasn't been visited yet */
-a.contact:visited {
-	color:rgb(1, 1, 102);
-}
-/* For a link that has been visited */
-a.contact:hover {
-	color:rgb(91, 0, 196);
-}
-/* For a link being hovered/moused over */
-a.contact:active {
-	color:rgb(91, 0, 196);
-}
-/* this class makes this section of the table change color when you hover over it */
-footer{
-	background-image:linear-gradient(#98aeff,#f0f0f0);
-	padding:0 0px 0% 0px;
-	text-align:center;
-	font-size:1.3vw;
-	height:auto;
-	align-content: center;
-}
-/* footer of the webpage */
-
-h3.footerLink{
-	font-size:2vw;
-}
-.buttonBox{
-	font-size:1vw;
-}
-html{
-	scroll-behavior:smooth;
-}
-button.portfolio{
-display: inline-block;
-  padding: 15px 25px;
-  font-size: 1.5vw;
-  cursor: pointer;
-  text-align: center;
-  color: #fff;
-  background-color: Navy;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 7px 5px #555;
-}
-button.portfolio:hover {
-	background-color: #fff;
-  	color: Navy;
-}
-
-button.portfolio:active {
-  background-color: #fff;
-  color: Navy;
-  box-shadow: 0 4px #444444;
-  transform: translateY(4px);
-}
-
-.hiddenForSpace{
-	visibility:hidden;
-}
-
-#Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
-#Skills, #Volunteer, #showWolfSection, #recommendSection, #thisSiteSection {
-	display: none;
-}
-
-#peerSection, #communitySection, #internSection, #community2pic{
-	display:none;
-}
-
-#photoCatGallery, #videoCatGallery, #showCatSection, #cat2pic, 
-#cat3pic, #cat4pic, #cat5pic, #cat2vid, #cat3vid{
-	display:none;
-}
-
-#photoWineGallery, #videoWineGallery, #showWineSection, #wine2pic, 
-#wine3pic, #wine4pic, #wine5pic{
-	display: none;
-}
-
-#peer2vid, #showPeerSection, #peer3vid, #peer4vid{
-	display: none;
-}
-
-#wine1pic, #cat1pic, #cat1vid, #squeak1pic, #blend1pic, #piskel1pic, #portfolio1pic, #peer1vid, #squeak1vid, #community1pic{
-	display: block;
-}
-
-#photoSqueakGallery, #videoSqueakGallery, #squeak2pic, 
-#squeak3pic, #squeak4pic, #squeak5pic, #squeak6pic, #squeak7pic, #squeak2vid{
-	display: none;
-}
-
-#portfolio2pic, 
-#portfolio3pic, #portfolio4pic, #portfolio5pic{
-	display:none;
-}
-
- #blendSection, #blend2pic, 
-#blend3pic, #blend4pic{
-	display:none;
-}
-
-#piskelSection, #piskel2pic, 
-#piskel3pic, #piskel4pic, #piskel5pic{
-	display:none;
-}
+/* MAIN SITE CONSISTENCY ELEMENTS*/
 
 
-#logos{
-	padding-top: 5px;
-	width:3%;
-	height:auto;
-}
 
-#logos2{
-	padding-top: 5px;
-	width:5%;
-	height:auto;
-}
+	/* body of each page of the website */
+	body{
+		background-color:Black;
+		font-family:'Tahoma';
+		height: 100%;
+		width:auto;
+	}
 
-a.footer{
-	padding:2%;
-}
+	/* class for the header element */
+	header{
+	    background-image:linear-gradient(#182568,#6e80de);
+		padding: 20px 0px;
+		text-align:center;
+		font-size:3vw;
+		width:100%;
+		max-width:100%;
+		height:auto;
+	}
 
-div.outerLayer{
-	padding: 0 6px;
-	width: 30%;
-	height:auto;
-	margin:auto;
-}
+	/* heading for the website */	
+	.websiteHeading{
+		text-shadow:6px 6px #3c3c3c;
+		font-size:4vw;
+		color: #f0f0f0;
+	}
 
-div.outerLayerVideo{
-	padding: 0 6px;
-	width: 40%;
-	height:auto;
-	margin:auto;
-}
+	/* box shadow for images on the site */
+	img.boxShadow{
+		box-shadow: 0 0 5px 5px #666;
+	}
 
-div.gallery {
-	border-radius: 15px;
-	border: 2px solid #ccc;
-	box-shadow: 0 0 5px 3px #666;
-  }
-  
-  div.gallery img {
-	width: 100%;
-	height: auto;
-	border-radius: 15px;
-  }
+	/* Headings for the section you are in (example "Unity" in Portfolio page) */
+	.nameOfPage{
+		margin:auto;
+		text-align:center;
+		text-shadow:0 5px 2px #3c3c3c;
+		color:white;
+		box-sizing:border-box;
+		width:auto;
+		height:auto;
+		border:20px solid transparent;
+		border-image: url("border.png") 30 round;
+		border-image-repeat: stretch;
+		padding: 15px;
+		font-size:3.3vw;
+		max-width:35%;
+	}
 
-  div.gallery iframe {
-	width:100%;
-	border-radius: 15px;
-  }
+	/* Element that holds all content between the header and footer */
+	.mainContent{
+		width:100%;
+		margin:auto;
+		height:90%;
+		background-image:linear-gradient(#6e80de, #98aeff);
+		text-align:center;
+		padding:23px 0px 23px 0px;
+		height:auto;
+	}
+	
+	
+	/* Sections of each page */
+	.section1{
+		text-align:center;
+		margin:auto;
+		width:95%;
+		height:33%;
+		line-height:2;
+		padding:0px 10px;
+		display: block;
+	}
 
-  div.imageDescription {
-	padding: 15px;
-	text-align: center;
-	font-size:0.9vw;
-  }
-img.aboutPics{
-	margin-top:12%;
-  }
-div.FooterScale{
-	margin:auto;
-	width:2%;
-	max-width:10%;
-}
-div.jobs{
-	margin:auto;
-	width:70%;
-	max-width:80%;
-	height:fit-content;
-}
-div.jobsHeader{
-	margin:auto;
-	width:95%;
-	max-width:100%;
-	border:10px solid transparent;
-	border-image: url("border.png") 30 round;
-	border-image-repeat: stretch;
-}
-div.jobsTitle{
-	margin: auto;
-	width:50%;
-	max-width:60%;
-}
-div.jobsDate{
-	margin: auto;
-	margin-top: 5%;
-	line-height: 25%;
-	width:30%;
-	max-width:40%;
-}
-ul.jobsList{
-	margin:auto;
-}
-div.jobsDescription{
-	margin:auto;
-	width:75%;
-	max-width:85%;
-	height:fit-content;
-}
-h2.employer{
-	font-size: 1.8vw;
-}
-h4.jobName{
-	font-size: 1.2vw;
-}
-h4.date{
-	font-size: 1vw;
-}
+	/* footer of the webpage */
+	footer{
+		background-image:linear-gradient(#98aeff,#f0f0f0);
+		padding:0 0px 0% 0px;
+		text-align:center;
+		font-size:1.3vw;
+		height:fit-content;
+		align-content: center;
+	}
+	
+	/* sets the scroll behavior for the site */
+	html{
+		scroll-behavior:smooth;
+	}
 
+	/* For any section that requires space */
+	.clearfix::after {
+		content: "";
+		  clear: both;
+		  display: table;
+	}
+
+
+	
+/* END OF MAIN SITE CONSISTENCY ELEMENTS*/
+
+
+
+
+
+
+
+
+
+/* FLOATING ELEMENTS */	
+
+
+	/* A class made to float elements to the right */
+	.floatRight{
+		float:right;
+	}
+
+	/* A class made to float elements to the left */
+	.floatLeft{
+		float:left;
+	}
+
+	/* A class made to float NAV elements to the left */
+	.floatLeftNav{
+		float:left;
+		width:19.5%;
+	}
+
+	/* A class made to floating pictures to the left */
+	#floatLeftPic{
+		float:left;
+		width:25%;
+		height:auto;
+		box-shadow: 0 0 10px 10px #666;
+		max-width:25%;
+		border-radius: 15%;
+	}
+
+	/* A class made to floating pictures to the right */
+	#floatRightPic{
+		float:right;
+		width:25%;
+		height:auto;
+		box-shadow: 0 0 10px 10px #666;
+		max-width:25%;
+		border-radius: 15%;
+	}
+
+
+/* END OF FLOATING ELEMENTS */
+
+
+
+
+
+
+
+
+
+/* IMAGES */
+
+
+	/* Home page image class*/
+	#homeImage{
+		width:90%;
+		height:auto;
+		border-radius: 15%;
+	}
+
+	/* Certification image class */
+	#certImage{
+		border-radius: 15%;
+	}
+
+	/* About page image class */
+	img.aboutPics{
+		margin-top:12%;
+	  }
+
+/* END OF IMAGES */
+
+
+
+
+
+
+
+
+
+/* LINKS */
+
+	/* Nav links */
+	a.sections:link, a.sections:visited {
+		background-color:Black;
+		color:White;
+		border:3px solid Black;
+		width:25%;
+		padding: 14px 25px;
+		max-width:25%;
+		font-size:1.8vw;
+		text-decoration: none;
+	}
+
+	/* Nav links */
+	a.sections:hover{
+		color:Black;
+		background-color:White;
+		text-decoration: none;
+	}
+
+	/* Nav links */
+	a.sections:active {
+		color:Black;
+		background-color:White;
+		text-decoration: none;
+	}
+	
+	/* Intrapage links */
+	a.pagesTop:link {
+		color: #8000ff;
+	}
+	
+	/* Intrapage links */
+	a.pagesTop:visited {
+		color: #8000ff;
+	}
+
+	/* Intrapage links */
+	a.pagesTop:hover {
+		color:#00a3cc;
+	}
+
+	/* Intrapage links */
+	a.pagesTop:active {
+		color:#751aff;
+	}
+
+	/* Contact table links */
+	a.contact:link {
+		height:100%;
+		width:100%;
+		display:block;
+		color:rgb(1, 1, 102);
+	}
+	
+	/* Contact table links */
+	a.contact:visited {
+		color:rgb(1, 1, 102);
+	}
+	
+	/* Contact table links */
+	a.contact:hover {
+		color:rgb(91, 0, 196);
+	}
+	
+	/* Contact table links */
+	a.contact:active {
+		color:rgb(91, 0, 196);
+	}
+
+
+/* END OF LINKS*/
+
+
+
+
+
+
+
+
+
+/* HEADINGS */
+
+
+
+	/* Sub-section headings */
+	h3.subHeading1{
+		text-align:center;
+		text-decoration:underline;
+		font-size:3.5vw;
+		text-shadow:2px 2px White;
+	}
+
+	/* A class of header for the categories of the lists */
+	h3.categories{
+		font-size:1.3vw;
+		text-decoration:underline;
+	}
+	
+	/* Heading used in About and Reasume (Education section) */
+	h2.subHeading2{
+		text-align:center;
+		text-decoration:none;
+		font-size:2vw;
+	}
+	
+	/* Heading stating references available upon request */
+	h2.references{
+		text-align:center;
+		text-decoration:none;
+		font-size:1.5vw;
+	}
+
+	/* Used for intrapage link */
+	h3.footerLink{
+		font-size:2vw;
+	}
+
+	/* headings used for employers and volunteer work */
+	h2.employer{
+		font-size: 1.8vw;
+	}
+
+	/* headings used for job name and volunteer work */
+	h4.jobName{
+		font-size: 1.2vw;
+	}
+
+	/* headings used for dates of jobs and volunteer work */
+	h4.date{
+		font-size: 1vw;
+	}
+
+
+
+
+/* END OF HEADINGS */
+
+
+
+
+
+
+
+
+
+/* PARAGRAPHS */	
+	
+	/* the main text used in this website */
+	p.main{
+		font-size:1.3vw;
+		width:70%;
+		max-width:100%;
+		margin:auto;
+		text-align:center;
+	}
+	
+	/* text for the about page */
+	p.about{
+		font-size:1.3vw;
+		width:auto;
+		max-width:100%;
+		margin:auto;
+		text-align:center;
+	}
+
+	/* text for the education section */
+	p.education{
+		font-size:1.3vw;
+		width:auto;
+		max-width:100%;
+		margin:auto;
+		text-align:center;
+	}
+
+
+/* END OF PARAGRAPHS */
+
+
+
+
+
+
+
+
+
+/* DIVS */
+
+	/* contains the message from Megan on the about page */
+	div.aboutContainer{
+		width:70%;
+		margin-right:50%;
+	}
+
+	/* contains the text on the education section of the resume page */
+	div.educationContainer{
+		width:65%;
+		margin-left:30%;
+	}
+
+	/* for the certifications in the skills section of the resume page */
+	div.certs{
+		float:left;
+		width:50%;
+		transition: 1s;
+	}
+
+	/* for the certifications in the skills section of the resume page, activates when hovered over */
+	div.certs:hover{
+		opacity: 75%;
+	}	
+
+	/* contains the jobs on the work and volunteer sections of the resume page */
+	div.jobs{
+		margin:auto;
+		width:70%;
+		max-width:80%;
+		height:fit-content;
+	}
+
+	/* contains the jobs header (the box) on the work and volunteer sections of the resume page */
+	div.jobsHeader{
+		margin:auto;
+		width:95%;
+		max-width:100%;
+		border:10px solid transparent;
+		border-image: url("border.png") 30 round;
+		border-image-repeat: stretch;
+	}
+
+	/* contains the jobs title (inside the box) on the work and volunteer sections of the resume page */
+	div.jobsTitle{
+		margin: auto;
+		width:50%;
+		max-width:60%;
+	}
+
+	/* contains the jobs date (inside the box) on the work and volunteer sections of the resume page */
+	div.jobsDate{
+		margin: auto;
+		margin-top: 5%;
+		line-height: 25%;
+		width:30%;
+		max-width:40%;
+	}
+
+	/* contains the jobs description (below the box) on the work and volunteer sections of the resume page */
+	div.jobsDescription{
+		margin:auto;
+		width:75%;
+		max-width:85%;
+		height:fit-content;
+	}
+
+	/* the outer layer for each pic in photo galleries */
+	div.outerLayer{
+		padding: 0 6px;
+		width: 30%;
+		height:auto;
+		margin:auto;
+	}
+	
+	/* the outer layer for each video in video galleries */
+	div.outerLayerVideo{
+		padding: 0 6px;
+		width: 40%;
+		height:auto;
+		margin:auto;
+	}
+	
+	/* little box container for galleries */
+	div.gallery {
+		border-radius: 15px;
+		border: 2px solid #ccc;
+		box-shadow: 0 0 5px 3px #666;
+	}
+	  
+	/* for images in the gallery */
+	div.gallery img {
+		width: 100%;
+		height: auto;
+		border-radius: 15px;
+	}
+	
+	/* used for videos in gallery */
+	div.gallery iframe {
+		width:100%;
+		border-radius: 15px;
+	}
+	
+	/* for image/video descriptions in gallery */
+	div.imageDescription {
+		padding: 15px;
+		text-align: center;
+		font-size:0.9vw;
+	}
+	
+
+
+/* END OF DIVS */
+
+
+
+
+
+
+
+
+
+/* LISTS */
+
+
+
+
+	/* sets the style of the lists in the website */
+	ul{
+		list-style-type:circle;
+		font-size:1vw;
+		padding:2px;
+		list-style-position:inside;	
+	}
+
+	/* Changes the font size for lists*/
+	li{
+		font-size:1.1vw;
+	}
+	
+	/* nav bar list */	
+	ul.navBar{
+		position: fixed;
+		top:0;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		background-color:Black;
+		width:100%;
+		list-style-type: none;
+		height:auto;
+	}
+
+	/* A class to make each div list change color when hovered over */
+	div.lists2:hover{
+		background-color:rgb(216, 227, 236);
+	}
+
+	/* A class for lists */
+	div.lists2{
+		float:left;
+		width:50%;
+	}
+
+	/* A class to make each div list change color when hovered over */
+	div.listsCode:hover{
+		background-color:rgb(216, 227, 236);
+	}
+	
+	/* A class for lists */
+	div.listsCode{
+		float:left;
+		width:50%;
+	}
+
+		/* A class for lists */
+		div.lists{
+			display:none;
+		}
+
+	/* A class for the list in the jobs and volunteer sections of the resume page*/
+	ul.jobsList{
+		margin:auto;
+	}
+
+
+
+/* END OF LISTS */
+
+
+
+
+
+
+
+
+
+
+/* TABLE THINGS */
+
+
+
+	/* This is a class for the table in the contact page */
+	table{
+		width:90%;
+		margin:auto;
+		font-size:2vw;
+		box-shadow: 0 0 5px 10px #666;
+		background-image:linear-gradient(#0046ff,#c1d1f9);
+	}
+
+	/* this class sets the borders for the inside of the table */
+	th, td{
+		border:10px solid transparent;
+		border-image: url("border.png") 30 round;
+		border-image-repeat: stretch;
+	}
+
+	/* this class makes this section of the table change color when you hover over it */
+	td.specific:hover{
+		background-color:White;
+
+	}
+
+
+
+
+
+/* END OF TABLES */
+
+
+
+
+
+
+
+
+
+/* BUTTONS*/
+
+
+	/* for the buttons of this site */
+	button.portfolio{
+		display: inline-block;
+  		padding: 15px 25px;
+  		font-size: 1.5vw;
+  		cursor: pointer;
+  		text-align: center;
+  		color: #fff;
+  		background-color: Navy;
+  		border: none;
+  		border-radius: 15px;
+  		box-shadow: 0 7px 5px #555;
+	}
+
+	/* for the buttons of this site when hovered */
+	button.portfolio:hover {
+		background-color: #fff;
+  		color: Navy;
+	}
+
+	/* for the buttons of this site when pressed */
+	button.portfolio:active {
+  		background-color: #fff;
+  		color: Navy;
+  		box-shadow: 0 4px #444444;
+  		transform: translateY(4px);
+	}
+
+/* END OF BUTTONS */
+
+
+	
+
+
+
+
+
+
+/* DISPLAY THINGS */
+
+
+
+	/* hidden paragraphs to space things out */
+	.hiddenForSpace{
+		visibility:hidden;
+	}
+
+	/* Displays that are turned on */
+	#wine1pic, #cat1pic, #cat1vid, #squeak1pic, #blend1pic, #piskel1pic, #portfolio1pic, #peer1vid, #squeak1vid, #community1pic{
+		display: block;
+	}
+
+
+	/* general displays turned off */
+	#Unity, #Unreal, #Websites, #Art, #Misc, #Education, #Profile, #Work, 
+	#Skills, #Volunteer, #showWolfSection, #recommendSection, #thisSiteSection {
+		display: none;
+	}
+	
+	/* certain displays in resume turned off */
+	#peerSection, #communitySection, #internSection, #community2pic{
+		display:none;
+	}
+
+	/* Cat-astrophe! displays turned off */
+	#photoCatGallery, #videoCatGallery, #showCatSection, #cat2pic, 
+	#cat3pic, #cat4pic, #cat5pic, #cat2vid, #cat3vid{
+		display:none;
+	}
+
+	/* Wine-Time displays turned off */
+	#photoWineGallery, #videoWineGallery, #showWineSection, #wine2pic, 
+	#wine3pic, #wine4pic, #wine5pic{
+		display: none;
+	}
+
+	/* Peer Education displays turned off */
+	#peer2vid, #showPeerSection, #peer3vid, #peer4vid{
+		display: none;
+	}
+
+
+
+
+	/* Hide & Go Squeak! displays turned off */
+	#photoSqueakGallery, #videoSqueakGallery, #squeak2pic, 
+	#squeak3pic, #squeak4pic, #squeak5pic, #squeak6pic, #squeak7pic, #squeak2vid{
+		display: none;
+	}
+
+	/* Portfolio site displays turned off */
+	#portfolio2pic, #portfolio3pic, #portfolio4pic, #portfolio5pic{
+		display:none;
+	}
+
+	/* Blender displays turned off */
+	#blendSection, #blend2pic, #blend3pic, #blend4pic{
+		display:none;
+	}
+
+	/* Piskel displays turned off */
+	#piskelSection, #piskel2pic, #piskel3pic, #piskel4pic, #piskel5pic{
+		display:none;
+	}
+
+
+
+/* END OF DISPLAY THINGS */
+
+
+
+
+
+
+
+
+
+/* LOGOS */
+
+
+
+	/* logos in footer */
+	#logos{
+		padding-top: 5px;
+		width:3%;
+		height:auto;
+	}
+
+	/* logo for gaming recommendation site */
+	#logos2{
+		padding-top: 5px;
+		width:5%;
+		height:auto;
+	}
+
+	/* footer */
+	a.footer{
+		padding:2%;
+	}
+
+
+
+/* END OF LOGOS*/
+
+
+
+
+
+
+
+
+
+/* TABLETS SECTION */
 @media only screen and (max-width:900px) {
-	/* For tablets: */
+	
 	.main {
-	  width: 80%;
-	  padding: 0;
-	}
-	.right {
-	  width: 100%;
-	}
-  }
+		width: 100%;
+	  }
+	  /* MAIN SITE CONSISTENCY ELEMENTS*/
+  
+  
+  
+	  /* class for the header element */
+	  header{
+		  background-image:linear-gradient(#182568,#6e80de);
+		  padding: 20px 0px;
+		  text-align:center;
+		  font-size:3vw;
+		  width:100%;
+		  max-width:100%;
+		  height:auto;
+	  }
+  
+	  /* heading for the website */	
+	  .websiteHeading{
+		  text-shadow: 1.6px 1.6px #3c3c3c;
+		  font-size:5vw;
+		  color: #f0f0f0;
+	  }
+  
+	  /* box shadow for images on the site */
+	  img.boxShadow{
+		  box-shadow: 0 0 2px 2px #666;
+	  }
+  
+	  /* Headings for the section you are in (example "Unity" in Portfolio page) */
+	  .nameOfPage{
+		  margin:auto;
+		  text-align:center;
+		  text-shadow:0 2px 1px #3c3c3c;
+		  color:white;
+		  box-sizing:border-box;
+		  width:auto;
+		  height:auto;
+		  border:10px solid transparent;
+		  border-image: url("border.png") 30 round;
+		  border-image-repeat: stretch;
+		  padding: 15px;
+		  font-size:4vw;
+		  max-width:50%;
+	  }
+  
+	  /* Element that holds all content between the header and footer */
+	  .mainContent{
+		  width:100%;
+		  margin:auto;
+		  height:90%;
+		  background-image:linear-gradient(#6e80de, #98aeff);
+		  text-align:center;
+		  padding:23px 0px 23px 0px;
+		  height:auto;
+	  }
+	  
+	  
+	  /* Sections of each page */
+	  .section1{
+		  text-align:center;
+		  margin:auto;
+		  width:95%;
+		  height:45%;
+		  line-height:2;
+		  padding:0px 10px;
+		  display: block;
+	  }
+  
+	  /* footer of the webpage */
+	  footer{
+		  background-image:linear-gradient(#98aeff,#f0f0f0);
+		  text-align:center;
+		  font-size:2.3vw;
+		  height:auto;
+		  align-content: center;
+	  }
+	  
+	  /* sets the scroll behavior for the site */
+	  html{
+		  scroll-behavior:smooth;
+	  }
+  
+	  /* For any section that requires space */
+	  .clearfix::after {
+		  content: "";
+			clear: both;
+			display: table;
+	  }
+  
+  
+	  
+  /* END OF MAIN SITE CONSISTENCY ELEMENTS*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* FLOATING ELEMENTS */	
+  
+  
+	  /* A class made to float NAV elements to the left */
+	  .floatLeftNav{
+		  float:left;
+		  width:19%;
+	  }
+  
+	  /* A class made to floating pictures to the left */
+	  #floatLeftPic{
+		  float:left;
+		  width:40%;
+		  height:auto;
+		  box-shadow: 0 0 4px 4px #666;
+		  max-width:40%;
+		  border-radius: 15%;
+	  }
+  
+	  /* A class made to floating pictures to the right */
+	  #floatRightPic{
+		  float:right;
+		  width:40%;
+		  height:auto;
+		  box-shadow: 0 0 4px 4px #666;
+		  max-width:40%;
+		  border-radius: 15%;
+	  }
+  
+  
+  /* END OF FLOATING ELEMENTS */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* IMAGES */
+  
+  
+	  /* Home page image class*/
+	  #homeImage{
+		  width:95%;
+		  height:auto;
+		  border-radius: 15%;
+	  }
+  
+	  /* Certification image class */
+	  #certImage{
+		  border-radius: 15%;
+		  width:80%;
+	  }
+  
+	  /* About page image class */
+	  img.aboutPics{
+		  margin-top:12%;
+		}
+  
+	  /* Resume  image class */
+	  img.resumePic{
+		  width:80%;
+		  max-width:80%;
+		}
+  
+	  /* Diploma  image class */
+	  img.diplomaPic{
+		  width:80%;
+		  max-width:80%;
+		}
+  
+  
+  /* END OF IMAGES */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* LINKS */
+  
+	  /* Nav links */
+	  a.sections:link, a.sections:visited {
+		  background-color:Black;
+		  color:White;
+		  border:0px solid Black;
+		  width:100%;
+		  padding: 5px 15px;
+		  font-size:3vw;
+		  text-decoration: none;
+		  text-align-last: center;
+		  margin: auto;
+		  height:auto;
+	  }
+  
+	  /* Nav links */
+	  a.sections:hover{
+		  color:Black;
+		  background-color:White;
+		  text-decoration: none;
+	  }
+  
+	  /* Nav links */
+	  a.sections:active {
+		  color:Black;
+		  background-color:White;
+		  text-decoration: none;
+	  }
+	  
+	  /* Intrapage links */
+	  a.pagesTop:link {
+		  color: #8000ff;
+	  }
+	  
+	  /* Intrapage links */
+	  a.pagesTop:visited {
+		  color: #8000ff;
+	  }
+  
+	  /* Intrapage links */
+	  a.pagesTop:hover {
+		  color:#00a3cc;
+	  }
+  
+	  /* Intrapage links */
+	  a.pagesTop:active {
+		  color:#751aff;
+	  }
+  
+	  /* Contact table links */
+	  a.contact:link {
+		  height:100%;
+		  width:100%;
+		  display:block;
+		  color:rgb(1, 1, 102);
+	  }
+	  
+	  /* Contact table links */
+	  a.contact:visited {
+		  color:rgb(1, 1, 102);
+	  }
+	  
+	  /* Contact table links */
+	  a.contact:hover {
+		  color:rgb(91, 0, 196);
+	  }
+	  
+	  /* Contact table links */
+	  a.contact:active {
+		  color:rgb(91, 0, 196);
+	  }
+  
+  
+  /* END OF LINKS*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* HEADINGS */
+  
+  
+  
+	  /* Sub-section headings */
+	  h3.subHeading1{
+		  text-align:center;
+		  text-decoration:underline;
+		  font-size:3.5vw;
+		  text-shadow:0.8px 0.8px White;
+	  }
+  
+	  /* A class of header for the categories of the lists */
+	  h3.categories{
+		  font-size:2.3vw;
+		  text-decoration:underline;
+	  }
+	  
+	  /* Heading used in About and Resume (Education section) */
+	  h2.subHeading2{
+		  text-align:center;
+		  text-decoration:none;
+		  font-size:2.5vw;
+	  }
+	  
+	  /* Heading stating references available upon request */
+	  h2.references{
+		  text-align:center;
+		  text-decoration:none;
+		  font-size:2.1vw;
+	  }
+  
+	  /* Used for intrapage link */
+	  h3.footerLink{
+		  font-size:3.2vw;
+	  }
+  
+	  /* headings used for employers and volunteer work */
+	  h2.employer{
+		  font-size: 2.8vw;
+	  }
+  
+	  /* headings used for job name and volunteer work */
+	  h4.jobName{
+		  font-size: 1.8vw;
+	  }
+  
+	  /* headings used for dates of jobs and volunteer work */
+	  h4.date{
+		  font-size: 1.6vw;
+	  }
+  
+  
+  
+  
+  /* END OF HEADINGS */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* PARAGRAPHS */	
+	  
+	  /* the main text used in this website */
+	  p.main{
+		  font-size:1.8vw;
+		  width:90%;
+		  max-width:100%;
+		  margin:auto;
+		  text-align:center;
+	  }
+	  
+	  /* text for the about page */
+	  p.about{
+		  font-size:1.8vw;
+		  width:auto;
+		  max-width:100%;
+		  margin:auto;
+		  text-align:center;
+	  }
+  
+	  /* text for the education section */
+	  p.education{
+		  font-size:1.8vw;
+		  width:auto;
+		  max-width:100%;
+		  margin:auto;
+		  text-align:center;
+	  }
+  
+  
+  /* END OF PARAGRAPHS */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* DIVS */
+  
+	  /* contains the message from Megan on the about page */
+	  div.aboutContainer{
+		  width:50%;
+		  margin-right:50%;
+	  }
+  
+	  /* contains the text on the education section of the resume page */
+	  div.educationContainer{
+		  width:50%;
+		  margin-left:47%;
+	  }
+  
+	  /* for the certifications in the skills section of the resume page */
+	  div.certs{
+		  float:left;
+		  width:50%;
+		  transition: 1s;
+	  }
+  
+	  /* for the certifications in the skills section of the resume page, activates when hovered over */
+	  div.certs:hover{
+		  opacity: 75%;
+	  }	
+  
+	  /* contains the jobs on the work and volunteer sections of the resume page */
+	  div.jobs{
+		  margin:auto;
+		  width:80%;
+		  max-width:90%;
+		  height:fit-content;
+	  }
+  
+	  /* contains the jobs header (the box) on the work and volunteer sections of the resume page */
+	  div.jobsHeader{
+		  margin:auto;
+		  width:95%;
+		  max-width:100%;
+		  border:10px solid transparent;
+		  border-image: url("border.png") 30 round;
+		  border-image-repeat: stretch;
+	  }
+  
+  
+  
+  
+	  /* contains the jobs description (below the box) on the work and volunteer sections of the resume page */
+	  div.jobsDescription{
+		  margin:auto;
+		  width:95%;
+		  max-width:95%;
+		  height:fit-content;
+	  }
+  
+	  /* the outer layer for each pic in photo galleries */
+	  div.outerLayer{
+		  padding: 0 6px;
+		  width: 80%;
+		  height:auto;
+		  margin:auto;
+	  }
+	  
+	  /* the outer layer for each video in video galleries */
+	  div.outerLayerVideo{
+		  padding: 0 6px;
+		  width: 80%;
+		  height:auto;
+		  margin:auto;
+	  }
+	  
+	  /* little box container for galleries */
+	  div.gallery {
+		  border-radius: 15px;
+		  border: 2px solid #ccc;
+		  box-shadow: 0 0 5px 3px #666;
+	  }
+		
+	  /* for images in the gallery */
+	  div.gallery img {
+		  width: 100%;
+		  height: auto;
+		  border-radius: 15px;
+	  }
+	  
+	  /* used for videos in gallery */
+	  div.gallery iframe {
+		  width:100%;
+		  border-radius: 15px;
+	  }
+	  
+	  /* for image/video descriptions in gallery */
+	  div.imageDescription {
+		  padding: 15px;
+		  text-align: center;
+		  font-size:1.8vw;
+	  }
+	  
+  
+  
+  /* END OF DIVS */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* LISTS */
+  
+  
+  
+  
+	  /* sets the style of the lists in the website */
+	  ul{
+		  list-style-type:circle;
+		  font-size:1.7vw;
+		  padding:2px;
+		  list-style-position:inside;	
+	  }
+  
+	  /* Changes the font size for lists*/
+	  li{
+		  font-size:1.8vw;
+	  }
+  
+	  /* nav bar list */	
+	  ul.navBar{
+		  position: fixed;
+		  top:0;
+		  overflow:hidden;
+		  background-color:Black;
+		  width:100%;
+		  list-style-type: none;
+		  height:max-content;
+		  list-style-position: inside;
+	  }
+  
+	  /* A class to make each div list change color when hovered over */
+	  div.lists2:hover{
+		  background-color:#f0f0f0;
+	  }
+  
+	  /* A class for lists */
+	  div.lists2{
+		  display:none;
+	  }
+  
+	  /* A class to make each div list change color when hovered over */
+	  div.lists3:hover{
+		  background-color:#f0f0f0;
+	  }
+	  
+	  /* A class for lists */
+	  div.listsCode{
+		  float:left;
+		  width:50%;
+	  }
+  
+	  /* A class to make each div list change color when hovered over */
+	  div.listsCode:hover{
+		  background-color:#f0f0f0;
+	  }
+  
+	  /* A class for lists */
+	   div.lists3{
+		  display:block;
+		  width:50%;
+		  float: left;
+	   }
+  
+  
+  
+  
+  
+  /* END OF LISTS */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* TABLE THINGS */
+  
+  
+  
+	  /* This is a class for the table in the contact page */
+	  table{
+		  width:95%;
+		  margin:auto;
+		  font-size:3vw;
+		  box-shadow: 0 0 3px 5px #666;
+		  background-image:linear-gradient(#0046ff,#c1d1f9);
+	  }
+  
+	  /* this class sets the borders for the inside of the table */
+	  th, td{
+		  border:5px solid transparent;
+		  border-image: url("border.png") 30 round;
+		  border-image-repeat: stretch;
+	  }
+  
+  
+  
+  
+  
+  /* END OF TABLES */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* BUTTONS*/
+  
+  
+  
+	  /* for the buttons of this site */
+	  button.portfolio{
+		  display: inline-block;
+			padding: 7px 12px;
+			font-size: 2.5vw;
+			cursor: pointer;
+			text-align: center;
+			color: #fff;
+			background-color: Navy;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 5px 2px #555;
+	  }
+  
+	  /* for the buttons of this site when hovered */
+	  button.portfolio:hover {
+		  background-color: #fff;
+			color: Navy;
+	  }
+  
+	  /* for the buttons of this site when pressed */
+	  button.portfolio:active {
+			background-color: #fff;
+			color: Navy;
+			box-shadow: 0 2px #444444;
+			transform: translateY(3px);
+	  }
+  
+  
+  
+  /* END OF BUTTONS */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* LOGOS */
+  
+  
+  
+	  /* logos in footer */
+	  #logos{
+		  padding-top: 5px;
+		  width:6%;
+		  height:auto;
+	  }
+  
+	  /* logo for gaming recommendation site */
+	  #logos2{
+		  padding-top: 5px;
+		  width:10%;
+		  height:auto;
+	  }
+  
+	  /* footer */
+	  a.footer{
+		  padding:2%;
+	  }
+  
+  
+  
+  /* END OF LOGOS*/
+
+}
+ 
+ 
+ 
+  
+  /* MOBILE SECTION */
   @media only screen and (max-width:575px) {
-	/* For mobile phones: */
+	
 	.main {
 	  width: 100%;
 	}
+	/* MAIN SITE CONSISTENCY ELEMENTS*/
+
+
+
+	/* class for the header element */
+	header{
+	    background-image:linear-gradient(#182568,#6e80de);
+		padding: 20px 0px;
+		text-align:center;
+		font-size:3vw;
+		width:100%;
+		max-width:100%;
+		height:auto;
+	}
+
+	/* heading for the website */	
+	.websiteHeading{
+		text-shadow: 1.6px 1.6px #3c3c3c;
+		font-size:5vw;
+		color: #f0f0f0;
+	}
+
+	/* box shadow for images on the site */
+	img.boxShadow{
+		box-shadow: 0 0 2px 2px #666;
+	}
+
+	/* Headings for the section you are in (example "Unity" in Portfolio page) */
+	.nameOfPage{
+		margin:auto;
+		text-align:center;
+		text-shadow:0 2px 1px #3c3c3c;
+		color:white;
+		box-sizing:border-box;
+		width:auto;
+		height:auto;
+		border:10px solid transparent;
+		border-image: url("border.png") 30 round;
+		border-image-repeat: stretch;
+		padding: 15px;
+		font-size:4vw;
+		max-width:50%;
+	}
+
+	/* Element that holds all content between the header and footer */
+	.mainContent{
+		width:100%;
+		margin:auto;
+		height:90%;
+		background-image:linear-gradient(#6e80de, #98aeff);
+		text-align:center;
+		padding:23px 0px 23px 0px;
+		height:auto;
+	}
+	
+	
+	/* Sections of each page */
+	.section1{
+		text-align:center;
+		margin:auto;
+		width:95%;
+		height:45%;
+		line-height:2;
+		padding:0px 10px;
+		display: block;
+	}
+
+	/* footer of the webpage */
+	footer{
+		background-image:linear-gradient(#98aeff,#f0f0f0);
+		text-align:center;
+		font-size:2.3vw;
+		height:auto;
+		align-content: center;
+	}
+	
+	/* sets the scroll behavior for the site */
+	html{
+		scroll-behavior:smooth;
+	}
+
+	/* For any section that requires space */
+	.clearfix::after {
+		content: "";
+		  clear: both;
+		  display: table;
+	}
+
+
+	
+/* END OF MAIN SITE CONSISTENCY ELEMENTS*/
+
+
+
+
+
+
+
+
+
+/* FLOATING ELEMENTS */	
+
+
+	/* A class made to float NAV elements to the left */
+	.floatLeftNav{
+		float:left;
+		width:19%;
+	}
+
+	/* A class made to floating pictures to the left */
+	#floatLeftPic{
+		float:left;
+		width:40%;
+		height:auto;
+		box-shadow: 0 0 4px 4px #666;
+		max-width:40%;
+		border-radius: 15%;
+	}
+
+	/* A class made to floating pictures to the right */
+	#floatRightPic{
+		float:right;
+		width:40%;
+		height:auto;
+		box-shadow: 0 0 4px 4px #666;
+		max-width:40%;
+		border-radius: 15%;
+	}
+
+
+/* END OF FLOATING ELEMENTS */
+
+
+
+
+
+
+
+
+
+/* IMAGES */
+
+
+	/* Home page image class*/
+	#homeImage{
+		width:95%;
+		height:auto;
+		border-radius: 15%;
+	}
+
+	/* Certification image class */
+	#certImage{
+		border-radius: 15%;
+		width:80%;
+	}
+
+	/* About page image class */
+	img.aboutPics{
+		margin-top:12%;
+	  }
+
+	/* Resume  image class */
+	img.resumePic{
+		width:80%;
+		max-width:80%;
+	  }
+
+	/* Diploma  image class */
+	img.diplomaPic{
+		width:80%;
+		max-width:80%;
+	  }
+
+
+/* END OF IMAGES */
+
+
+
+
+
+
+
+
+
+/* LINKS */
+
+	/* Nav links */
+	a.sections:link, a.sections:visited {
+		background-color:Black;
+		color:White;
+		border:0px solid Black;
+		width:100%;
+		padding: 5px 15px;
+		font-size:3vw;
+		text-decoration: none;
+		text-align-last: center;
+		margin: auto;
+		height:auto;
+	}
+
+	/* Nav links */
+	a.sections:hover{
+		color:Black;
+		background-color:White;
+		text-decoration: none;
+	}
+
+	/* Nav links */
+	a.sections:active {
+		color:Black;
+		background-color:White;
+		text-decoration: none;
+	}
+	
+	/* Intrapage links */
+	a.pagesTop:link {
+		color: #8000ff;
+	}
+	
+	/* Intrapage links */
+	a.pagesTop:visited {
+		color: #8000ff;
+	}
+
+	/* Intrapage links */
+	a.pagesTop:hover {
+		color:#00a3cc;
+	}
+
+	/* Intrapage links */
+	a.pagesTop:active {
+		color:#751aff;
+	}
+
+	/* Contact table links */
+	a.contact:link {
+		height:100%;
+		width:100%;
+		display:block;
+		color:rgb(1, 1, 102);
+	}
+	
+	/* Contact table links */
+	a.contact:visited {
+		color:rgb(1, 1, 102);
+	}
+	
+	/* Contact table links */
+	a.contact:hover {
+		color:rgb(91, 0, 196);
+	}
+	
+	/* Contact table links */
+	a.contact:active {
+		color:rgb(91, 0, 196);
+	}
+
+
+/* END OF LINKS*/
+
+
+
+
+
+
+
+
+
+/* HEADINGS */
+
+
+
+	/* Sub-section headings */
+	h3.subHeading1{
+		text-align:center;
+		text-decoration:underline;
+		font-size:3.5vw;
+		text-shadow:0.8px 0.8px White;
+	}
+
+	/* A class of header for the categories of the lists */
+	h3.categories{
+		font-size:2.3vw;
+		text-decoration:underline;
+	}
+	
+	/* Heading used in About and Resume (Education section) */
+	h2.subHeading2{
+		text-align:center;
+		text-decoration:none;
+		font-size:2.5vw;
+	}
+	
+	/* Heading stating references available upon request */
+	h2.references{
+		text-align:center;
+		text-decoration:none;
+		font-size:2.1vw;
+	}
+
+	/* Used for intrapage link */
+	h3.footerLink{
+		font-size:3.2vw;
+	}
+
+	/* headings used for employers and volunteer work */
+	h2.employer{
+		font-size: 2.8vw;
+	}
+
+	/* headings used for job name and volunteer work */
+	h4.jobName{
+		font-size: 1.8vw;
+	}
+
+	/* headings used for dates of jobs and volunteer work */
+	h4.date{
+		font-size: 1.6vw;
+	}
+
+
+
+
+/* END OF HEADINGS */
+
+
+
+
+
+
+
+
+
+/* PARAGRAPHS */	
+	
+	/* the main text used in this website */
+	p.main{
+		font-size:1.8vw;
+		width:90%;
+		max-width:100%;
+		margin:auto;
+		text-align:center;
+	}
+	
+	/* text for the about page */
+	p.about{
+		font-size:1.8vw;
+		width:auto;
+		max-width:100%;
+		margin:auto;
+		text-align:center;
+	}
+
+	/* text for the education section */
+	p.education{
+		font-size:1.8vw;
+		width:auto;
+		max-width:100%;
+		margin:auto;
+		text-align:center;
+	}
+
+
+/* END OF PARAGRAPHS */
+
+
+
+
+
+
+
+
+
+/* DIVS */
+
+	/* contains the message from Megan on the about page */
+	div.aboutContainer{
+		width:50%;
+		margin-right:50%;
+	}
+
+	/* contains the text on the education section of the resume page */
+	div.educationContainer{
+		width:50%;
+		margin-left:47%;
+	}
+
+	/* for the certifications in the skills section of the resume page */
+	div.certs{
+		float:left;
+		width:50%;
+		transition: 1s;
+	}
+
+	/* for the certifications in the skills section of the resume page, activates when hovered over */
+	div.certs:hover{
+		opacity: 75%;
+	}	
+
+	/* contains the jobs on the work and volunteer sections of the resume page */
+	div.jobs{
+		margin:auto;
+		width:80%;
+		max-width:90%;
+		height:fit-content;
+	}
+
+	/* contains the jobs header (the box) on the work and volunteer sections of the resume page */
+	div.jobsHeader{
+		margin:auto;
+		width:95%;
+		max-width:100%;
+		border:10px solid transparent;
+		border-image: url("border.png") 30 round;
+		border-image-repeat: stretch;
+	}
+
+
+
+
+	/* contains the jobs description (below the box) on the work and volunteer sections of the resume page */
+	div.jobsDescription{
+		margin:auto;
+		width:95%;
+		max-width:95%;
+		height:fit-content;
+	}
+
+	/* the outer layer for each pic in photo galleries */
+	div.outerLayer{
+		padding: 0 6px;
+		width: 80%;
+		height:auto;
+		margin:auto;
+	}
+	
+	/* the outer layer for each video in video galleries */
+	div.outerLayerVideo{
+		padding: 0 6px;
+		width: 80%;
+		height:auto;
+		margin:auto;
+	}
+	
+	/* little box container for galleries */
+	div.gallery {
+		border-radius: 15px;
+		border: 2px solid #ccc;
+		box-shadow: 0 0 5px 3px #666;
+	}
+	  
+	/* for images in the gallery */
+	div.gallery img {
+		width: 100%;
+		height: auto;
+		border-radius: 15px;
+	}
+	
+	/* used for videos in gallery */
+	div.gallery iframe {
+		width:100%;
+		border-radius: 15px;
+	}
+	
+	/* for image/video descriptions in gallery */
+	div.imageDescription {
+		padding: 15px;
+		text-align: center;
+		font-size:1.8vw;
+	}
+	
+
+
+/* END OF DIVS */
+
+
+
+
+
+
+
+
+
+/* LISTS */
+
+
+
+
+	/* sets the style of the lists in the website */
+	ul{
+		list-style-type:circle;
+		font-size:1.7vw;
+		padding:2px;
+		list-style-position:inside;	
+	}
+
+	/* Changes the font size for lists*/
+	li{
+		font-size:1.8vw;
+	}
+
+	/* nav bar list */	
+	ul.navBar{
+		position: fixed;
+		top:0;
+		overflow:hidden;
+		background-color:Black;
+		width:100%;
+		list-style-type: none;
+		height:max-content;
+		list-style-position: inside;
+	}
+
+	/* A class to make each div list change color when hovered over */
+	div.lists2:hover{
+		background-color:#f0f0f0;
+	}
+
+	/* A class for lists */
+	div.lists2{
+		display:none;
+	}
+
+	/* A class to make each div list change color when hovered over */
+	div.lists3:hover{
+		background-color:#f0f0f0;
+	}
+	
+	/* A class for lists */
+	div.listsCode{
+		float:left;
+		width:50%;
+	}
+
+	/* A class to make each div list change color when hovered over */
+	div.listsCode:hover{
+		background-color:#f0f0f0;
+	}
+
+	/* A class for lists */
+	 div.lists3{
+		display:block;
+		width:50%;
+		float: left;
+	 }
+
+
+
+
+
+/* END OF LISTS */
+
+
+
+
+
+
+
+
+
+
+/* TABLE THINGS */
+
+
+
+	/* This is a class for the table in the contact page */
+	table{
+		width:95%;
+		margin:auto;
+		font-size:3vw;
+		box-shadow: 0 0 3px 5px #666;
+		background-image:linear-gradient(#0046ff,#c1d1f9);
+	}
+
+	/* this class sets the borders for the inside of the table */
+	th, td{
+		border:5px solid transparent;
+		border-image: url("border.png") 30 round;
+		border-image-repeat: stretch;
+	}
+
+
+
+
+
+/* END OF TABLES */
+
+
+
+
+
+
+
+
+
+/* BUTTONS*/
+
+
+
+	/* for the buttons of this site */
+	button.portfolio{
+		display: inline-block;
+  		padding: 7px 12px;
+  		font-size: 2.5vw;
+  		cursor: pointer;
+  		text-align: center;
+  		color: #fff;
+  		background-color: Navy;
+  		border: none;
+  		border-radius: 15px;
+  		box-shadow: 0 5px 2px #555;
+	}
+
+	/* for the buttons of this site when hovered */
+	button.portfolio:hover {
+		background-color: #fff;
+  		color: Navy;
+	}
+
+	/* for the buttons of this site when pressed */
+	button.portfolio:active {
+  		background-color: #fff;
+  		color: Navy;
+  		box-shadow: 0 2px #444444;
+  		transform: translateY(3px);
+	}
+
+
+
+/* END OF BUTTONS */
+
+
+
+
+
+
+
+
+
+/* LOGOS */
+
+
+
+	/* logos in footer */
+	#logos{
+		padding-top: 5px;
+		width:6%;
+		height:auto;
+	}
+
+	/* logo for gaming recommendation site */
+	#logos2{
+		padding-top: 5px;
+		width:10%;
+		height:auto;
+	}
+
+	/* footer */
+	a.footer{
+		padding:2%;
+	}
+
+
+
+/* END OF LOGOS*/
   }
