@@ -539,6 +539,11 @@
 		width:50%;
 	}
 
+	/* A class for lists */
+	div.lists3{
+		display:none;
+	}
+
 	/* A class to make each div list change color when hovered over */
 	div.listsCode:hover{
 		background-color:rgb(216, 227, 236);
