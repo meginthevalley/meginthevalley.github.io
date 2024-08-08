@@ -258,6 +258,25 @@
 		color:rgb(91, 0, 196);
 	}
 
+	/* Course links */
+	a.courseLink:link {
+		color:rgb(1, 1, 102);
+	}
+		
+	/* Course links */
+	a.courseLink:visited {
+		color:rgb(1, 1, 102);
+	}
+	
+	/* Course links */
+	a.courseLink:hover {
+		color:rgb(91, 0, 196);
+	}
+	
+	/* Course links */
+	a.courseLink:active {
+		color:rgb(91, 0, 196);
+	}
 
 /* END OF LINKS*/
 
