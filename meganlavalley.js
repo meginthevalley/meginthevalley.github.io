@@ -1009,19 +1009,22 @@ function Piskel(){
 			document.getElementById("piskel4pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
 			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 		else if(document.getElementById("piskel3pic").style.display === "block"){
 			document.getElementById("piskel4pic").style.display = "block";
 			document.getElementById("piskel1pic").style.display = "none";
 			document.getElementById("piskel3pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 		else if(document.getElementById("piskel5pic").style.display === "block"){
-			document.getElementById("piskel1pic").style.display = "block";
+			document.getElementById("piskel6pic").style.display = "block";
 			document.getElementById("piskel5pic").style.display = "none";
 			document.getElementById("piskel4pic").style.display = "none";
 			document.getElementById("piskel3pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel1pic").style.display = "none";
 		}
 		else if(document.getElementById("piskel2pic").style.display === "block"){
 			document.getElementById("piskel3pic").style.display = "block";
@@ -1029,6 +1032,15 @@ function Piskel(){
 			document.getElementById("piskel4pic").style.display = "none";
 			document.getElementById("piskel5pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel6pic").style.display === "block"){
+			document.getElementById("piskel1pic").style.display = "block";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 		else{
 			document.getElementById("piskel2pic").style.display = "block";
@@ -1036,6 +1048,7 @@ function Piskel(){
 			document.getElementById("piskel4pic").style.display = "none";
 			document.getElementById("piskel5pic").style.display = "none";
 			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 	}
 
@@ -1043,11 +1056,12 @@ function Piskel(){
 
 	function previousPhotoPiskel(){
 		if(document.getElementById("piskel1pic").style.display === "block"){
-			document.getElementById("piskel5pic").style.display = "block";
+			document.getElementById("piskel6pic").style.display = "block";
 			document.getElementById("piskel3pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
 			document.getElementById("piskel1pic").style.display = "none";
 			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel5pic").style.display = "none";
 		}
 		else if(document.getElementById("piskel2pic").style.display === "block"){
 			document.getElementById("piskel1pic").style.display = "block";
@@ -1055,6 +1069,7 @@ function Piskel(){
 			document.getElementById("piskel4pic").style.display = "none";
 			document.getElementById("piskel5pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 		else if(document.getElementById("piskel3pic").style.display === "block"){
 			document.getElementById("piskel2pic").style.display = "block";
@@ -1062,6 +1077,7 @@ function Piskel(){
 			document.getElementById("piskel3pic").style.display = "none";
 			document.getElementById("piskel5pic").style.display = "none";
 			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 		else if(document.getElementById("piskel5pic").style.display === "block"){
 			document.getElementById("piskel4pic").style.display = "block";
@@ -1069,6 +1085,15 @@ function Piskel(){
 			document.getElementById("piskel3pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
 			document.getElementById("piskel5pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
+		}
+		else if(document.getElementById("piskel6pic").style.display === "block"){
+			document.getElementById("piskel5pic").style.display = "block";
+			document.getElementById("piskel3pic").style.display = "none";
+			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel1pic").style.display = "none";
+			document.getElementById("piskel2pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 		else{
 			document.getElementById("piskel3pic").style.display = "block";
@@ -1076,6 +1101,7 @@ function Piskel(){
 			document.getElementById("piskel5pic").style.display = "none";
 			document.getElementById("piskel2pic").style.display = "none";
 			document.getElementById("piskel4pic").style.display = "none";
+			document.getElementById("piskel6pic").style.display = "none";
 		}
 	}
 
