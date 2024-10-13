@@ -745,6 +745,11 @@
 		display:none;
 	}
 
+	/* Piskel displays turned off */
+	#showCPPSection, #showGoSection, #showJavaSection, #showSQLSection{
+		display:none;
+	}
+
 
 
 /* END OF DISPLAY THINGS */

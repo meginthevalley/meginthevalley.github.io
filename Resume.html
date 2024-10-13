@@ -217,6 +217,7 @@
 								<ul>
 					  				<li>C#</li>
 									<li>C++</li>
+									<li>Java</li>
 									<li>SQL</li>
 					  				<li>Python</li>
 					  				<li>HTML/CSS</li>
@@ -255,16 +256,29 @@
 					<!-- The bottom portion of the Skills section that holds Megan's certifications -->
 					<h3 class="subHeading1">Certifications</h3>
 
-					 	<p class="main">Below are Megan's current certifications.</p>
+					 	<p class="main">Click on a button to see Megan's certifications in that coding language!</p>
+
+						 <div>
+							<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
+						</div>
 					 	
+						<!-- Div for the buttons to get to different certifications! -->
+						 <div>
+							<button class="portfolio" onclick="CPP()">C++</button>
+							<button class="portfolio" onclick="Java()">Java</button>
+							<button class="portfolio" onclick="SQL()">SQL</button>
+							<button class="portfolio" onclick="Golang()">Go</button>
+						</div>
+
 						<div>
 							<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
 						</div>
 
-						<!-- Div that holds all Certifications -->
+			<!-- Div for the CPP Section -->
+			<div id="showCPPSection"> 
 					<div class="clearfix">
 
-							<h3 class ="categories">C++</h3>
+							<h3 class="subHeading1">C++</h3>
 							<!-- Div for CPlusPlus Codecademy -->
 							<div class="certs">
 								<a title="Click here to go to Megan's Certification" 
@@ -348,13 +362,77 @@
 
 				</div>
 
+			</div>
 
+			<!-- Div for the Java Section -->
+			<div id="showJavaSection"> 
+				<div class="clearfix">
+
+					<h3 class="subHeading1">Java</h3>
+						<!-- Div for Getting Started Java CodeSignal -->
+						<div class="certs">
+							<a title="Click here to go to Megan's Certification" 
+							href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/31"
+							target="_blank" tabindex="0">
+							<img id="certImage" class="boxShadow" src="javaGettingStarted.jpg"></img></a>
+						</div>
+
+					<!-- Div for Data Structures Java CodeSignal -->
+					<div class="certs">
+						<a title="Click here to go to Megan's Certification" 
+							href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/32" target="_blank" 
+							tabindex="0"><img id="certImage" class="boxShadow" src="javaDataStructures.jpg"></img></a>
+					   </div>
+
+				</div>
+
+
+				<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
+
+				<div class="clearfix">
+
+					<!-- Div for Iterations and Loops Java CodeSignal -->
+					<div class="certs">
+						<a title="Click here to go to Megan's Certification" 
+						href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/33"
+						target="_blank" tabindex="0">
+						<img id="certImage" class="boxShadow" src="javaLoops.jpg"></img></a>
+					</div>
+
+				<!-- Div for Debugging Java CodeSignal-->
+				<div class="certs">
+					<a title="Click here to go to Megan's Certification" 
+						href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/34" target="_blank" 
+						tabindex="0"><img id="certImage" class="boxShadow" src="javaDebug.jpg"></img></a>
+				   </div>
+
+			</div>
+
+
+			<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
+
+			<div class="clearfix">
+
+				<!-- Div for String Manipulation Java CodeSignal-->
+				<div class="certs">
+					<a title="Click here to go to Megan's Certification" 
+					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/35"
+					target="_blank" tabindex="0">
+					<img id="certImage" class="boxShadow" src="javaStringManipulation.jpg"></img></a>
+				</div>
+
+
+			</div>
+
+			
+
+			</div>
 						
-					<p class="hiddenForSpace">Needed to space out the certifications.</p>
-
+			<!-- Div for the SQL Section -->
+			<div id="showSQLSection">
 					<div class="clearfix">						
 						
-						<h3 class ="categories">SQL</h3>
+						<h3 class="subHeading1">SQL</h3>
 
 						<!-- Div for Intro SQL -->
 						<div class="certs">
@@ -371,13 +449,14 @@
 					   	</div>
 
 					</div>
+			</div>
 
 
-					<p class="hiddenForSpace">Needed to space out the certifications.</p>
-					
+			<!-- Div for the Java Section -->
+			<div id="showGoSection">
 					<div class="clearfix">
 
-						<h3 class ="categories">Go</h3>
+						<h3 class="subHeading1">Go</h3>
 
 						<!-- Div for Go Codecademy -->
 						<div class="certs">
@@ -389,9 +468,10 @@
 
 					
 
-				</div>
+					</div>
+			</div>
 
-				</section>
+			</section>
 		</div>
 
 

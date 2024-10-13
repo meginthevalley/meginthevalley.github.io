@@ -1166,3 +1166,72 @@ function Intern(){
 	}
 
 //BUTTONS FOR COMMUNITY MANAGER PROMOTIONAL MATERIALS (FINISHED)
+
+
+
+//BUTTONS FOR DIFFERENT CERTIFICATIONS (STARTED)
+
+
+	function CPP(){
+		if (document.getElementById("showCPPSection").style.display === "block"){
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+			document.getElementById("showCPPSection").style.display = "none";
+		}
+		else{
+			document.getElementById("showCPPSection").style.display = "block";
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+		}
+	}
+
+	function Java(){
+		if (document.getElementById("showJavaSection").style.display === "block"){
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+			document.getElementById("showCPPSection").style.display = "none";
+		}
+		else{
+			document.getElementById("showJavaSection").style.display = "block";
+			document.getElementById("showCPPSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+		}
+	}
+
+	function SQL(){
+		if (document.getElementById("showSQLSection").style.display === "block"){
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+			document.getElementById("showCPPSection").style.display = "none";
+		}
+		else{
+			document.getElementById("showSQLSection").style.display = "block";
+			document.getElementById("showCPPSection").style.display = "none";
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+		}
+	}
+
+	function Golang(){
+		if (document.getElementById("showGoSection").style.display === "block"){
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+			document.getElementById("showGoSection").style.display = "none";
+			document.getElementById("showCPPSection").style.display = "none";
+		}
+		else{
+			document.getElementById("showGoSection").style.display = "block";
+			document.getElementById("showCPPSection").style.display = "none";
+			document.getElementById("showJavaSection").style.display = "none";
+			document.getElementById("showSQLSection").style.display = "none";
+		}
+	}
+
+	
+
+//BUTTONS FOR DIFFERENT CERTIFICATIONS (fINISHED)
