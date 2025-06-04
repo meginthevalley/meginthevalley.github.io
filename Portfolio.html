@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
 	<title>Megan LaValley</title>
+
+
+	<!-- Bootstrap framework -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="MDB5-STANDARD-UI-KIT-Free-9.0.0/css/mdb.min.css"/> 
+
 	<!-- Megan's style sheet -->
-	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
+	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/> 
 	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<!-- The author of this website, that's me!!!-->
@@ -13,269 +23,336 @@
 
 <body>
 
-<!-- Megan's JavaScript-->
-<script src="meganlavalley.js"></script>
+<!-- Megan's JavaScript most likely unneeded with bootstrap-->
+<!-- <script src="meganlavalley.js"></script> -->
+
+<!-- Bootstrap framework -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" 
+integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<script src="MDB5-STANDARD-UI-KIT-Free-9.0.0/js/mdb.umd.min.js"></script>
 
 	<header>
+	    <!-- Navigation links for the other pages of the website -->
+		 <!-- A navbar that is dark with white text and 80% opacity-->
+	  	<nav class="navbar fixed-top navbar-expand-lg bg-black bg-gradient border-bottom" data-mdb-theme="dark">
 
-		<!-- This states which page of the website you are on -->
-	  	<h1 class="websiteHeading"><a id="backToTop">Portfolio</a></h1>
+			<!-- A fluid container for the navbar-->
+			<div class="container-fluid">
 
-	  	<!-- Navigation links for the other pages of the website -->
-	  	<nav>
+				<!-- Possibly link this to the home page-->
+				<a class="navbar-brand fs-3" href="#">Megan LaValley</a>
 
-			<ul class="navBar">
-				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-					href="index.html" tabindex="0">Home</a></li>
-				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-					href="Portfolio.html" tabindex="0">Portfolio</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-					href="About.html" tabindex="0">About</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
-					href="Resume.html" tabindex="0">Resume</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-					href="Contact.html" tabindex="0">Contact</a></a></li>
-			</ul>
-			
-	 	</nav>
+				<!-- A button for when the navbar is collapsed -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
 
-	    <!-- Holds all buttons to get to different parts of the page-->
-		<div>
-			<button class="portfolio" onclick="unityFunction()">Unity</button>
-			<button class="portfolio" onclick="unrealFunction()">Unreal Engine</button>
-			<button class="portfolio" onclick="websitesFunction()">Websites</button>
-			<button class="portfolio" onclick="artFunction()">Art</button>
-			<!-- To be added later
-			 <button class="portfolio" onclick="miscFunction()">Miscellaneous</button> 
-			 -->
-		</div>
-		
+			<!-- The collapsable portion of the nav bar -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav fs-5">
+				<!--Home in navbar-->
+					<li class="nav-item">
+						<a class="nav-link" title="Click here to go to the home page!" 
+						href="index.html" tabindex="0">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link active" aria-current="page" title="You're already on this page!"
+						href="#" tabindex="0">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link"  title="Click here to see info about Megan!" 
+						href="About.html" tabindex="0">About</a></li>
+					<li class="nav-item"><a class="nav-link" title="Click here to see the Megan's Resume!" 
+						href="Resume.html" tabindex="0">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" title= "Click here to see Megan's Contact Page!" 
+						href="Contact.html" tabindex="0">Contact</a></li>
+				</ul>
+			</div>
+	   		</div>
+		</nav>
+
 	</header>
 
 	<!-- Everything between the header and footer of the webpage -->
-	<main class="mainContent">
-	
+	<div class="pb-3 container-fluid text-center bg-image" style="background-image: url('Site Background from Canva.png'); backdrop-filter: blur(10px);">
+			<div class="row">
 
-	 	<p class="hiddenForSpace">I think <br> coding is fun.</p>
+			<div class="pt-5 mt-5 bg-black bg-opacity-50 text-center col-12">
+			<!-- This states which page of the website you are on -->
+	  		<h1 class=" pt-1 pb-3 rounded text-white fs-1 bg-opacity-75">
+				<strong>Portfolio</strong></h1>
+			</div>
+			</div>
 
-		<!-- The Unity portion of Megans' portfolio -->
-		<div id="Unity">
+			
+	    <!-- The Unreal Engine portion of Megans' portfolio -->
+	   <div class="pt-4 row">
 
-	 		<h2 class="nameOfPage">Unity</h2>
+		<div class="col-3 col-xl-4"></div>
+		<!-- Title of the section -->
+		<div class="col-6 col-xl-4 pb-3 text-center">
+				<h2 class="bg-dark pt-1 pb-1 border border-2 rounded text-light fs-1" style="--bs-bg-opacity: .9"><strong>
+					Unreal Engine</strong></h2>
+			</div>
 
-	 		<p class="hiddenForSpace">I think <br> coding is fun.</p>
+		 <!-- The section dedicated to Megan's game Hide & Go Squeak! -->
+		<div class="col-12 text-center accordion" data-mdb-theme="dark" id="unrealAccordion">
+			<div class="accordion-item" >
+			<!-- Title of the game -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-4 text-center" style="background-color: rgb(78, 78, 78);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMouse" aria-expanded="false" aria-controls="collapseMouse">
+       				 <strong>Hide & Go Squeak!</strong></button></h3>
 
-			<!-- Buttons to lead to each section of the Unity portion of Megans' portfolio -->
-	 		<button class="portfolio" onclick="Catastrophe()">Cat-astrophe!</button>
-	 		<button class="portfolio" onclick="WineTime()">Wine-Time</button>
-	 		<button class="portfolio" onclick="Wolfjam()">Wolfjam Hackathon</button>
-	 		<button class="portfolio" onclick="GamePeer()">Peer Education</button>
+				<div id="collapseMouse" class="accordion-collapse collapse" data-bs-parent="#unrealAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+			<div class="col-12 p-5 text-center">
+			<!-- Description of the game -->
+			<p><i>Hide & Go Squeak!</i> was made in April of 2024 and it is a VR Game made in Unreal Engine 5. <i>Hide & Go Squeak!</i> was a team 
+				project that was made for my AR/VR class. I did a lot of work in Blueprints for this project since I had not learned any C++ at this point. This was my first game made in the Unreal Engine. Doing 
+				VR for my first Unreal project was certainly a challenge but it was relatively easy to work with Blueprints. <br><br> I was able to add adjustable music and SFX sounds. 
+				I also added menu controls that allowed the player to switch between teleportation and continuous movement based on their preferences. I had programmed and set up the beginning and end 
+				screens for the game as well. As a last thing to add, I had coded a clock table that moved along as if hands on the clock were spinning. In the future I'd would 
+				love to code this to set a timer for the player to find the mice by and add a losing condition to the game as well. The repository for this game can be found on my <a href="https://github.com/meginthevalley/Hide-and-Go-Squeak">
+				Github</a>.
+			</p>
+			</div>
+			</div>
+			  
+			<div class="row">
+			<!-- The photo gallery for Hide & Go Squeak! -->
+			<div class="col-12 col-lg-6 px-4">
 
-	 		<!-- The section dedicated the Megans' game Cat-astrophe! -->
-	   		<section id="showCatSection" class="section1">
-	   
-				<!-- Name of the game -->
-	     		<h3 class="subHeading1">Cat-astrophe!</h3>
+			<div id="mousePhotoCarousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" data-mdb-carousel-init>
+					<div class="carousel-inner rounded border border-2">
+	   					<div class="carousel-item active">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Squeak Loop.png" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
 
-				<!-- Description of Megan's work on the game -->
-		 		<p class="main"><i>Cat-astrophe!</i> was made in April of 2023 and it is 
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Mouse1.jpg" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Mouse2.jpg" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Mouse3.jpg" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Mouse4.jpg" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Mouse5.jpg" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Hide-and-go-squeak/Mouse6.jpg" alt= "A photo of Megan's game 'Hide and Go Squeak!'">
+						</div>
+					</div>
+
+						<button class="carousel-control-prev bg-dark" style="opacity: 0.2" type="button" data-bs-target="#mousePhotoCarousel" data-bs-slide="prev">
+    						<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next bg-dark" style="opacity: 0.2" type="button" data-bs-target="#mousePhotoCarousel" data-bs-slide="next">
+    						<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
+					</div>
+			</div>
+			
+
+				 
+			
+			
+			<!-- The video gallery for Hide & Go Squeak! -->
+			<div class="col-12 col-lg-6 px-4">
+				
+				<div id="mouseVideoCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner rounded border border-2">
+	   					<div class="carousel-item active">
+							<!-- Video pulled from Megan's YouTube -->
+							<iframe  class="d-block w-100 active" style="height: 50vh;" src="https://www.youtube.com/embed/1SAlTLFbMXE" title="Hide &amp; Go Squeak! : Intro Video" frameborder="0" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+						</div>
+
+						<div class="carousel-item">
+							<!-- Video pulled from Megan's YouTube -->
+							<iframe class="d-block w-100" style="height: 50vh;" src="https://www.youtube.com/embed/X-l9qlAty24?si=Pf2TAHzOJXNSzk9j" title="YouTube video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+						</div>
+
+						<button class="carousel-control-prev bg-dark" style="opacity: 0.2" type="button" data-bs-target="#mouseVideoCarousel" data-bs-slide="prev">
+    						<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next bg-dark" style="opacity: 0.2" type="button" data-bs-target="#mouseVideoCarousel" data-bs-slide="next">
+    						<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+			</div>
+
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>	
+		  </div>
+	   </div>
+
+
+	    <!-- The Unity portion of Megans' portfolio -->
+	   <div class="pt-5 row">
+
+		<div class="col-3 col-xl-4"></div>
+		<!-- Title of the section -->
+		<div class="col-6 col-xl-4 pb-3 text-center">
+				<h2 class="bg-dark pt-1 pb-1 border border-2 rounded text-light fs-1" style="--bs-bg-opacity: .9"><strong>
+					Unity</strong></h2>
+			</div>
+
+		 
+		<div class="col-12 text-center accordion" data-mdb-theme="dark" id="unityAccordion">
+			<!-- The section dedicated to Megan's game Cat-astrophe! -->
+			<div class="accordion-item" >
+			<!-- Title of the game -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-4 text-center" style="background-color: rgb(48, 47, 47);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCat" aria-expanded="false" aria-controls="collapseCat">
+       				 <strong>Cat-astrophe!</strong></button></h3>
+
+				<div id="collapseCat" class="accordion-collapse collapse" data-bs-parent="#unityAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+			<div class="col-12 p-5 text-center">
+			<!-- Description of Megan's work on the game -->
+		 		<p><i>Cat-astrophe!</i> was made in April of 2023 and it is 
 					a VR Game made in Unity (2021.3.17f1). <i>Cat-astrophe!</i> was an independent 
-					project that was made for Megan's first class working in Unity.
-					For this game, Megan used an older version of unity so she needed 
-					to manually create the locomotion system for player movement.
-					Megan had created many assets using unity primitives including
+					project that was made for my first class working in Unity.
+					For this game, I used an older version of Unity. This led to me manually create the locomotion system for player movement
+					since it is not provided in this version of Unity.
+					I had created many assets using unity primitives including
 					the furniture, the litter box (and everything in it), and the remote. 
+					Though I created some assets, I am more of a coder than an artist.
 					All other small assets came from TurboSquid.
 				</p>
+			</div>
+			</div>
+			  
+			<div class="row">
+			<!-- The photo gallery for Cat-astrophe! -->
+			<div class="col-12 col-lg-6 px-4">
 
-				<!-- Buttons to open/close the photo and video galleries -->
-		 		<button class="portfolio" onclick="photoCat()">Photo Gallery</button>
-		 		<button class="portfolio" onclick="videoCat()">Video Gallery</button>
-		 
-		 		<p class="hiddenForSpace">I think coding is fun.</p>
-
-				<!-- The photo gallery for Cat-astrophe! -->
-		 		<div id="photoCatGallery">
-
-					<!-- The first/starting picture for Cat-astrophe! -->
-					<div id="cat1pic" class="outerLayer">
-
-		 				<div  class="gallery">
-
-							<!-- Cat-astrophe! gameplay loop -->
-			  				<img src="Cat Loop.png" alt="A pic from Cat-astrophe!">
-							
-							<!-- Description of the image -->
-							<div class="imageDescription">
-								This was the gameplay loop for <i>Cat-astrophe!</i> All the player needed to do was knock enough objects on the ground to win. In future versions, Megan plans on making unlockable areas and NPCs 
-								that may hinder the players' progress by picking up after them.
-							</div>
-
-		  				</div>
-
-					</div>
-
-					<!-- The second picture for Cat-astrophe! -->
-					<div id="cat2pic" class="outerLayer">
-
-		  				<div class="gallery">
-
-							<!-- Cat-astrophe! picture -->
-			  				<img src="Cat2.PNG" alt="A pic from Cat-astrophe!">
-
-							<!-- Description of the image -->
-							<div class="imageDescription">The living room. Here, the player could teleport onto surfaces to knock down objects.
-								Most of the objects are from TurboSquid besides for the remote and furniture which were made by Megan.
-							</div>
-
-	  					</div>
-
-					</div>
-
-					<!-- The third picture for Cat-astrophe! -->
-					<div id="cat3pic" class="outerLayer">
-
-	  					<div  class="gallery">
-
-							<!-- Cat-astrophe! picture -->
-		  					<img src="Cat3.png" alt="A pic from Cat-astrophe!">
-
-							<!-- Description of the image -->
-							<div class="imageDescription">This image is part of the kitchen scene. The player is playing with a <span title="yum!" style = "color:yellow;">banana</span>.
-								The banana in this scene is from TurboSquid. All other objects in this scene are made by Megan.
-							</div>
-
-  						</div>
-
-					</div>
-
-					<!-- The fourth picture for Cat-astrophe! -->
-					<div id="cat4pic" class="outerLayer">
-
-  						<div  class="gallery">
-
-							<!-- Cat-astrophe! picture -->
-	  						<img src="Cat4.png" alt="A pic from Cat-astrophe!">
-
-							<!-- Description of the image -->
-							<div class="imageDescription">Here, the player can be seen playing in the <span title="EW!" style ="color:Brown;">litter box</span>. 
-								They could really rack up points here. All objects in this scene were made by Megan. 
-								Players' reported having the most fun in this <span title="odd?">area</span>.
-							</div>
-
+			<div id="catPhotoCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner rounded border border-2">
+	   					<div class="carousel-item active">
+							<img class="d-block w-100" src="Cat-astrophe/Cat Loop.png" alt= "A photo of Megan's game 'Cat-astrophe!'">
 						</div>
 
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Cat-astrophe/Cat2.PNG" alt= "A photo of Megan's game 'Cat-astrophe!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Cat-astrophe/Cat3.png" alt= "A photo of Megan's game 'Cat-astrophe!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Cat-astrophe/Cat4.png" alt= "A photo of Megan's game 'Cat-astrophe!'">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Cat-astrophe/Cat1.PNG" alt= "A photo of Megan's game 'Cat-astrophe!'">
+						</div>
+
+						<button class="carousel-control-prev bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#catPhotoCarousel" data-bs-slide="prev">
+    						<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#catPhotoCarousel" data-bs-slide="next">
+    						<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
 					</div>
+			</div>
+			</div>
 
-					<!-- The fifth picture for Cat-astrophe! -->
-					<div id="cat5pic" class="outerLayer">
+				 
+			
+			
+			<!-- The video gallery for Cat-astrophe! -->
+			<div class="col-12 col-lg-6 px-4">
+				
+				<div id="catVideoCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner rounded border border-2">
+	   					<div class="carousel-item active">
+							<!-- Video pulled from Megan's YouTube -->
+							<iframe  class="d-block w-100 active" style="height: 50vh;" src="https://www.youtube.com/embed/tYrUU5kHt34?si=1Gd0aIXsPoHjiAQo" title="YouTube video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+						</div>
 
-						<div  class="gallery">
+						<div class="carousel-item">
+							<!-- Video pulled from Megan's YouTube -->
+							<iframe class="d-block w-100" style="height: 50vh;" src="https://www.youtube.com/embed/z9r9JzDQPyc?si=MS6zeWVdJ9hpkNkM" title="YouTube video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+						</div>
 
-							<!-- Cat-astrophe! picture -->
-						 	<img src="Cat1.PNG" alt="A pic from Cat-astrophe!">
+						<div class="carousel-item">
+							<!-- Video pulled from Megan's YouTube -->
+							<iframe class="d-block w-100" style="height: 50vh;" src="https://www.youtube.com/embed/M9qIef6zNPk?si=AlLfe5dmecwb99Ti" title="YouTube video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+							</iframe>
+						</div>
 
-							<!-- Description of the image -->
-				   			<div class="imageDescription">The dining room. Here, the player could teleport onto chairs to knock things off the table. 
-					   			Furniture assets are made by Megan and all other assets are from turbo squid.
-				   			</div>
-
-				 		</div>
-
-			   		</div>
-
-					<!-- Buttons to switch to the next photo in the gallery -->
-		 			<button class="portfolio" onclick="previousPhotoCat()">Previous</button>
-			 		<button class="portfolio" onclick="nextPhotoCat()">Next</button>
-
+						<button class="carousel-control-prev bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#catVideoCarousel" data-bs-slide="prev">
+    						<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#catVideoCarousel" data-bs-slide="next">
+    						<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
+					</div>
 				</div>
+			</div>
+			</div>
+			
+			</div>
 
-				<div class="clearfix"></div>
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>
+			
+			<!-- The section dedicated to Megan's game Wine-Time -->
+			<div class="accordion-item" >
+			<!-- Title of the game -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-4 text-center" style="background-color: rgb(78, 78, 78);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWine" aria-expanded="false" aria-controls="collapseWine">
+       				 <strong>Wine-Time</strong></button></h3>
 
-
-				<!-- The video gallery for Cat-astrophe! -->
-				<div id="videoCatGallery">
-
-					<!-- The first Cat-astrophe! video -->
-					<div id="cat1vid" class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- Video pulled from Megan's YouTube -->
-							<iframe height="315" src="https://www.youtube.com/embed/tYrUU5kHt34?si=1Gd0aIXsPoHjiAQo" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of the video -->
-							<div class="imageDescription">
-								This is a short video where the player is playing in the litter box. After the player is done having fun in the litter box, they teleport
-								onto the coffee table and hold the can before throwing it onto the ground. At the end you can briefly see the clutter count.
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- The second Cat-astrophe! video -->
-					<div id="cat2vid" class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- Video pulled from Megan's YouTube -->
-							<iframe height="315" src="https://www.youtube.com/embed/z9r9JzDQPyc?si=MS6zeWVdJ9hpkNkM" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of the video -->
-							<div class="imageDescription">
-								In this video the player teleports onto a chair to then get onto the dining table. Once they are on the dining table, 
-								they then turn to juggle/play with a can.
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- The third Cat-astrophe! video -->
-					<div id="cat3vid" class="outerLayerVideo">
-
-						<div  class="gallery">
-
-							<!-- Video pulled from Megan's YouTube -->
-							<iframe height="315" src="https://www.youtube.com/embed/M9qIef6zNPk?si=AlLfe5dmecwb99Ti" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of the video -->
-							<div class="imageDescription">
-								The player has some more fun on the dining table in this video. Now they can be seen playing with the fruit on the table before knocking them to the ground.
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- Buttons to switch between videos in the gallery -->
-					<button class="portfolio" onclick="previousVideoCat()">Previous</button>
-			 		<button class="portfolio" onclick="nextVideoCat()">Next</button>
-				</div>
-
-				<div class="clearfix"></div>
-
-	   		</section>
-
-
-	   		<!-- The section dedicated to Megans' game Wine-Time -->
-	   		<section id="showWineSection" class="section1">
-		
-				<!-- Name of the game -->
-		  		<h3 class="subHeading1">Wine Time</h3>
-
+				<div id="collapseWine" class="accordion-collapse collapse" data-bs-parent="#unityAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+			<div class="col-12 p-5 text-center">
 				<!-- Description of the game -->
-		  		<p class="main"><i>Wine-Time</i> was made in October and November of 2023 and it is 
+		  		<p><i>Wine-Time</i> was made in October and November of 2023 and it is 
 					a VR Game made in Unity (2021.3.17f1). <i>Wine-Time</i> was an independent 
 					project that was made for Megan's Serious Games class. <i>Wine-Time</i> is a winery 
 					simulator where the player would serve the customers and try to pour the right amount to
@@ -283,1017 +360,225 @@
 					For this game, Megan used an older version of Unity so she used the locomotion system she had created previously in <i>Cat-astrophe!</i> for player movement.
 					Megan had created all of the assets for <i>Wine-Time</i> except for the glasses (from TurboSquid) and the music (from the Unity assets Store).
 				</p>
-
-				<!-- Buttons to open/close the photo and video galleries -->
-		  		<button class="portfolio" onclick="photoWine()">Photo Gallery</button>
-		  		<button class="portfolio" onclick="videoWine()">Video Gallery</button>
-		  
-		  		<p class="hiddenForSpace">I think coding is fun.</p>
-
-
-				<!-- The photo gallery for Wine-Time -->
-			  	<div id="photoWineGallery">
-
-					<!-- Statement about pictures -->
-					<p class="main">All pictures seen here are from mid-process. The final product only had slight changes like the 
-						environment having a roof, minor adjustments to customer text and scoring system.
-					</p>
-
-					<p class="hiddenForSpace">I think coding is fun.</p>
-
-					<!-- The first/starting photo of the Wine-Time gallery -->
-				 	<div id="wine1pic" class="outerLayer">
-
-				  		<div  class="gallery">
-
-							<!-- Wine-Time gameplay loop -->
-						   	<img src="Wine Loop.png" alt="A pic from Wine-Time.">
-
-							<!-- Description of the image -->
-					 		<div class="imageDescription">
-								This was the gameplay loop for <i>Wine-Time</i>. The player would server each customer until none were remaining. 
-								Depending on the players final review they would either win or lose the game.
-					 		</div>
-
-				   		</div>
-
-				 	</div>
-
-					<!-- The second photo of the Wine-Time gallery -->
-				 	<div id="wine2pic" class="outerLayer">
-
-				   		<div class="gallery">
-
-							<!-- Image from Wine-Time -->
-						   	<img src="wine2.jpg" alt="A pic from Wine-Time.">
-
-							<!-- Description of the image -->
-					 		<div class="imageDescription">This is a capture of the environment. The objects in the room were mainly made to
-								be entertaining for the player. Megan wanted players' to be able to grab objects and have fun in the room 
-								for if they wanted a break from serving wine.
-					 		</div>
-
-				   		</div>
-
-				 	</div>
-
-					<!-- The third photo of the Wine-Time gallery -->
-				 	<div id="wine3pic" class="outerLayer">
-
-				   		<div  class="gallery">
-
-							<!-- Image from Wine-Time -->
-						   	<img src="wine3.jpg" alt="A pic from Wine-Time.">
-
-							<!-- Description of the image -->
-					 		<div class="imageDescription"> Displayed here is another view of the environment where you can see shelves that held wine bottles.
-								This was made purely for the players' enjoyment. Many players loved just going to the back and playing with the wine on these shelves.
-					 		</div>
-
-				   		</div>
-
-				 	</div>
-				 
-					<!-- The fourth photo of the Wine-Time gallery -->
-					<div id="wine4pic" class="outerLayer">
-
-				   		<div  class="gallery">
-
-							<!-- Image from Wine-Time -->
-						   	<img src="wine4.jpg" alt="A pic from Wine-Time.">
-
-							<!-- Description of the image -->
-					 		<div class="imageDescription">This is the wine cooler. Here players would grab a bottle to pour wine into the players' glass.
-								Megan coded the wine to go back into the bottle whenever it hit a surface or glass. This way the player would not need to 
-								worry about running out of wine.
-					 		</div>
-
-				 		</div>
-
-			 		</div>
-			 
-					<!-- The fifth photo of the Wine-Time gallery -->
-					<div id="wine5pic" class="outerLayer">
-
-						<div  class="gallery">
-
-							<!-- Image from Wine-Time -->
-						 	<img src="wine1.jpg" alt="A pic from Wine-Time.">
-
-							<!-- Description of the image -->
-				   			<div class="imageDescription"> The first customer and their order. Megan decided to create a cat customer to
-					  			slightly reference her time on <i>Cat-astrophe!</i>. Megan made everything in this scene except the glasses.
-					  			Even the pictures on the wall are from photo's she had taken.
-				   			</div>
-
-				 		</div>
-
-			   		</div>
-					
-					<!-- Buttons to switch between images -->
-					<button class="portfolio" onclick="previousPhotoWine()">Previous</button>
-					<button class="portfolio" onclick="nextPhotoWine()">Next</button>
-
-				</div>
-
-			 	<div class="clearfix"></div>
-
-
-				<!-- Wine-Time Video gallery-->
-			 	<div id="videoWineGallery">
-
-					<!-- The first (and currently only) video for Wine-Time -->
-					<div class="outerLayerVideo">
-
-						<div id="wine1vid" class="gallery">
-
-							<!-- Video pulled from Megan's YouTube -->
-							<iframe height="315" src="https://www.youtube.com/embed/AFJBx7GIqoA?si=8jB4PhvccS-Og1_D" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of the video -->
-							<div class="imageDescription">
-								This is a previous iteration of the game. The player reads the customers' order, grabs the correct wine, then starts to pour that wine into the glass.
-								The dialogue is changed according to how much wine the player pours in the glass (in the full game this also changes the review). Then, the player proceeds to play with the objects in the room.
-								When the players' hand hovers over the glass it turns orange. This signifyies that the glass may be grabbed. On the other hand, the bottles turn a slightly different shade of the colors they are.
-							</div>
-
-						</div>
-
-					</div>
-				
-				</div>
-
-			 	<div class="clearfix"></div>
-
-			</section>
-
-
-		 	<!-- The section dedicated to Megans' Wolfjam Hackathon Minigame -->
-			<section id="showWolfSection" class="section1">
-
-				<!-- Event the project was made for -->
-			  	<h3 class="subHeading1">Wolfjam Hackathon</h3>
-
-				<!-- Description of the Minigame -->
-			  	<p class="main">
-					This minigame was made for the Wolfjam Hackathon that Megan participated in. The hackathon took place for one day in November of 2023. For this event,
-					Megan worked in a team of 6. Megan was tasked with creating one of the minigames, specifically, the spot the difference minigame. The minigame was made in 3D Unity so that it 
-					could easily work with the main game and the other minigame. Due to time constraints, this minigame was done in about an hour or two. <br><br> Below is a video of the 
-					minigame a little before the game was finished. The player is meant to find all the differences and then enter the answer to procede to the next part of the story. 
-					All code for this was implemented though it was not demonstrated in this video.
-			  	</p>
-			
-			  	<p class="hiddenForSpace">I think coding is fun.</p>
-
-				<div class="clearfix"></div>
-
-				<!-- The video of the Minigame for Wolfjam Hackathon -->
-				<div class="outerLayerVideo">
-
-					<div class="gallery">
-
-						<!-- Video pulled from Megan's Youtube -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/6c5XJwH2Vm8?si=xra_NN2YtB0G5_H3" title="YouTube video player" 
-							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-						</iframe>
-
-						<!-- Description of the video -->
-						<div class="imageDescription">
-							A video demonstrating the simple spot the difference puzzle made for the Wolfjam Hackathon. The art was done by one of the members of Megans' development
-							team for the event. The spot the difference was meant to show the change in environment due to climate change. 
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="clearfix"></div>
-
-			</section>
-
-
-			<!-- The section dedicated to Megans' time as a Peer Educator at UAlbany  -->
-			<section id="showPeerSection" class="section1">
-
-				<!-- Relevant job -->
-				<h3 class="subHeading1">Peer Education</h3>
-				  
-				<!-- Description of peer education -->
-				<p class="main"> In Megan's last semester at UAlbany (Spring 2024), she worked as a peer educator for the Game Design & Development 2 class.
-					This class consisted of helping students with their Unity projects and repositories. More about this position can be found in the Resume section of this website.
-					Below are some videos Megan had thrown together to help students with frequently asked questions and to go over what the students had learned in class so they would not feel 
-					lost if they fell behind. These videos are quite lengthy but each one links to Megan's YouTube where she has posted about her projects.
-				</p>
-				  
-				<p class="hiddenForSpace">I think <br> coding is fun.</p>
-
-				<div class="clearfix"></div>
-
-				<!-- Video gallery for peer education -->
-				<div>
-
-					<!-- The first/starting peer education video -->
-					<div id="peer1vid" class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- Video pulled from Megan's YouTube-->
-							<iframe height="315" src="https://www.youtube.com/embed/ldsuhyLzLBk?si=H4p291-9ZsZwJ2Vj" 
-								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of video-->
-							<div class="imageDescription">
-								This demo was used to help students with their first project which was an introduction to Unity for many of the students.
-								Megan tried to go over basics that were covered in class with a few extra add ons and explanations as to what each line of code means.
-							</div>
-
-					  	</div>
-
-					</div>
-					
-					<!-- The second peer education video -->
-					<div id="peer2vid" class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- Video pulled from Megan's YouTube-->
-							<iframe height="315" src="https://www.youtube.com/embed/AhN1-s7nEl0?si=d35LMDUBHIieYacL" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of video-->
-							<div class="imageDescription">
-								This video goes over simple animation in Unity (no Blender required). This was the content of the class from the week this was published. 
-								Many students had questions on this topic so Megan had decided to make a video to help since not everyone was able to go to office hours. 
-								This video mainly goes over the animator since many students were able to view copies of the code with comments so there were less questions on that topic.
-							</div>
-
-					  	</div>
-
-					</div>
-					  
-					<!-- The third peer education video -->
-					<div id="peer3vid" class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- Video pulled from Megan's YouTube-->
-							<iframe height="315" src="https://www.youtube.com/embed/LEmyeNQ62XQ?si=Wkx3myniFqtfIrx3" title="YouTube video player" frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of video-->
-							<div class="imageDescription">
-								This is the First-Person Shooter demo that was used to help students with the corresponding assignment. This is only a simple demo to help with some mechanics
-								that students had questions on. It was up to students to find ways to enhance their game and make it fun for their projects.
-							</div>
-
-					  	</div>
-
-					</div>
-					  
-					<!-- The fourth peer education video -->
-					<div id="peer4vid" class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- Video pulled from Megan's YouTube-->
-							<iframe height="315" src="https://www.youtube.com/embed/F8xCDiXXtxg?si=NNw7Nsy3ZwdRlz9d" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Description of video-->
-							<div class="imageDescription">
-								This last video was a menu demo Megan developed to instruct students in the class. She later posted the video to YouTube 
-								for students who were receiving help with their projects during this time. The menu demo was meant to be simple and easy to follow. Megan pre-wrote the code 
-								prior to recording so she could instruct students' better during the presentation.  The menu goes over controller support, volume settings, and switching between menus.
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- Buttons to switch between videos in the gallery -->
-					<button class="portfolio" onclick="previousVideoPeer()">Previous</button>
-				   	<button class="portfolio" onclick="nextVideoPeer()">Next</button>
-
-				</div>
-
-				<div class="clearfix"></div>
-
-			</section>
-
-	   	</div>
-
-
-	    <!-- The Unreal Engine portion of Megans' portfolio -->
-	   <div id="Unreal">
-
-		<h2 class="nameOfPage">Unreal Engine</h2>
-
-		 <!-- The section dedicated to Megan's game Hide & Go Squeak! -->
-		<section class="section1">
-
-			<!-- Title of the game -->
-			<h3 class="subHeading1">Hide & Go Squeak!</h3>
-
-			<!-- Description of the game -->
-			<p class="main"><i>Hide & Go Squeak!</i> was made in April of 2024 and it is a VR Game made in Unreal Engine 5. <i>Hide & Go Squeak!</i> was a team 
-				project that was made for Megan's AR/VR class. Megan did a lot of work in Blueprints for this project and it was her first game made in Unreal. Doing 
-				VR for her first Unreal project was certainly a challenge but it was relatively easy for Megan to work with Blueprints. <br><br> Megan was able to add adjustable music and SFX sounds. 
-				She also allowed the player to switch between teleportation and continuous movement based on their preferences. Megan had programmed and set up the beginning and end 
-				screens for the game as well. As a last thing to add, Megan had coded a clock table that moved along as if hands on the clock were spinning. In the future she would 
-				love to code this to set a timer for the player to find the mice by and add a losing condition to the game as well.
-			</p>
-
-			<!-- Buttons to open/close the video and photo galleries-->
-			<button class="portfolio" onclick="photoSqueak()">Photo Gallery</button>
-			<button class="portfolio" onclick="videoSqueak()">Video Gallery</button>
+			</div>
+			</div>
 			  
-			<p class="hiddenForSpace">I think <br> coding is fun.</p>
+			<div class="row">
+			<!-- The photo gallery for Wine-Time -->
+			<div class="col-12 col-lg-6 px-4">
 
-			<!-- The photo gallery for Hide & Go Squeak! -->
-			<div id="photoSqueakGallery">
-
-				<!-- The first/starting photo for Hide & Go Squeak! -->
-				<div id="squeak1pic" class="outerLayer">
-					  
-					<div  class="gallery">
-							   
-						<!-- Hide & Go Squeak gameplay loop -->
-						<img src="Squeak Loop.png" alt="A pic from Hide & Go Squeak!">
-						 
-						<!-- Description of image -->
-						<div class="imageDescription"> 
-							This is the gameplay loop for <i>Hide & Go Squeak!</i> The win screen will only trigger once the player has put every mouse in the bin.
+			<div id="winePhotoCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner rounded border border-2">
+	   					<div class="carousel-item active">
+							<img class="d-block w-100" src="Wine-Time/Wine Loop.png" alt= "A photo of Megan's game 'Wine-Time'">
 						</div>
 
-					</div>
-				</div>
-
-				<!-- The second photo for Hide & Go Squeak! -->	 
-				<div id="squeak2pic" class="outerLayer">
-					   
-					<div class="gallery">
-							   
-						<!-- Image from Hide & Go Squeak! -->
-						<img src="Mouse1.jpg" alt="A pic from Hide & Go Squeak!">
-						 
-						<!-- Description of image -->
-						<div class="imageDescription">
-							This picture shows the beginning screen for the game. The player could look at any wall to see the instructions. This is easier to see with the oculus recording 
-							in the video gallery.
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Wine-Time/wine1.jpg" alt= "A photo of Megan's game 'Wine-Time'">
 						</div>
 
-					</div>
-					 
-				</div>
-					 
-				<!-- The third photo for Hide & Go Squeak! -->	
-				<div id="squeak3pic" class="outerLayer">
-					   
-					<div  class="gallery">
-							   
-						<!-- Image from Hide & Go Squeak! -->
-						<img src="Mouse2.jpg" alt="A pic from Hide & Go Squeak!">
-						 
-						<!-- Description of image -->
-						<div class="imageDescription"> 
-							This shows one of the mice in it's hiding spot. The player could use an extendo grab to grab the mouse so they would not need to bend down. This was done by Megans' 
-							co-developer, Hayden Ball. Hayden had also made the model for the mouse though most other assets are from free Unreal asset packs to focus more on gameplay since it was their first 
-							project in Unreal. <br><br>
-							Note: When you pick the mouse up it squeaks! The coding for this was done by Megan.
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Wine-Time/wine2.jpg" alt= "A photo of Megan's game 'Wine-Time'">
 						</div>
-					   
-					</div>
-					 
-				</div>
-					 
-				<!-- The fourth photo for Hide & Go Squeak! -->	
-				<div id="squeak4pic" class="outerLayer">
-					   
-					<div  class="gallery">
-							
-						<!-- Image from Hide & Go Squeak! -->
-						<img src="Mouse3.jpg" alt="A pic from Hide & Go Squeak!">
-						 	
-						<!-- Description of image -->
-						<div class="imageDescription">
-							This picture shows the trash can and trash that was taken out of the can. Megan had made the model for the Trash in blender. She also added code so the player would hear the trash 
-							crinkle when picked up.
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Wine-Time/wine3.jpg" alt= "A photo of Megan's game 'Wine-Time'">
 						</div>
-					 	
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Wine-Time/wine4.jpg" alt= "A photo of Megan's game 'Wine-Time'">
+						</div>
+
+						<button class="carousel-control-prev bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#winePhotoCarousel" data-bs-slide="prev">
+    						<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#winePhotoCarousel" data-bs-slide="next">
+    						<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
 					</div>
-				 	
-				</div>
-				 
-				<!-- The fifth photo for Hide & Go Squeak! -->	
-				<div id="squeak5pic" class="outerLayer">
-					
-					<div  class="gallery">
-						
-						<!-- Image from Hide & Go Squeak! -->
-						<img src="Mouse4.jpg" alt="A pic from Hide & Go Squeak!">
-					  	
-						<!-- Description of image -->
-						<div class="imageDescription">
-							In this picture the settings part of the menu is displayed. Megan did all of the coding for this portion and the check mark signified which movement mode you were currently using. 
-							The Master and SFX volume were adjustable as well. This allowed the player to adjust the volume to their preferred level.
-					  	</div>
-				  	
-					</div>
-			  	
-				</div>
-			  	
-				<!-- The sixth photo for Hide & Go Squeak! -->
-				<div id="squeak6pic" class="outerLayer">
-					
-					<div  class="gallery">
-						
-						<!-- Image from Hide & Go Squeak! -->
-						<img src="Mouse5.jpg" alt="A pic from Hide & Go Squeak!">
-				  		
-						<!-- Description of image -->
-						<div class="imageDescription">
-							This is a part of the room for <i>Hide & Go Squeak!</i>. The pictures on the wall are meant to be of the mice in the game. When the player reached the end screen,
-							the mouse would be next to their picture. Both Megan and her co-developer set up this room and tried to make it a fun space for the players.
-				  		</div>
-			  		
-					</div>
-		  		
-				</div>
-		  		
-				<!-- The seventh photo for Hide & Go Squeak! -->
-				<div id="squeak7pic" class="outerLayer">
-				
-					<div  class="gallery">
-					
-						<!-- Image from Hide & Go Squeak! -->
-						<img src="Mouse6.jpg" alt="A pic from Hide & Go Squeak!">
-			  			
-						<!-- Description of image -->
-						<div class="imageDescription">
-							This is a portion of the end screen. The font was from the website 1001 fonts and all references to the game were included onto a word document. The yellow mouse is next to a picture 
-							of Pikachu to say that this mouse represents Pikachu and the orange mouse was next to a photo of Stuart Little.
-			  			</div>
-		  			
-					</div>
-	  			
-				</div>
-				
-				<!-- Buttons to switch between photos in the gallery -->
-				<button class="portfolio" onclick="previousPhotoSqueak()">Previous</button>
-				<button class="portfolio" onclick="nextPhotoSqueak()">Next</button>
-				
 			</div>
-				 
-			<div class="clearfix"></div>
+			</div>	 
 			
 			
-			<!-- The video gallery for Hide & Go Squeak! -->
-			<div id="videoSqueakGallery">
-				
-				<!-- The first/starting video for Hide & Go Squeak! -->
-				<div id="squeak1vid" class="outerLayerVideo">
-					
-					<div class="gallery">
-						
-						<!-- Video pulled from Megan's YouTube -->
-						<iframe height="315" src="https://www.youtube.com/embed/1SAlTLFbMXE" title="Hide &amp; Go Squeak! : Intro Video" frameborder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-						</iframe>
-						
-						<!-- Description of the video -->
-						<div class="imageDescription">
-							This video is of the screen the player sees when they first enter the game.  During playtesting, players said they were unsure of how to play the game and that is why this screen was added! 
-							After this, players were able to understand the objective and controls of the game easily before playing and the developing team got no further playtesting notes from future sessions regarding this issue.<br> <br>
-							Due to the quality of the video it is hard to see the text though it is easy for players to read the text while playing the game. There was a timer for the beginning screen that allowed the 
-							players enough time to read the instructions before being brought into the game. The teleportation function can also be seen in this video and a brief bit of the main area is seen as well.
-						</div>
-				
-					</div>
-				
+			<!-- The video for Wine-Time -->
+			<div class="col-12 col-lg-6 px-4">
+	   			<div class="rounded border border-2 active">
+					<!-- Video pulled from Megan's YouTube -->
+					<iframe  class="d-block w-100" style="height: 50vh;"  src="https://www.youtube.com/embed/AFJBx7GIqoA?si=8jB4PhvccS-Og1_D" title="YouTube video player" 
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+					</iframe>
 				</div>
-				
-				<!-- The second video for Hide & Go Squeak! -->
-				<div id="squeak2vid" class="outerLayerVideo">
-				
-					<div class="gallery">
-				
-						<!-- Video pulled from Megan's YouTube -->
-						<iframe height="315" src="https://www.youtube.com/embed/X-l9qlAty24?si=Pf2TAHzOJXNSzk9j" title="YouTube video player" 
-							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-						</iframe>
-						
-						<!-- Description of the video -->
-						<div class="imageDescription">
-							This video is a brief demonstration of the gameplay. First the player decides to go into the settings and adjust the controls and change the volume to their desired levels. 
-							After that the player explores the room. They find their first mouse at the clock table where the player can watch the clock move. The player then brings that mouse to the 
-							bin and searches for other mice. This loop is repeated until the player has put all the mice in the bin (not shown in this video).<br><br> The player can take their time finding 
-							the mice and have fun in the environment since there are no time constraints. After all mice are found the player would be brought to the end screen.
-							The end screen consists of a "You Win" text and each mouse on a shelf next to their portrait. The end screen is not seen in this video though it is essentially the same 
-							as the intro screen but with different music, shelves, pictures, and different text. In future versions of the game, the development team would like to add timed modes, more levels, 
-							and more hiding spots.
-						</div>
-				
-					</div>
-				
-				</div>
-			
-				<!-- Buttons to switch between the videos in the gallery -->
-				<button class="portfolio" onclick="VideoSqueakButtons()">Previous</button>
-			 	<button class="portfolio" onclick="VideoSqueakButtons()">Next</button>
-			
-			</div>
-			
-			<div class="clearfix"></div>
-		  
-		</div>
 
+			</div>
+			</div>
+			</div>
+
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>
+		  </div>
+	   </div>
 
 		<!-- The Websites portion of Megans' portfolio -->
-		<div id="Websites">
+		<div class="pt-5 pb-4 row">
 
-			<h2 class="nameOfPage">Websites</h2>
+			<div class="col-3 col-xl-4"></div>
+		<!-- Title of the section -->
+		<div class="col-6 col-xl-4 pb-3 text-center">
+				<h2 class="bg-dark pt-1 pb-1 border border-2 rounded text-light fs-1" style="--bs-bg-opacity: .9"><strong>
+					Websites</strong></h2>
+			</div>
 
-			<p class="hiddenForSpace">I think <br> coding is fun.</p>
+		 
+		<div class="col-12 text-center accordion" data-mdb-theme="dark" id="websiteAccordion">
+			<!-- The section dedicated to a previous version of This Site -->
+			<div class="accordion-item" >
+			<!-- Title of the game -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-4 text-center" style="background-color: rgb(48, 47, 47);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThisSite" aria-expanded="false" aria-controls="collapseThisSite">
+       				 <strong>Old Version of this Site</strong></button></h3>
 
-			<!-- Buttons to switch between the websites Megan has created -->
-	 		<button class="portfolio" onclick="ThisOne()">This Site</button>
-	 		<button class="portfolio" onclick="Recommend()">Gaming Recommendation Site</button>
-
-			<!-- The section dedicated to Megans' Gaming Recommendation Site -->
-			<section id="recommendSection" class="section1">
-
-				<!-- The site -->
-				<h3 class="subHeading1">Gaming Recommendation Site</h3>
-				  
-				<!-- Description of the site -->
-				<p class="main">This is the first website Megan had created. It was for a class in the Fall of 2021. For this project, Megan had decided to make a brief gaming recommendation website.
-					Megan was a Twitch streamer at the time and has always loved video games so she thought it would be a fun website to make. She tried to keep the color scheme close to the colors for 
-					her Twitch logo. <br><br> There are many things Megan would change about this site if it was made today instead of years ago. One big change would be the videos used in the tabs. On the server 
-					that the website was being posted to there was a size limit that Megan had not realized until last minute and had to quickly make shorter videos. Megan would also add more games, different games, 
-					more game options, a way for users to get to each game without scrolling, and more if it were done today. <br><br>The video below gives a brief overview of the site. In the future, Megan would 
-					love to remake this site with the changes listed above and post it to it's own custom domain. Listed below the video is a link to the site in it's state from 2021 if you would like to visit 
-					it and check it out!
-				  </p>
-				  
-				<p class="hiddenForSpace">I think <br> coding is fun.</p>
-					 
-				<div class="clearfix"></div>
-					 
-				<!-- Video of the site -->
-				<div class="outerLayerVideo">
-						
-					<div class="gallery">
-							
-						<!-- Video pulled from Megan's YouTube -->
-						<iframe height="315" src="https://www.youtube.com/embed/mbr5gw_LUxc?si=9u0eahc-Ue2RisAc" 
-							title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-							picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-						</iframe>
-							
-						<!-- Description of the video -->
-						<div class="imageDescription">
-							The site in the video is optomized for mobile but the optimization in the site could use work since it was Megan's first website. Overall, 
-							Megan was happy with the final result at the time and learned a lot from that experience.<br>
-							Want to get to the site? Click on the image below!<br> 
-
-							<!-- Link to the site in the form of an image -->
-							<a title="Click here to go to Megan's Gaming Recommendation Website!" 
-								href="https://www.albany.edu/~ML436757/Homepage.html" target="_blank" 
-								tabindex="0"><img id="logos2" src="LaughingMeg.png"></img>
-							</a>
-
-						</div>
-					
-					</div>
-					
-				</div>
-					
-				<div class="clearfix"></div>
-				
-			</section>
-
-
-			<!-- The section dedicated to This Site! -->
-			<section id="thisSiteSection" class="section1">
-
-				<!-- The Site -->
-				<h3 class="subHeading1">Megan's Portfolio Site</h3>
-
+				<div id="collapseThisSite" class="accordion-collapse collapse" data-bs-parent="#websiteAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+			<div class="col-12 p-5 text-center">
 				<!-- Description of the site and why it is included-->
-				<p class="main">This is the site you are on right now! Megan coded this site entirely using HTML, CSS, and JavaScript. She started off with the Gaming Recommendation Site she had 
-					made as a template. Though that site started off as her template, she had completely scrapped everything in that site except the intrapage link. <br><br>
-					The version of the site you see here is it's FIRST completed form. You may notice updates that are not posted in this gallery. That means that these updates 
-					likely came after July 2024. For any major updates to the site Megan will be sure to add a picture or video to the gallery showing the update and saying when it was completed.
+				<p>This is the old version of the site you are on right now! I had coded it using entirely using HTML, CSS, and JavaScript. I started off with the Gaming Recommendation Site I had 
+					created as a template. Though that site started off as my template, I ended up completely scrapping everything in that site except the intrapage link. <br><br>
+					The version of the site you see here is it's FIRST completed form. This site was made in July of 2024 and the new version you are on today is almost an entirely new site with some minor 
+					things kept from my old site. I have created a repository to keep the old site in so I can track my progress in creating websites. You can find the old site in my <a href="https://github.com/meginthevalley/oldPortfolioSite">Github</a>
+					if you're interested in it. <br><br> The new site you are on today was completed in early June of 2025 using Bootstrap. If you have any feedback about the new site, 
+					feel free to send me an email or contact me on LinkedIn. I am always looking for ways to improve as a new dev.
 				</p>
-	
-				<p class="hiddenForSpace">I think <br> coding is fun.</p>
-					
-				<div class="clearfix"></div>
-					
-				<!-- Photo gallery for the original portfolio site -->
-				<div>
+			</div>
+			</div>
+			  
+			<div class="row">
+			 <div class="col-2 px-4"></div>
+			<!-- The photo gallery for the previous version of this site -->
+			<div class="col-12 col-lg-8 px-4">
 
-					<!-- The home pic for the porfolio site -->
-					<div id="portfolio1pic" class="outerLayer">
-						 
-						<div  class="gallery">
-								  
-							<!-- Image from original portfolio site -->
-							<img src="HomeForSite.PNG" alt="A pic of the first home screen of this site.">
-							
-							<!-- Description of the image -->
-							<div class="imageDescription">
-								The original Home page for this site. This depicts an image from Megans' VR game <i>Hide & Go Squeak!</i>
-							</div>
-						  
+			<div id="thisSitePhotoCarousel" class="carousel slide" data-bs-ride="carousel" >
+					<div class="carousel-inner rounded border border-2" style="height: 40vh;">
+	   					<div class="carousel-item active">
+							<img class="d-block w-100" src="Photos of the previous site/HomeForSite.PNG" alt= "A photo of the old home for this site">
 						</div>
-						
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Photos of the previous site/AboutForThisSite.png" alt= "A photo of the old about for this site">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Photos of the previous site/ContactForThisSite.png" alt= "A photo of the old contact for this site">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Photos of the previous site/PortfolioThisSite.PNG" alt= "A photo of the old portfolio for this site">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block w-100" src="Photos of the previous site/ResumeForThisSite.png" alt= "A photo of the old resume for this site">
+						</div>
+
+						<button class="carousel-control-prev bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#thisSitePhotoCarousel" data-bs-slide="prev">
+    						<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Previous</span>
+  						</button>
+  						<button class="carousel-control-next bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#thisSitePhotoCarousel" data-bs-slide="next">
+    						<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    						<span class="visually-hidden">Next</span>
+  						</button>
 					</div>
-						
-					<!-- The portfolio pic for the porfolio site -->
-					<div id="portfolio2pic" class="outerLayer">
-						  
-						<div class="gallery">
-								  
-							<!-- Image from original portfolio site -->
-							<img src="PortfolioThisSite.PNG" alt="A pic of the Portfolio page towards the end of the process.">
-							
-							<!-- Description of the image -->
-							<div class="imageDescription">
-								An example of the original layout for the Portfolio page of this site. Buttons are used to navigate between areas to condense space on the website and reduce the scrolling that the user needs to do.
-								Megan also added a little click animation to each button to add a little bit of visual appeal.
-							</div>
-						  
-						</div>
-						
-					</div>
-						
-					<!-- The about pic for the porfolio site -->
-					<div id="portfolio3pic" class="outerLayer">
-							
-						<div  class="gallery">
-							
-							<!-- Image from original portfolio site -->
-							<img src="AboutForThisSite.png" alt="A pic of the Resume page towards the end of the process.">
-							
-							<!-- Description of the image -->
-							<div class="imageDescription">
-								The original About page for this site. This comes with a message from Megan and a picture that changes when you scroll over it.
-						  	</div>
-							
-						</div>
-						
-					</div>
-						
-					<!-- The resume pic for the porfolio site -->
-					<div id="portfolio4pic" class="outerLayer">
-						
-						<div  class="gallery">
-						
-							<!-- Image from original portfolio site -->
-							<img src="ResumeForThisSite.png" alt="A pic of the Resume page towards the end of the process.">
-						
-							<!-- Description of the image -->
-							<div class="imageDescription">
-								An original snippet of the Resume page of this site. This depicts part of the layout for the Work Experience section of this site. 
-							</div>
-						
-						</div>
-						
-					</div>
-						
-					<!-- The contact pic for the porfolio site -->
-					<div id= "portfolio5pic" class="outerLayer">
-						
-						<div  class="gallery">
-						
-							<!-- Image from original portfolio site -->
-							<img src="ContactForThisSite.png" alt="A pic of the Contact page towards the end of the process.">
-						
-							<!-- Description of the image -->
-							<div class="imageDescription">
-								The original Contact page for this site. The table is to make it easier to contact Megan. By clicking on the links on the left side of the table, it leads the user directly to 
-								the desired page or contact method.
-							</div>
-						
-						</div>
+			</div>
+			</div>
+
+			</div>
+			
+			</div>
+
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>
+			
+			<!-- The section dedicated to Megan's gaming recommendation site-->
+			<div class="accordion-item" >
+			<!-- Title of the game -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-4 text-center" style="background-color: rgb(78, 78, 78);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGaming" aria-expanded="false" aria-controls="collapseGaming">
+       				 <strong>Gaming Recommendation Site</strong></button></h3>
+
+				<div id="collapseGaming" class="accordion-collapse collapse" data-bs-parent="#websiteAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+				
+			<div class="col-12 p-5 text-center">
+				<!-- Description of the site -->
+				<p>This is the first website I had ever created. It was for a class in the Fall of 2021 which was focused on HTML, CSS, and JavaScript. For this project, I had decided to make a brief gaming recommendation website.
+					At the time, I was a Twitch streamer. I have always been very passionate about video games so I thought it would be a fun website to make. I tried to keep the color scheme close to the colors for 
+					my Twitch logo at the time. <br><br> There are many things I would change about this site if it was made today instead of years ago. I would add more games, different genres, 
+					a way for users to get to each game without scrolling, and more if it were done today. <br><br>In the future, I would 
+					love to remake this site with the changes listed above and post it to it's own custom domain. The video below gives a brief overview of the site. If you're interested in visiting the site, 
+					please click on this <a href="https://www.albany.edu/~ML436757/Homepage.html">link</a> to get there.							
 					
-					</div>					
-					 
-					<!-- Buttons to switch between photos in the gallery -->
-					<button class="portfolio" onclick="previousPhotoPortfolio()">Previous</button>
-					<button class="portfolio" onclick="nextPhotoPortfolio()">Next</button>
-			   
+				  </p>
+			</div>
+			</div>
+			  
+			<div class="row"> 
+				<div class="col-2 px-4"></div>
+			<!-- The video for gaming site -->
+			<div class="col-12 col-lg-8 px-4" >
+	   			<div class="rounded border border-2">
+						<!-- Video pulled from Megan's YouTube -->
+						<iframe class="d-block w-100" style="height: 50vh;" src="https://www.youtube.com/embed/mbr5gw_LUxc?si=5-l7ORBhMe98B2ch" title="YouTube video player" 
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
-						
-				<div class="clearfix"></div>
-				  	
-			</section> 
-				
-		</div>
 
+			</div>
+			</div>
+			</div>
 
-		<!-- The Art portion of Megans' portfolio -->
-		<div id="Art">
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>
+		  </div>
+	   </div>
 
-			<!-- Maybe add blender animations later -->
-			<h2 class="nameOfPage">Art</h2>
-
-			<p class="hiddenForSpace">I think <br> coding is fun.</p>
-
-			<!-- Buttons to switch between Megans' 3D and pixel art -->
-			<button class="portfolio" onclick="Blender()">Blender</button>
-			<button class="portfolio" onclick="Piskel()">Piskel</button>
-
-
-			<!-- The section dedicated to Megans' work in Blender -->
-			<section id="blendSection" class="section1">
-
-				<!-- The title of the software-->
-				<h3 class="subHeading1">Blender</h3>
-				
-				<!-- Brief description -->
-				<p class="main">Below are some of Megan's Blender projects that she has made for some of her games. Megan is looking to improve on her blender and art skills to 
-					enhance her games in the future.	
-				</p>
-					
-				<p class="hiddenForSpace">I think <br> coding is fun.</p>
-				
-				<div class="clearfix"></div>
-				
-				<!-- Blender photo gallery -->
-				<div>
-						
-					<!-- Picture of the starting paw for Cat-astrophe! -->
-					<div id="blend1pic" class="outerLayer">
-						
-						<div  class="gallery">
-						
-							<!-- Image of blender project -->
-							<img src="CatPawBeginning.PNG" alt="A pic of the prototype cat paw from Cat-astrophe!">
-						
-							<!-- Description of image -->
-							<div class="imageDescription">
-								This was Megan's first attempt at the cat paw for <i>Cat-astrophe!</i> It was the first time Megan had explored Blender and was certainly a learning process.
-							</div>
-						  
-						</div>
-						
-					</div>
-						
-					<!-- Picture of the finished paw for Cat-astrophe! -->
-					<div id="blend2pic" class="outerLayer">
-						  
-						<div class="gallery">
-								  
-							<!-- Image of blender project -->
-							<img src="CatPawFinished.PNG" alt="A pic of the finished paw design from Cat-astrophe!">
-							
-							<!-- Description of image -->
-							<div class="imageDescription"> This was Megan's final model that she used for <i>Cat-astrophe!</i> She made both the model and textured it. 
-								The model fit the game in the state it was in but Megan would like to make a new model when she works further on <i>Cat-astrophe!</i>
-							</div>
-						 
-						</div>
-						
-					</div>
-						
-					<!-- Picture of Hide & Go Squeak trash -->
-					<div id="blend3pic" class="outerLayer">
-						  
-						<div  class="gallery">
-								
-							<!-- Image of blender project -->
-							<img src="Trash.PNG" alt="A pic of a piece of trash made for Hide & Go Squeak!">
-							
-							<!-- Description of image -->
-							<div class="imageDescription"> This is just a simple piece of trash that Megan had made for <i>Hide & Go Squeak!</i> 
-								Megan adjusted sizes to make the trash look different so she could use the same model for every piece while making them appear different.
-							</div>
-						  
-						</div>
-						
-					</div>
-						
-					<!-- Picture of Wine-Time bottle -->
-					<div id= "blend4pic" class="outerLayer">
-						  
-						<div  class="gallery">
-							
-							<!-- Image of blender project -->
-							<img src="Bottle.PNG" alt="A pic of the bottle made for Wine-Time.">
-							
-							<!-- Description of image -->
-							<div class="imageDescription">
-								This was a bottle Megan had made for <i>Wine-Time</i>. Megan had made sure to remove the top so little water beads could be poured out of the bottle.
-							</div>
-						
-						</div>
-					
-					</div>
-					 
-					<!-- Buttons to switch between gallery photos -->
-					<button class="portfolio" onclick="previousPhotoBlend()">Previous</button>
-					<button class="portfolio" onclick="nextPhotoBlend()">Next</button>
-					
-				</div>
-					  
-				<div class="clearfix"></div>
-				  
-			</section>
-
-
-			<!-- The section dedicated to Megans' creations in Piskel -->
-			<section id="piskelSection" class="section1">
-					
-				<!-- Title of software-->	  
-				<h3 class="subHeading1">Piskel</h3>
-					  
-				<!-- Brief description -->
-				<p class="main">Piskel has been Megan's preferred way to make art when she experiments in her free time. If you would like to see a game made entirely out of Megans' pixel art please visit Megans' 
-					itch.io page. This can be found in the contact section of this site. The game is called "Bee game" and it was Megans' first game.
-				</p>
-				
-				<p class="hiddenForSpace">I think <br> coding is fun.</p>
-				
-				<div class="clearfix"></div>
-				
-				<!-- Piskel photo gallery-->
-				<div>
-					<!-- Image of Megan!-->
-					<div id="piskel1pic" class="outerLayer">
-							
-						<div class="gallery">
-									
-							<!-- Image from piskel -->
-							<img src="IssaMe.jpg" alt="A pixel self portrait!">
-							  
-							<!-- Description of image -->
-							<div class="imageDescription"> This is a self portrait of Megan! She wanted the style to be similar to Fields of Mistria since she has been playing that lately and 
-								really enjoying it!						  
-							</div>
-							
-						</div>
-						  
-					</div>
-
-					<!-- Dan's Animation -->
-					<div id="piskel2pic" class="outerLayer">
-				
-						<div  class="gallery">
-				
-							<!-- Image from piskel -->
-							<img src="Dan Streaming.gif" alt="A short gif Megan made for a streamer.">
-				
-							<!-- Description of image -->
-							<div class="imageDescription"> 
-								This is a simple gif that Megan had been commissioned to make by a streamer. There may be updates to this in the future if the streamer would like!
-							</div>
-							
-						</div>
-						  
-					</div>
-
-					<!-- Ghost cat image -->
-					<div id="piskel3pic" class="outerLayer">
-				
-						<div  class="gallery">
-				
-							<!-- Image from piskel -->
-							<img src="Ghost Cat.png" alt="A pixel pic of a ghost cat that Megan made.">
-				
-							<!-- Description of image -->
-							<div class="imageDescription"> 
-								This is a simple ghost cat that Megan made for a class project. Megan would like to improve upon this with animations and add it to a future game!
-							</div>
-							
-						</div>
-						  
-					</div>	
-
-					<!-- Sanji image -->
-					<div id="piskel4pic" class="outerLayer">
-							
-						<div  class="gallery">
-									
-							<!-- Image from piskel -->
-							<img src="Sanji2.png" alt="A pixel pic of Sanji from One Piece.">
-							  
-							<!-- Description of image -->
-							<div class="imageDescription"> This is a pixel image of Sanji from One Piece that Megan had made. 
-								She looked at a few different angles and references for Sanji's face and decided to go with this angle. 
-							</div>
-							
-						</div>
-						  
-					</div>
-						 
-					<!-- Chopper gif -->
-					<div id= "piskel5pic" class="outerLayer">
-							
-						<div  class="gallery">
-									
-							<!-- Gif from piskel -->
-							<img src="Chopper.gif" alt="A pixel gif of Tony Tony Chopper from One Piece.">
-							  
-							<!-- Description of gif -->
-							<div class="imageDescription"> This is a simple animation made of Tony Tony Chopper from One Piece talking. 
-								This was one of Megan's first attempts at animation so she wanted to keep it relatively simple.	  
-							</div>
-						  
-						</div>
-					  
-					</div>
-					 
-					<!-- Squirrel gif -->
-					<div id= "piskel6pic" class="outerLayer">
-						
-						<div  class="gallery">
-							
-							<!-- Gif from piskel -->
-							<img src="Mobster Squirrel.gif" alt="A pixel gif of a mobster squirrel that Megan made.">
-						 
-							<!-- Description of gif -->
-							<div class="imageDescription"> 
-								This was a "Mobster Squirrel" that Megan created. She really loved the idea of a squirrel shooting acorns and wanted to include it in her bee game but she felt it needed more 
-								work before it was ready to be implemented into a game. She did think the catch phrase "Go Nuts" would've been nice and that lead to ideas of a possible squirrel game for the future.  
-						  	</div>
-					 
-						</div>
-				  
-					</div>
-					 
-					<!-- Buttons to switch between photos in gallery -->
-					<button class="portfolio" onclick="previousPhotoPiskel()">Previous</button>
-					<button class="portfolio" onclick="nextPhotoPiskel()">Next</button>
-					  
-				</div>
-						 
-				<div class="clearfix"></div>
-					
-			</section>
-		
-		</div>
-
-
-		<!-- To be added later.
-		<div id="Misc">
-			Do this section with bee simulator, anxiety dilemma, potion pandemonium and any other relevant works. 
-			<h2 class="nameOfPage">Miscellaneous</h2>
-
-			<section id="anxietySection" class="section1">
-					
-			<h3 class="subHeading1">Anxiety Dilemma</h3>
-				<div class="gallery">
-						</div>
-						<br/>
-						<div>
-				 <p class="main">Type Text here</p>
-						 </div>
-					</section>
-				</div> 
-		 -->
-
-
-	</main>
-
+	</div>
 
 	<!-- Start of the footer section -->
-	<footer>
-		<!-- The intrapage link to bring the user back to the top of the page -->
-		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		
-		<!-- A div containing the logo links to bring users to Megans' various pages -->
-		<div>
-			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
-				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
-				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a>
-			<a class="footer" title="Click here to go to send Megan an email!" 
-				href="mailto:meganelavalley@gmail.com" tabindex="0"
-				tabindex="0"><img id="logos" src="email.png"></img></a>
-			<a class="footer" title="Click here to go to Megan's GitHub!" 
-				href="https://github.com/meginthevalley" target="_blank" 
-				tabindex="0"><img id="logos" src="Github.png"></img></a>
+	 <footer class="bg-black bg-gradient text-center border-top">
+		<div class="p-4 container-fluid">
+			<div class="row">
+				
+				<!-- A div containing the logo links to bring users to Megans' various pages -->
+			<div class="mb-4">
+				
+			<a  title="Click here to go to Megan's LinkedIn!" 
+				href="https://www.linkedin.com/in/megan-e-lavalley/" target="_blank" >
+				<img src="LinkedIn.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to send Megan an email!" 
+				href="mailto:meganelavalley@gmail.com" tabindex="0">
+				<img  src="email.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to Megan's GitHub!" 
+				href="https://github.com/meginthevalley" target="_blank">
+				<img src="Github.png" class="m-1" width="40" height="auto"></img></a>
+			</div>
+			<!-- The year for the creation of this site... to be updated for future iterations -->
+			<div class= "me-auto text-light fs-5">
+				<p><strong>@2025 Megan LaValley</strong></p>
+			</div>
+			
 		</div>
-
-		<!-- The year for the creation of this site... to be updated for future iterations -->
-		<div>
-			<p>@2024 Megan LaValley</p>
-		</div>	
-
+	</div>
 	</footer>
 
 </body>

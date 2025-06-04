@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
 	<title>Megan LaValley</title>
+
+
+	<!-- Bootstrap framework -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	
+
+	<link rel="stylesheet" type="text/css" href="MDB5-STANDARD-UI-KIT-Free-9.0.0/css/mdb.min.css"/> 
+
 	<!-- Megan's style sheet -->
-	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
+	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/> 
 	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<!-- The author of this website, that's me!!!-->
@@ -13,100 +22,134 @@
 
 <body>
 
-<!-- Megan's JavaScript-->
-<script src="meganlavalley.js"></script>
+<!-- Megan's JavaScript most likely unneeded with bootstrap-->
+<!-- <script src="meganlavalley.js"></script> -->
+
+<!-- Bootstrap framework -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" 
+integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<script src="MDB5-STANDARD-UI-KIT-Free-9.0.0/js/mdb.umd.min.js"></script>
 
 	<header>
+	    <!-- Navigation links for the other pages of the website -->
+		 <!-- A navbar that is dark with white text and 80% opacity-->
+	  	<nav class="navbar fixed-top navbar-expand-lg bg-black bg-gradient border-bottom" data-mdb-theme="dark">
 
-		<!-- This states which page of the website you are on -->
-	  	<h1 class="websiteHeading"><a id="backToTop">About Megan</a></h1>
-	    
-		<!-- Navigation links for the other pages of the website -->
-	  	<nav>
+			<!-- A fluid container for the navbar-->
+			<div class="container-fluid">
 
-			<ul class="navBar">
-				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-					href="index.html" tabindex="0"> Home</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-					href="Portfolio.html" tabindex="0">Portfolio</a></li>
-				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-					href="About.html" tabindex="0">About</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
-					href="Resume.html" tabindex="0">Resume</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-					href="Contact.html" tabindex="0">Contact</a></a></li>
-			</ul>
-			
-	  	</nav>
+				<!-- Possibly link this to the home page-->
+				<a class="navbar-brand fs-3" href="#">Megan LaValley</a>
+
+				<!-- A button for when the navbar is collapsed -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<!-- The collapsable portion of the nav bar -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav fs-5">
+				<!--Home in navbar-->
+					<li class="nav-item">
+						<a class="nav-link" title="Click here to go to the home page!" 
+						href="index.html" tabindex="0">Home</a></li>
+					<li class="nav-item"><a class="nav-link"  title="Click here to see Megan's Portfolio!" 
+						href="Portfolio.html" tabindex="0">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link active" aria-current="page"  title="You're already on this page!"
+						href="#" tabindex="0">About</a></li>
+					<li class="nav-item"><a class="nav-link" title="Click here to see the Megan's Resume!" 
+						href="Resume.html" tabindex="0">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" title= "Click here to see Megan's Contact Page!" 
+						href="Contact.html" tabindex="0">Contact</a></li>
+				</ul>
+			</div>
+	   		</div>
+		</nav>
 
 	</header>
 
 
 	<!-- Everything between the header and footer of the webpage -->
-	<main class="mainContent">
+	<div class="pb-3 container-fluid text-center bg-image" style="background-image: url('Site Background from Canva.png'); backdrop-filter: blur(10px);">
 	
-	   	<section class="section1">
+		<div class="row">
 
-	   		<div class="clearfix">
+		<div class="pt-5 mt-5 bg-black bg-opacity-50 text-center col-12">
+			<!-- This states which page of the website you are on -->
+	  		<h1 class=" pt-1 pb-3 rounded text-white fs-1 bg-opacity-75">
+				<strong>About Me!</strong></h1>
+			</div>
+		</div>
+	   	<div class="row pt-3">
 
-				<!-- An image of Megan that is set to change to a different image when hovered over via Javascript. -->
-				<picture >
-					<img class="aboutPics" id="floatRightPic" onmouseover="changeAboutPicture()" onmouseout="changeAboutBack()" 
-						src="Megan4.jpg" alt="A photo of Megan from her time at UAlbany.">
+	   		<div class="pt-3 col-12 col-xxl-5">
+
+				<!-- An image of Megan -->
+				<picture>
+					<img class="img-fluid rounded border border-2" src="Photos of me/Megan4.jpg" alt="A photo of Megan from her graduation from UAlbany.">
 				</picture>
-
+				</div>
 				<!-- A message from me! Though I suppose everything is a message from me but in this one I talk in first person -->
-				<div class="aboutContainer">
+				<div class=" pt-3 pb-5 mb-3 col-12 col-xxl-7">
+					<div class="card text-bg-dark text-center border mb-3 ">
 
-					<h2 class="subHeading2">A Message From Megan</h2>
+					<div class="card-header border">
+						<h2 class="fs-2"><strong>A Message From Megan</strong></h2>
+					</div>
+					<div class="card-body border">
+	   				<p class="card-text fs-5"> 
+						Hey there! I'm Megan LaValley — a proud University at Albany grad with a degree in Informatics and a focus in Game Design & Development. You can find the résumé stuff elsewhere on this site, so let's get personal. <br/><br/>
+						I grew up in a small town in upstate NY with a lifelong love for gaming and tech. Funny enough, I almost went to school for musical theatre (<i>wild</i>), but somewhere in my 20s, 
+						I realized my true calling was behind the screen — not on stage. <br/><br/>
+						That “aha!” moment led me to dive into game design, where I discovered my real passion: coding. I love the behind-the-scenes magic that brings games to life. 
+						Since then, I've earned my degree, started volunteering with New York Celebration of Women in Computing (NYCWiC), and picked up a few certifications along the way.<br/><br/>
+						On the job front, I bring a mix of creativity, curiosity, and problem-solving to every project I touch. Whether it's debugging code, collaborating with a team, or learning a new tool on the fly, 
+						I'm all about jumping in, figuring it out, and getting things done. I'm excited to keep growing in tech — ideally somewhere that values innovation, inclusion, and growth. <br/><br/>
+						When I'm not coding or job hunting, I'm probably gaming — currently hooked on Balatro, Elden Ring, and Oblivion Remastered. My favorites list is always growing, and I never pass up a chance to geek out over 
+						games or hear new suggestions. Feel free to reach out to me through LinkedIn or email to chat more and thank you for visiting my Portfolio site!
 
-	   				<p class="about"> Hello everyone! My name is Megan LaValley. Currently, I am 27 years old and I am an
-						aspiring game programmer. I have always been extremely passionate about video games and what better way to 
-						show my passion than by making games! As soon as I was taught programming I knew that it was the right place for me.<br> <br>
-						I recently graduated from UAlbany obtaining a Bachelor's in Informatics with a concentration in Game Design & Development.
-						Since graduating in May 2024, I have been spending time researching for future projects, starting Udemy courses to expand my coding knowledge,
-						making this website, and creating a discord for NYCWiC (New York Women in Computing). 
-		 				I plan on volunteering with them for their conference in 2025 and I am very excited for the opportunity
-		 				to give back to a conference that helped me throughout my college journey.<br><br>
 
-		 				As for a career, I would love to work in the game development industry. I am passionate about coding and can adapt to new coding languages 
-		 				with little to no issues. I currently live in South Glens Falls but I am looking to relocate to the Albany area (both in NY). 
-		 				For professional inquiries, please contact me through email or LinkedIn.
 	   				</p>
-
+					</div>
 				</div>
 
 			</div>
 
-	   </section>
+		</div>
 
-	</main>
+	</div>
 
 
 	<!-- Start of the footer section -->
-	<footer>
-		
-		<!-- The intrapage link to bring the user back to the top of the page -->
-		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		
-		<!-- A div containing the logo links to bring users to Megans' various pages -->
-		<div>
-			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
-				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
-				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a>
-			<a class="footer" title="Click here to go to send Megan an email!" 
-				href="mailto:meganelavalley@gmail.com" tabindex="0"
-				tabindex="0"><img id="logos" src="email.png"></img></a>
-			<a class="footer" title="Click here to go to Megan's GitHub!" 
-				href="https://github.com/meginthevalley" target="_blank" 
-				tabindex="0"><img id="logos" src="Github.png"></img></a>
+	 <footer class="bg-black bg-gradient text-center border-top">
+		<div class="p-4 container-fluid">
+			<div class="row">
+				
+				<!-- A div containing the logo links to bring users to Megans' various pages -->
+			<div class="mb-4">
+				
+			<a  title="Click here to go to Megan's LinkedIn!" 
+				href="https://www.linkedin.com/in/megan-e-lavalley/" target="_blank" >
+				<img src="LinkedIn.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to send Megan an email!" 
+				href="mailto:meganelavalley@gmail.com" tabindex="0">
+				<img  src="email.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to Megan's GitHub!" 
+				href="https://github.com/meginthevalley" target="_blank">
+				<img src="Github.png" class="m-1" width="40" height="auto"></img></a>
+			</div>
+			<!-- The year for the creation of this site... to be updated for future iterations -->
+			<div class= "me-auto text-light fs-5">
+				<p><strong>@2025 Megan LaValley</strong></p>
+			</div>
+			
 		</div>
-
-		<!-- The year for the creation of this site... to be updated for future iterations -->
-		<div>
-			<p>@2024 Megan LaValley</p>
-		</div>	
-
+	</div>
 	</footer>
 
 </body>

@@ -1,126 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
 	<title>Megan LaValley</title>
+
+
+	<!-- Bootstrap framework -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="MDB5-STANDARD-UI-KIT-Free-9.0.0/css/mdb.min.css"/> 
+
 	<!-- Megan's style sheet -->
-	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
+	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/> 
 	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<!-- The author of this website, that's me!!!-->
  	<meta name="author" content="Megan LaValley">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("Hd1oLtsISEy2boNoQ");
+        })();
+    </script>
+	<script src="send_email.js" type="text/javascript"></script>
 </head>
 
 
 <body>
 
-<!-- Megan's JavaScript-->
-<script src="meganlavalley.js"></script>
+<!-- Megan's JavaScript most likely unneeded with bootstrap-->
+<!-- <script src="meganlavalley.js"></script> -->
+
+<!-- Bootstrap framework -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" 
+integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<script src="MDB5-STANDARD-UI-KIT-Free-9.0.0/js/mdb.umd.min.js"></script>
 
 	<header>
-
-		<!-- This states which page of the website you are on -->
-	  	<h1 class="websiteHeading"><a id="backToTop">Contact Information</a></h1>
-
 	    <!-- Navigation links for the other pages of the website -->
-	  	<nav>
+		 <!-- A navbar that is dark with white text-->
+	  	<nav class="navbar fixed-top navbar-expand-lg bg-black bg-gradient border-bottom" data-mdb-theme="dark">
 
-			<ul class="navBar">
-				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-					href="index.html" tabindex="0">Home</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-					href="Portfolio.html" tabindex="0">Portfolio</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-					href="About.html" tabindex="0">About</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see the Megan's Resume!" 
-					href="Resume.html" tabindex="0">Resume</a></li>
-				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-					href="Contact.html" tabindex="0">Contact</a></a></li>
-			</ul>
-	   
+			<!-- A fluid container for the navbar-->
+			<div class="container-fluid">
+
+				<!-- Possibly link this to the home page-->
+				<a class="navbar-brand fs-3" href="#">Megan LaValley</a>
+
+				<!-- A button for when the navbar is collapsed -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<!-- The collapsable portion of the nav bar -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav fs-5">
+				<!--Home in navbar-->
+					<li class="nav-item">
+						<a class="nav-link" title="Click here to go to the home page!" 
+						href="index.html" tabindex="0">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link"  title="Click here to see Megan's Portfolio!" 
+						href="Portfolio.html" tabindex="0">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link"  title="Click here to see info about Megan!" 
+						href="About.html" tabindex="0">About</a></li>
+					<li class="nav-item"><a class="nav-link" title="Click here to see the Megan's Resume!" 
+						href="Resume.html" tabindex="0">Resume</a></li>
+					<li class="nav-item"><a class="nav-link active" aria-current="page" title="You're already on this page!" 
+						href="#" tabindex="0">Contact</a></li>
+				</ul>
+			</div>
+	   		</div>
 		</nav>
 
 	</header>
 
 
 	<!-- Everything between the header and footer of the webpage -->
-	<main class="mainContent">
+	<div class="pb-3 container-fluid text-center bg-image" style="background-image: url('Site Background from Canva.png'); backdrop-filter: blur(10px);">
+		<div class="row">
 
-		<section class="section1">
+		<div class="pt-5 mt-5 bg-black bg-opacity-50 text-center col-12">
+			<!-- This states which page of the website you are on -->
+	  		<h1 class="pt-1 rounded text-white fs-1 bg-opacity-75">
+				<strong>Contact</strong></h1>
+				<hr class="hr hr-blurry" />
+			<h3 class=" pt-1 pb-3 px-3 rounded text-light fs-5 text-center bg-opacity-75" >Click the desired Username to get in Contact</h3>
+			</div>
+		</div>
 
+	   	<div class="pt-5 p-3 row">
+		<div class=" col-12 table-responsive">
 			<!-- Contact table with links located at each username -->
-			<!-- Each link in the table is set to different colors based on the links status -->
-		  	<table>
-		  
-				<!-- Top of the table -->
+			<!-- The table is striped and bordered using bootstrap -->
+		  	<table class="table table-dark table-striped table-hover table-bordered border fs-5" >
+				<!-- Head of the table -->
+				<thead>
 				<tr>
 					<th>Username</th>
 					<th>Location</th>
 			 	</tr>
+				</thead>
 
-				<!-- Megan's linktree link -->
-				<tr>
-					<td class="specific"><div><a class="contact" title="Shortcut to everything" href="https://linktr.ee/meganlavalley" tabindex="0">Megan LaValley</a></div></td>
-					<td>Linktree</td>
-			  	</tr>
-				<!-- Megan's email link -->
-			  	<tr>
-					<td class="specific"><div><a class="contact" title="Send an email to Megan" href="mailto:meganelavalley@gmail.com" tabindex="0">meganelavalley@gmail.com</a></div></td>
-					<td>Gmail</td>
-			  	</tr>
+				<!-- A divider for the body of the table-->
+				<tbody class="table-group-divider">
+					<!-- Megan's linktree link -->
+					<tr>
+						<td><a class="link-light link-underline" title="Shortcut to everything" 
+							href="https://linktr.ee/meganlavalley" tabindex="0">Megan LaValley</a></td>
+						<td>Linktree</td>
+			  		</tr>
+					<!-- Megan's email link -->
+			  		<tr>
+						<td><a class="link-light" title="Send an email to Megan" 
+							href="mailto:meganelavalley@gmail.com" tabindex="0">meganelavalley@gmail.com</a></td>
+						<td>Gmail</td>
+			  		</tr>
 
-				<!-- Megan's LinkedIn link -->
-			  	<tr>
-					<td class="specific"><div><a class="contact" title="Go to Megan's LinkedIn" href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" tabindex="0">Megan LaValley</a></div></td>
-					<td>LinkedIn</td>
-			  	</tr>
+					<!-- Megan's LinkedIn link -->
+			  		<tr>
+						<td><a class="link-light" title="Go to Megan's LinkedIn" 
+							href="https://www.linkedin.com/in/megan-e-lavalley/" target="_blank" tabindex="0">Megan LaValley</a></td>
+						<td>LinkedIn</td>
+			  		</tr>
 
-				<!-- Megan's GitHub link -->
-			  	<tr>
-					<td class="specific"><div><a class="contact" title="Follow Megan on GitHub" href="https://github.com/meginthevalley" target="_blank" tabindex="0">meginthevalley</a></div></td>
-					<td>GitHub</td>
-			  	</tr>
+					<!-- Megan's GitHub link -->
+			  		<tr>
+						<td><a class="link-light" title="Follow Megan on GitHub" 
+							href="https://github.com/meginthevalley" target="_blank" tabindex="0">meginthevalley</a></td>
+						<td>GitHub</td>
+			  		</tr>
 
-				<!-- Megan's Itch.io link -->
-			  	<tr>
-					<td class="specific"><div><a class="contact" title="View Megan's itch page" href="https://meginthevalley.itch.io/" target="_blank" tabindex="0">meginthevalley</a></div></td>
-					<td>Itch</td>
-			  	</tr> 
-
+					<!-- Megan's Itch.io link -->
+			  		<tr>
+						<td><a class="link-light" title="View Megan's itch page" 
+							href="https://meginthevalley.itch.io/" target="_blank" tabindex="0">meginthevalley</a></td>
+						<td>Itch</td>
+			  		</tr> 
+				</tbody>
 		  	</table>
 
-		  	<br/>
-
-		</section>
-
-	</main>
-
-
-	<!-- Start of the footer section -->
-	<footer>
-
-		<!-- The intrapage link to bring the user back to the top of the page -->
-		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		
-		<!-- A div containing the logo links to bring users to Megans' various pages -->
-		<div>
-			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
-				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
-				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a>
-			<a class="footer" title="Click here to go to send Megan an email!" 
-				href="mailto:meganelavalley@gmail.com" tabindex="0"
-				tabindex="0"><img id="logos" src="email.png"></img></a>
-			<a class="footer" title="Click here to go to Megan's GitHub!" 
-				href="https://github.com/meginthevalley" target="_blank" 
-				tabindex="0"><img id="logos" src="Github.png"></img></a>
 		</div>
 
-		<!-- The year for the creation of this site... to be updated for future iterations -->
-		<div>
-			<p>@2024 Megan LaValley</p>
-		</div>	
+	</div>
+	<div class="pt-5 p-5 row">
+		<div class="col-12 card bg-dark align-items-center border border-2 border-light" data-mdb-theme="dark">
+		<form id="contact-form" class="pt-3 card-body" style="width: 90%;">
+ 		 <!-- Name input -->
+  			<div data-mdb-input-init class="form-outline border mb-4">
+    			<input id="name" type="text" class="form-control" required>
+    		<label class="form-label">Name</label>
+  		</div>
 
+  		<!-- Email input -->
+  		<div data-mdb-input-init class="form-outline border mb-4">
+    		<input type="email" id="email" class="form-control" required>
+    		<label class="form-label">Email address</label>
+  		</div>
+
+		<!-- Subject input -->
+  		<div data-mdb-input-init class="form-outline border mb-4">
+    		<input type="text" id="subject" class="form-control" required>
+    		<label class="form-label">Subject</label>
+  		</div>
+
+  		<!-- Message input -->
+  		<div data-mdb-input-init class="form-outline border mb-4">
+    		<textarea id="message" class="form-control" rows="5" cols="30" required></textarea>
+    		<label class="form-label">Message</label>
+  		</div>
+
+  		<!-- Submit button -->
+  		<button data-mdb-ripple-init type="submit" value="Send" class="btn btn-primary btn-block mb-4" onclick="sendMail()">Send</button>
+		</form>
+
+	</div></div>
+	</div>
+
+	
+	<!-- Start of the footer section -->
+	 <footer class="bg-black bg-gradient text-center border-top">
+		<div class="p-4 container-fluid">
+			<div class="row">
+				
+				<!-- A div containing the logo links to bring users to Megans' various pages -->
+			<div class="mb-4">
+				
+			<a  title="Click here to go to Megan's LinkedIn!" 
+				href="https://www.linkedin.com/in/megan-e-lavalley/" target="_blank" >
+				<img src="LinkedIn.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to send Megan an email!" 
+				href="mailto:meganelavalley@gmail.com" tabindex="0">
+				<img  src="email.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to Megan's GitHub!" 
+				href="https://github.com/meginthevalley" target="_blank">
+				<img src="Github.png" class="m-1" width="40" height="auto"></img></a>
+			</div>
+			<!-- The year for the creation of this site... to be updated for future iterations -->
+			<div class= "me-auto text-light fs-5">
+				<p><strong>@2025 Megan LaValley</strong></p>
+			</div>
+			
+		</div>
+	</div>
 	</footer>
-
 </body>
 
 </html>

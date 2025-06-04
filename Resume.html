@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
 	<title>Megan LaValley</title>
+
+
+	<!-- Bootstrap framework -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="MDB5-STANDARD-UI-KIT-Free-9.0.0/css/mdb.min.css"/> 
+
 	<!-- Megan's style sheet -->
-	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/>
+	<link rel="stylesheet" type="text/css" href="meganlavalley.css"/> 
 	<!-- Viewport added to make the website responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<!-- The author of this website, that's me!!!-->
@@ -13,793 +21,579 @@
 
 <body>
 
-<!-- Megan's JavaScript-->
-<script src="meganlavalley.js"></script>
+<!-- Megan's JavaScript most likely unneeded with bootstrap-->
+<!-- <script src="meganlavalley.js"></script> -->
+
+<!-- Bootstrap framework -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" 
+integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<script src="MDB5-STANDARD-UI-KIT-Free-9.0.0/js/mdb.umd.min.js"></script>
 
 	<header>
+	    <!-- Navigation links for the other pages of the website -->
+		 <!-- A navbar that is dark with white text and 80% opacity-->
+	  	<nav class="navbar fixed-top navbar-expand-lg bg-black bg-gradient border-bottom" data-mdb-theme="dark">
 
-		<!-- This states which page of the website you are on -->
-	  	<h1 class="websiteHeading"><a id="backToTop">Resume</a></h1>
-	    
-		 <!-- Navigation links for the other pages of the website -->
-	  	<nav>
+			<!-- A fluid container for the navbar-->
+			<div class="container-fluid">
 
-			<ul class="navBar">
-				<li class="floatLeftNav"><a class="sections" title="Click here to go to the home page!" 
-					href="index.html" tabindex="0">Home</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see Megan's Portfolio!" 
-					href="Portfolio.html" tabindex="0">Portfolio</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here to see info about Megan!" 
-					href="About.html" tabindex="0">About</a></li>
-				<li class="floatLeftNav"><a class="sections" title="You're already on this page!" 
-					href="Resume.html" tabindex="0">Resume</a></li>
-				<li class="floatLeftNav"><a class="sections" title="Click here for Megan's contact information!" 
-					href="Contact.html" tabindex="0">Contact</a></a></li>
-			</ul>
-			
-	  	</nav>
+				<!-- Possibly link this to the home page-->
+				<a class="navbar-brand fs-3" href="index.html">Megan LaValley</a>
 
-	  	<h2 class="references">References available upon request.</p>
+				<!-- A button for when the navbar is collapsed -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
 
-		<!-- Holds all buttons to get to different parts of the page-->
-	  	<div>
-			<button class="portfolio" onclick="profileFunction()">Profile</button>
-			<button class="portfolio" onclick="skillsFunction()">Skills</button>
-			<button class="portfolio" onclick="educationFunction()">Education</button>
-			<button class="portfolio" onclick="workFunction()">Work Experience</button>
-			<button class="portfolio" onclick="volunteerFunction()">Volunteering</button>
-		</div>
-		
+			<!-- The collapsable portion of the nav bar -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav fs-5">
+				<!--Home in navbar-->
+					<li class="nav-item">
+						<a class="nav-link" title="Click here to go to the home page!" 
+						href="index.html" tabindex="0">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link"  title="Click here to see Megan's Portfolio!" 
+						href="Portfolio.html" tabindex="0">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link"  title="Click here to see info about Megan!" 
+						href="About.html" tabindex="0">About</a></li>
+					<li class="nav-item"><a class="nav-link active" aria-current="page" title="You're already on this page!" 
+						href="#" tabindex="0">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" title="Click here to see the Megan's Contact Page!" 
+						href="Contact.html" tabindex="0">Contact</a></li>
+				</ul>
+			</div>
+	   		</div>
+		</nav>
+
 	</header>
 
-
 	<!-- Everything between the header and footer of the webpage -->
-	<main class="mainContent">
+	<div class="pb-3 container-fluid text-center bg-image" style="background-image: url('Site Background from Canva.png'); backdrop-filter: blur(10px);">
+			<div class="row">
+
+			<div class="pt-5 mt-5 bg-black bg-opacity-50 text-center col-12">
+			<!-- This states which page of the website you are on -->
+	  		<h1 class=" pt-1 pb-3 rounded text-white fs-1 bg-opacity-75">
+				<strong>Resume</strong></h1>
+			</div>
+			</div>
 	
+	<div class="row p-5">
+		<div class="col-12">
+		<div class="card text-bg-dark text-center border">
 
-		<p class="hiddenForSpace">I think coding is fun.</p>
-		
-		<!-- The Education portion of Megans' Resume -->
-	   	<div id="Education">
-
-			<h2 class="nameOfPage">Education</h2>
-
-			<section class="section1">
-				
-				<!-- The name of Megan's college -->
-			  	<h3 class="subHeading1">University at Albany</h3>
-
-				<!-- The top half of the Education section -->
-			  	<div class="clearfix">
-
-					<!-- An image of Megan that is set to change to a different image when hovered over via Javascript. -->
-				 	<picture>
-					 	<img id="floatLeftPic" onmouseover="changePicture()" onmouseout="changeBack()" src="Megan2.jpg"
-					 		alt="A photo of Megan from her time at UAlbany.">
-					</picture>
-
-
-					<div class="educationContainer">
-
-						<!-- Megan's Degree type and information -->
-				 		<h2 class="subHeading2">Bachelor of Science</h2>
-							<p class="education"> Megan graduated from the University at Albany in May 2024.
-				 			Her major was Informatics with a concentration in Game Design and Development.
-				 			Her GPA when she graduated was 3.82 which led her to graduating Summa Cum Laude.
-							</p>
-					
-				 			<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-				 	
-						<!-- Div that holds all of the education related lists -->
-						<div>
-
-							<!-- Div for Megan's Awards-->
-					 		<div class="lists2">
-					 			<h3 class="categories">Awards</h3>
-									<ul>
-						  				<li>CEHC Dean's Award</li>
-						  				<li>Dean's List Spring 2021 to Spring 2024</li>
-						  			</ul>
-					  		</div>
-
-							<!-- Div for Megan's Extra Curricular Activities -->
-					  		<div class="lists2">
-					  			<h3 class="categories">Extra Curriculars</h3>
-									<ul>
-						  				<li>Founding Member of the UAlbany Game Design Club</li>
-						  				<li>Member of the UAlbany Esports League of Legends Team</li>
-						 			</ul>
-					 		</div>
-
-				 		</div>
-
+					<div class="card-header border">
+						<h2 class="fs-2"><strong>Summary</strong></h2>
 					</div>
-					
-				 </div>
-
-				 <!-- Div that holds all of the education related lists -->
-				 <div>
-
-					<!-- Div for Megan's Awards-->
-					 <div class="lists3">
-						 <h3 class="categories">Awards</h3>
-							<ul>
-								  <li>CEHC Dean's Award</li>
-								  <li>Dean's List Spring 2021 to Spring 2024</li>
-							  </ul>
-					  </div>
-
-					<!-- Div for Megan's Extra Curricular Activities -->
-					  <div class="lists3">
-						  <h3 class="categories">Extra Curriculars</h3>
-							<ul>
-								  <li>Founding Member of the UAlbany Game Design Club</li>
-								  <li>Member of the UAlbany Esports League of Legends Team</li>
-							 </ul>
-					 </div>
-
-				<!-- Bottom portion of the Education section -->
-				 <p class="hiddenForSpace">This is just for spacing purposes.</p>
- 
-				 <p class="main"> Click on Megans' Diploma below to be lead to her UAlbany Merit page!</p>
-
-				 <p class="hiddenForSpace">This is just for spacing purposes.</p>
-
-				 <!-- An image of Megan's Diploma that links to her UAlbany Merit Page -->
-				 <a href="https://meritpages.com/meginthevalley" title="Come visit Megans' Merit Page!" target="_blank" 
-				 	tabindex="0"><img class="boxShadow diplomaPic" src="MeganDiploma.PNG" alt="A photo of Megan's Diploma for verification."></img></a>
-
-			</section>
-
-		</div>
-
-
-		<!-- The Profile portion of Megans' Resume -->
-		<div id="Profile">
-
-			<h2 class="nameOfPage">Profile</h2>
+					<div class="card-body border">
+	   				<p class="card-text">Detail-oriented and adaptable Informatics graduate with a strong foundation in programming, IT support, and technical communication. 
+					Proven ability to troubleshoot complex systems, support emerging technologies, and collaborate effectively across diverse teams. 
+					Experienced in Unity game development, front-end web design, and backend database operations using languages such as Java, C++, Python, JavaScript, and SQL. 
+					Demonstrated leadership and outreach skills through volunteer and conference organization roles, including promoting diversity in tech. 
+					Passionate about technology, creative problem-solving, and contributing to dynamic teams—especially within the gaming, IT, or marketing industries. 
+					</div>
+				</div></div>
 			
-			  <section class="section1">
-
-			  	<div class="clearfix" >
-
-			  		<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here</p>
-
-					<!-- Brief summary of Megan 
-				   	<p class="main">Innovative UAlbany graduate with a passion for programming video games. 
-						Has worked on multiple small projects including VR, 3D, and 2D games. 
-						Thrives in both collaborative and independent environments. Able to easily adapt to new coding 
-						languages. Pursuing a place to leverage analytical and coding experience as a programmer.</p> -->
-
-				</div>
+	</div>
+	    <!-- My resume accordion -->
+	   <div class="pt-5 pb-4 row">
 
 
-				<!-- A photo of Megan's resume -->
-				<div>
-					<img class="boxShadow resumePic" src="Megan's Resume.png" alt="A photo of Megans' resume."></img>
-				</div>
+		 
+		<div class="col-12 text-center accordion" data-mdb-theme="dark" id="resumeAccordion">
+			<!-- The section shows my current resumes and gives a breif summary on me -->
+			<div class="accordion-item">
+			<!-- Title of the section -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-2 text-center" style="background-color: rgb(48, 47, 47);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProfile" aria-expanded="false" aria-controls="collapseProfile">
+       				 <strong>Profile</strong></button></h3>
 
-			  </section>
-
-		</div>
-
-
-		<!-- The Skills portion of Megans' Resume -->
-		<div id="Skills">
-
-			<h2 class="nameOfPage">Skills & Certifications</h2>
-				
-				<section class="section1">
-				
-					<h3 class="subHeading1">Skills</h3>
-
-					<!-- Paragraph talking about certifications Megan is currently working on -->
-						<p class="main"> Listed here are some of the coding languages and software that Megan has used.
-							Currently, she is also taking certification courses for C++, Golang, Redis, Linux, and courses to deepen her knowledge in SQL and C#.
-							The courses she is taking for these are from Udemy and will be updated to the list and certifications when completed. See her current progress 
-							on courses in her GitHub repository <a class="courseLink" title="Megan's current course repository." href="https://github.com/meginthevalley/UdemyUnreal">"UdemyUnreal"</a>.
-							<br><br>
-							Besides courses, Megan is working on sites like HackerRank and Codingame (by CoderPad). 
-							Megan has also been studying YouTube tutorials in the time she does not spend on her course work.
+				<div id="collapseProfile" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
+      			<div class="accordion-body">
+					<div class="row">
+						<p class="p-4"> 
+							Below are the two most corrent versions of my Resume as of June 2025. These may frequently change on the site as I regularly reformat my resume based on 
+							my professional development.
 						</p>
+			  </div>
+			<div class="row pb-2">
+			
+			<div class="col-12 col-lg-6 p-4">
+				<h3 style="text-decoration: underline;"><strong>Technical Resume</strong></h3>
+				<img class="d-flex w-100" src="Resumes/LaValley Technical-1.png"/>
+			
+			</div>
 
-					<div>
-						<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
-					</div>
+				 
+			
+			
+			
+			<div class="col-12 col-lg-6 p-4">
+				<h3 style="text-decoration: underline;"><strong>Networking Resume</strong></h3>
+				<img class="d-flex w-100" src="Resumes/LaValley Networking Resume-1.png"/>
+				
+			</div>
+			</div>
+			
+			</div>
 
-					<!-- Div that holds all of the lists for the Skills section -->
-				  	<div class="clearfix">
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>
+			
+			<!-- The section dedicated to my Skills and Certifications -->
+			<div class="accordion-item">
+			<!-- Title of the game -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-2 text-center" style="background-color: rgb(78, 78, 78);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills">
+       				 <strong>Skills & Certifications</strong></button></h3>
 
-						<!-- Div for Coding Languages -->
-				 		<div class="listsCode">
+				<div id="collapseSkills" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+			<div class="col-12 col-lg-6 p-5 text-center">
 
-				 			<h3 class="categories">Coding Languages</h3>
-								<ul>
-					  				<li>C#</li>
-									<li>C++</li>
-									<li>Java</li>
-									<li>SQL</li>
-					  				<li>Python</li>
-					  				<li>HTML/CSS</li>
-					  				<li>JavaScript</li>
-									<li>Go</li>	
-									<li>Blueprints</li>
+				 	<h3 class="fs-3" style="text-decoration: underline;"><strong>Coding</strong></h3>
+								<ul class="list-group border border-2">
+									<li class="list-group-item">SQL</li>
+									<li class="list-group-item">JavaScript</li>
+									<li class="list-group-item">Bootstrap</li>
+									<li class="list-group-item">C++</li>
+									<li class="list-group-item">Java</li>
+					  				<li class="list-group-item">Python</li>
+					  				<li class="list-group-item">HTML/CSS</li>
+					  				<li class="list-group-item">C#</li>
+									<li class="list-group-item">Blueprints</li>
 									
 					  			</ul>
 
 				  		</div>
 
 						<!-- Div for Engines & Software -->
-				  		<div class="listsCode">
+				  		<div class="col-12 col-lg-6 p-5 text-center">
 
-				  			<h3 class="categories">Engines and Software</h3>
-								<ul>
-					  				<li>Unity</li>
-					  				<li>Unreal Engine</li>
-					  				<li>SourceTree</li>
-					  				<li>GitHub</li>
-					  				<li>Twine</li>
-									<li>Construct 3</li>
-									<li>Microsoft Office</li>
-									<li>Adobe Photoshop</li>
-									<li>Blender</li>
-									<li>Piskel</li>
+				  			<h3 class="fs-3" style="text-decoration: underline;"><strong>Software and Engines</strong></h3>
+								<ul class="list-group border border-2">
+									<li class="list-group-item">Microsoft Office</li>
+									<li class="list-group-item">SourceTree</li>
+					  				<li class="list-group-item">GitHub</li>
+					  				<li class="list-group-item">Unity</li>
+					  				<li class="list-group-item">Unreal Engine</li>
+					  				<li class="list-group-item">Twine</li>
+									<li class="list-group-item">Adobe Photoshop</li>
+									<li class="list-group-item">Blender</li>
+									<li class="list-group-item">Piskel</li>
 					 			</ul>
 
 				 		</div>
-				 	</div>
-
-					 <div>
-						<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
-					</div>
-
-					<!-- The bottom portion of the Skills section that holds Megan's certifications -->
-					<h3 class="subHeading1">Certifications</h3>
-
-					 	<p class="main">Click on a button to see Megan's certifications in that coding language!</p>
-
-						 <div>
-							<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
-						</div>
-					 	
-						<!-- Div for the buttons to get to different certifications! -->
-						 <div>
-							<button class="portfolio" onclick="CPP()">C++</button>
-							<button class="portfolio" onclick="Java()">Java</button>
-							<button class="portfolio" onclick="SQL()">SQL</button>
-							<button class="portfolio" onclick="Golang()">Go</button>
-						</div>
-
-						<div>
-							<p class="hiddenForSpace">This is just some <br> empty space... nothing to see here.</p>
-						</div>
-
-			<!-- Div for the CPP Section -->
-			<div id="showCPPSection"> 
-					<div class="clearfix">
-
-							<h3 class="subHeading1">C++</h3>
-							<!-- Div for CPlusPlus Codecademy -->
-							<div class="certs">
-								<a title="Click here to go to Megan's Certification" 
-								href="https://www.codecademy.com/profiles/meginthevalley/certificates/ddc94032dd07fd43ee02f994e8f72af9"
-								target="_blank" tabindex="0">
-								<img id="certImage" class="boxShadow" src="Codecademy_CPlusPlus-1.jpg"></img></a>
+			</div>
+		<div class="pt-2 row">
+				<div class="col-12 pb-3 fs-2"><h2 style="text-decoration: underline;"><strong>Certifications</h2></strong>
+				<h3 class="fs-4">From Newest to Oldest</h3>
+			<p>Most "path certificates" consist of between 3-6 courses.</p></div>
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Introduction to Back-End Development-1.png" class="rounded w-100" alt="Introduction to Back-End Development" style="height: 40vh;"/>
+						<a href="https://www.coursera.org/account/accomplishments/verify/EUZFPOIREZTY">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%); 
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Introduction to Back-End Development</h3>
+									</div>
 							</div>
-
-						<!-- Div for Intro C++ -->
-						<div class="certs">
-							<a title="Click here to go to Megan's Certification" 
-								href="https://www.sololearn.com/certificates/CC-KZQ5B7O6" target="_blank" 
-								tabindex="0"><img id="certImage" class="boxShadow" src="IntroCPlusPlus.jpg"></img></a>
-					   	</div>
-
-					</div>
-
-
-					<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-
-					<div class="clearfix">
-
-						<!-- Div for C++ Interview Prep Path CodeSignal -->
-						<div class="certs">
-							<a title="Click here to go to Megan's Certification" 
-							href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/course-paths/32"
-							target="_blank" tabindex="0">
-							<img id="certImage" class="boxShadow" src="Interview Prep Path.jpg"></img></a>
-						</div>
-
-					<!-- Div for C++ for Technical Interviews CodeSignal-->
-					<div class="certs">
-						<a title="Click here to go to Megan's Certification" 
-							href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/159" target="_blank" 
-							tabindex="0"><img id="certImage" class="boxShadow" src="CPP Technical Interviews.jpg"></img></a>
-					   </div>
-
+						</a>
 				</div>
-
-
-				<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-
-				<div class="clearfix">
-
-					<!-- Div for C++ Advanced Loops CodeSignal-->
-					<div class="certs">
-						<a title="Click here to go to Megan's Certification" 
-						href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/158"
-						target="_blank" tabindex="0">
-						<img id="certImage" class="boxShadow" src="Advanced Loops.jpg"></img></a>
-					</div>
-
-				<!-- Div for C++ Simple Looping CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-						href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/156" target="_blank" 
-						tabindex="0"><img id="certImage" class="boxShadow" src="Applying Simple Looping.jpg"></img></a>
-				   </div>
-
-				</div>
-
-				<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-
-				<div class="clearfix">
-
-				<!-- Div for C++ Type conversions CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/157"
-					target="_blank" tabindex="0">
-					<img id="certImage" class="boxShadow" src="Type Conversions.jpg"></img></a>
-				</div>
-
-				<!-- Div for C++ Revisiting Basics CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/155"
-					target="_blank" tabindex="0">
-					<img id="certImage" class="boxShadow" src="Revisiting Basics.jpg"></img></a>
-				</div>
-
-				</div>
-
 			</div>
 
-			<!-- Div for the Java Section -->
-			<div id="showJavaSection"> 
-				<div class="clearfix">
-
-					<h3 class="subHeading1">Java</h3>
-						<!-- Div for Getting Started Java CodeSignal -->
-						<div class="certs">
-							<a title="Click here to go to Megan's Certification" 
-							href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/31"
-							target="_blank" tabindex="0">
-							<img id="certImage" class="boxShadow" src="javaGettingStarted.jpg"></img></a>
-						</div>
-
-					<!-- Div for Data Structures Java CodeSignal -->
-					<div class="certs">
-						<a title="Click here to go to Megan's Certification" 
-							href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/32" target="_blank" 
-							tabindex="0"><img id="certImage" class="boxShadow" src="javaDataStructures.jpg"></img></a>
-					   </div>
-
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Introduction to Databases for Back-End Development.png" class="rounded w-100" alt="Introduction to Databases for Back-End Development" 
+						style="height: 40vh;"/>
+						<a href="https://www.coursera.org/account/accomplishments/verify/WAPQJLRNY9TG">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Introduction to Databases for Back-End Development</h3>
+									</div>
+							</div>
+						</a>
 				</div>
-
-
-				<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-
-				<div class="clearfix">
-
-					<!-- Div for Iterations and Loops Java CodeSignal -->
-					<div class="certs">
-						<a title="Click here to go to Megan's Certification" 
-						href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/33"
-						target="_blank" tabindex="0">
-						<img id="certImage" class="boxShadow" src="javaLoops.jpg"></img></a>
-					</div>
-
-				<!-- Div for Debugging Java CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-						href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/34" target="_blank" 
-						tabindex="0"><img id="certImage" class="boxShadow" src="javaDebug.jpg"></img></a>
-				   </div>
-
 			</div>
 
-
-			<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-
-			<div class="clearfix">
-
-				<!-- Div for String Manipulation Java CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/35"
-					target="_blank" tabindex="0">
-					<img id="certImage" class="boxShadow" src="javaStringManipulation.jpg"></img></a>
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Advanced Query Techniques and Conditional Logic in SQL.png" class="rounded w-100" alt="Advanced Query Techniques and Conditional Logic in SQL"
+						 style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/courses/107">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Advanced Query Techniques and Conditional Logic in SQL</h3>
+									</div>
+							</div>
+						</a>
 				</div>
+			</div>
 
-				<!-- Div for Functions Java CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/36"
-					target="_blank" tabindex="0">
-					<img id="certImage" class="boxShadow" src="Functions Java.jpg"></img></a>
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Getting into JavaScript Fundamentals.png" class="rounded w-100" alt="Getting into JavaScript Fundamentals" style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/courses/59">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Getting into JavaScript Fundamentals</h3>
+									</div>
+							</div>
+						</a>
 				</div>
-
-
 			</div>
-
-			<p class="hiddenForSpace">This is just some empty space... nothing to see here.</p>
-
-			<div class="clearfix">
-
-				<!-- Div for OOP Java CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/courses/72"
-					target="_blank" tabindex="0">
-					<img id="certImage" class="boxShadow" src="OOP Java.jpg"></img></a>
-				</div>
-
-				<!-- Div for Beginner Java Path CodeSignal-->
-				<div class="certs">
-					<a title="Click here to go to Megan's Certification" 
-					href="https://learn.codesignal.com/certificates/cm15kna2k001b9mro54ptwijj/course-paths/8"
-					target="_blank" tabindex="0">
-					<img id="certImage" class="boxShadow" src="Java for Beginners.jpg"></img></a>
-				</div>
-
-
-			</div>
-
-			
-
-			</div>
-						
-			<!-- Div for the SQL Section -->
-			<div id="showSQLSection">
-					<div class="clearfix">						
-						
-						<h3 class="subHeading1">SQL</h3>
-
-						<!-- Div for Intro SQL -->
-						<div class="certs">
-							<a title="Click here to go to Megan's Certification" 
-								href="https://www.sololearn.com/certificates/CC-PWET74P7" target="_blank" 
-								tabindex="0"><img id="certImage" class="boxShadow" src="IntroSQL.jpg"></img></a>
-					   	</div>
-
-						<!-- Div for Intermediate SQL -->
-						<div class="certs">
-							<a title="Click here to go to Megan's Certification" 
-								href="https://www.sololearn.com/certificates/CC-M1TOYJZN" target="_blank" 
-								tabindex="0"><img id="certImage" class="boxShadow" src="IntermediateSQL.jpg"></img></a>
-					   	</div>
-
-					</div>
-			</div>
-
-
-			<!-- Div for the Java Section -->
-			<div id="showGoSection">
-					<div class="clearfix">
-
-						<h3 class="subHeading1">Go</h3>
-
-						<!-- Div for Go Codecademy -->
-						<div class="certs">
-							<a title="Click here to go to Megan's Certification" 
-							href="https://www.codecademy.com/profiles/meginthevalley/certificates/60773d2e920679c8e46ff634b9ed2e6e"
-							target="_blank" tabindex="0">
-							<img id="certImage" class="boxShadow" src="Codecademy_GoCourse.jpg"></img></a>
-						</div>
-
-					
-
-					</div>
-			</div>
-
-			</section>
 		</div>
 
+		<hr class="hr hr-blurry" />
 
-		<!-- The Work Experience portion of Megans' Resume -->
-		<div id="Work">
-
-			<h2 class="nameOfPage">Work Experience</h2>
-	
-			<p class="hiddenForSpace">I think <br> coding is fun.</p>
-
-				<!-- Buttons to go to different positions Megan has held -->
-				<button class="portfolio" onclick="PeerEducator()">Game Dev: Peer Educator</button>
-				<button class="portfolio" onclick="CommunityManager()">Community Manager</button>
-				<button class="portfolio" onclick="Intern()">Intern</button>
-
-
-				<!-- The section dedicated to Megan's time as a Peer Educator -->
-				<section id="peerSection" class="section1">
-
-					<p class="hiddenForSpace">I think <br> coding is fun.</p>
-
-					<!-- The header area for this job-->
-					<div class= "jobs clearfix">
-
-						<div class="jobsHeader clearfix">
-
-							<!-- Employer and title -->
-							<div class="jobsTitle clearfix floatLeft">
-								<h2 class="employer">University at Albany</h2>
-								<h4 class="jobName">Game Development: Peer Educator</h4>
+				<div class="pt-2 row">
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Journey into SQL with Taylor Swift.png" class="rounded w-100" alt="Journey into SQL with Taylor Swift" style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/course-paths/22">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%); 
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Journey into SQL with Taylor Swift</h3>
+									</div>
 							</div>
+						</a>
+				</div>
+			</div>
 
-							<!-- Date that Megan worked at this position -->
-							<div class="jobsDate clearfix floatRight">
-								<h4 class="date">January 2024 -</h4>
-								<h4 class="date">May 2024</h4>
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/JavaScript Programming for Beginners.png" class="rounded w-100" alt="JavaScript Programming for Beginners" 
+						style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/course-paths/7">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">JavaScript Programming for Beginners</h3>
+									</div>
 							</div>
+						</a>
+				</div>
+			</div>
 
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Building Beautiful Websites with Bootstrap.png" class="rounded w-100" alt="Building Beautiful Websites with Bootstrap"
+						 style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/course-paths/72">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Building Beautiful Websites with Bootstrap</h3>
+									</div>
+							</div>
+						</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Java Programming for Beginners.png" class="rounded w-100" alt="Java Programming for Beginners" style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/course-paths/8">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Java Programming for Beginners</h3>
+									</div>
+							</div>
+						</a>
+				</div>
+			</div>
+		</div>
+
+		<hr class="hr hr-blurry" />
+
+						<div class="pt-2 pb-2 row">
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Fundamental Coding Interview Preparation with CPP.png" class="rounded w-100" alt="Fundamental Coding Interview Preparation with CPP" style="height: 40vh;"/>
+						<a href="https://codesignal.com/learn/certificates/cm15kna2k001b9mro54ptwijj/course-paths/32">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%); 
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Fundamental Coding Interview Preparation with C++</h3>
+									</div>
+							</div>
+						</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Codecademy_CPlusPlus-1.jpg" class="rounded w-100" alt="C++ for Programmers" 
+						style="height: 40vh;"/>
+						<a href="https://www.codecademy.com/profiles/meginthevalley/certificates/ddc94032dd07fd43ee02f994e8f72af9">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">C++ for Programmers</h3>
+									</div>
+							</div>
+						</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/Codecademy_GoCourse.jpg" class="rounded w-100" alt="Learn Go"
+						 style="height: 40vh;"/>
+						<a href="https://www.codecademy.com/profiles/meginthevalley/certificates/60773d2e920679c8e46ff634b9ed2e6e">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">Learn Go</h3>
+									</div>
+							</div>
+						</a>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-3 ">
+				<div class="bg-image hover-overlay hover-zoom hover-shadow ripple" data-mdb-ripple-init="dark">
+   				 		<img src="Certifications/IntermediateSQL.jpg" class="rounded w-100" alt="SQL Intermediate" style="height: 40vh;"/>
+						<a href="https://www.sololearn.com/en/certificates/CC-M1TOYJZN">
+							<div class="mask rounded" style="background: linear-gradient(45deg,
+        								hsla(268, 75%, 29%, 0.589),
+        								hsla(241, 100%, 34%, 0.596) 100%);
+										backdrop-filter: blur(10px);">
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<h3 class="text-white fw-bold" style="text-decoration: underline;">SQL Intermediate</h3>
+									</div>
+							</div>
+						</a>
+				</div>
+			</div>
+		</div>			
+			</div>
+			</div>
+
+			<!-- END OF ACCORDION BODY -->
+			</div>
+			
+			<!-- The section shows my Education from UAlbany -->
+			<div class="accordion-item" >
+			<!-- Title of the section -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-2 text-center" style="background-color: rgb(48, 47, 47);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation">
+       				 <strong>Education</strong></button></h3>
+
+				<div id="collapseEducation" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
+      			<div class="accordion-body">
+       
+			<div class="row">
+				<div class="col-12 col-lg-7 p-5 text-center">
+				<!-- An image of Megan -->
+				<picture>
+					<img class="img-fluid rounded border border-2" style="height:60vh" src="Photos of me/Megan3.jpg" alt="A photo of Megan from her graduation from UAlbany.">
+				</picture>
+			</div>
+			<div class="col-12 col-lg-5 p-5 text-center">
+			<!-- Description of Megan's work on the game -->
+
+						<!-- Megan's Degree type and information -->
+				 		<h2 class="fs-2" style="text-decoration: underline;"><strong>Bachelor of Science</strong></h2>
+							<p> I graduated Summa Cum Laude from the University at Albany in May 2024 with a Bachelor's degree in Informatics, 
+								specializing in Game Design and Development. <br/><br/>My coursework focused on programming, networking, research, and software development, 
+								providing a strong foundation in both the technical and creative aspects of game creation.
+				 			
+							</p>
+					</div>
+
+					</div>
+						<!-- Div that holds all of the education related lists -->
+						 <div class="row">
+						<div class="col-12">
 						</div>
-							
-					</div>
+							<!-- Div for Megan's Awards-->
+					 		<div class="col-6">
+					 			<h3 class="fs-4" style="text-decoration: underline;"><strong>Awards</strong></h3>
+									<ul class="list-group border border-2">
+						  				<li class="list-group-item">CEHC Dean's Award</li>
+						  				<li class="list-group-item">Dean's List Spring 2021 to Spring 2024</li>
+						  			</ul>
+					  		</div>
 
-					<!-- Div that holds the job description -->
-					<div class="jobsDescription clearfix">
-
-						<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-
-						<p class="main">During Megans' time as a Peer Educator, she was able to assist many students with their game development projects in the Unity engine. 
-							Her responsibilities included debugging students' code, helping students with repository issues, giving feedback on student projects, and more. <br><br>
-							Though it was not her responsibility, Megan created demos for the students to help them better understand assignments that they were struggling with. 
-							These demos can be found in the Resume portion of this site in the Unity section. She had also created a video to help students with SourceTree (for repositories). 
-							This video can be found below.	
-						</p>
-
-					</div>
-
-					<p class="hiddenForSpace">I think coding is fun.</p>
-
-				 	<div class="clearfix"></div>
-
-					<!-- SourceTree Demo video from Peer Education -->
-				 	<div class="outerLayerVideo">
-
-						<div class="gallery">
-
-							<!-- SourceTree video from YouTube -->
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/fujJeDhw1xE?si=UOTmJ1DxnbYtz-qk" title="YouTube video player" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							</iframe>
-
-							<!-- Brief description of the SourceTree video -->
-							<div class="imageDescription">
-								This video is a step-by-step process for making a repository and linking SourceTree with GitHub. Many students' had questions about how to set up their repository. 
-								Megan had decided to make this video to help those students.
-							</div>
-
+							<!-- Div for Megan's Extra Curricular Activities -->
+					  		<div class="col-6">
+					  			<h3 class="fs-4" style="text-decoration: underline;"><strong>Extra Curriculars</strong></h3>
+									<ul class="list-group border border-2">
+						  				<li class="list-group-item">Founding Member of the UAlbany Game Design Club</li>
+						  				<li class="list-group-item">Member of the UAlbany Esports League of Legends Team</li>
+						 			</ul>
+					 		</div>
 						</div>
-
-					</div>
-
-				 	<div class="clearfix"></div>
-
-				</section>
-
-
-				<!-- The section dedicated to Megan's time as a Community Manager-->
-				<section id="communitySection" class="section1">
-
-					<p class="hiddenForSpace">I think <br> coding is fun.</p>
-
-					<!-- The header area for this job-->
-					<div class= "jobs clearfix">
-
-						<div class="jobsHeader clearfix">
-
-							<!-- Employer and title -->
-							<div class="jobsTitle clearfix floatLeft">
-								<h2 class="employer">University at Albany</h2>
-								<h4 class="jobName">Community Manager</h4>
-							</div>
-
-							<!-- Date that Megan worked at this position -->
-							<div class="jobsDate clearfix floatRight">
-								<h4 class="date">January 2023 -</h4>
-								<h4 class="date">May 2023</h4>
-							</div>
-
-						</div>
-							
-					</div>
-
-					<!-- Div that holds the job description -->
-					<div class="jobsDescription clearfix">
-
-						<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-
-						<p class="main">
-									As a Community Manager, Megan was responsible for the CEHC (College of Emergency Preparedness, Homeland Security, & Cybersecurity) Game Nights at UAlbany. 
-									This position included management of the discord associated with Game Nights as well as supervising the in-person Game Nights held in the Makerspace. 
-									Megan had also made promotion materials for Game Nights, networked with other clubs at UAlbany, and spread the word about CEHC Game Nights. <br><br>
-									During March, there was an event involving Game Nights that Megan was also in charge of running. The event was related to International Women's Day and all 
-									of the board games used in this event were made by Women. Megan created promotional materials (pictured below), learned each game, and ran the board game portion of the event. <br><br>
-						</p>
-
-					</div>
-
-					<p class="hiddenForSpace">I think coding is fun.</p>
-
-					<!-- Div for the promotional materials gallery -->
-			  		<div>
-
-						<!-- First/starting picture for gallery -->
-				 		<div id="community1pic" class="outerLayer">
-
-				  			<div  class="gallery">
-
-								<!-- Game Night poster image -->
-						   		<img src="GameNight.png" alt="The promotional poster for Game Nights.">
-
-								<!-- Brief description of image-->
-					 			<div class="imageDescription">
-									This was the promotional poster for CEHC Game Nights. Megans' professors/employers information is cut out along with the discord link due to privacy concerns. 
-					 			</div>
-
-				   			</div>
-
 				 		</div>
 
-						<!-- Second picture in the gallery -->
-				 		<div id="community2pic" class="outerLayer">
+					
+			
 
-				   			<div class="gallery">
+			  
+			<div class="row pb-2">
+			<div class="col-md-2 col-lg-3"></div>
+			<!-- The photo gallery for Cat-astrophe! -->
+			<div class="col-12 col-md-8 col-lg-6 p-4">
+				<h3 class="fs-3" style="text-decoration: underline;"><strong>Megan's Diploma</strong></h3>
+				<!-- An image of Megan's Diploma that links to her UAlbany Merit Page -->
+				 <a href="https://meritpages.com/meginthevalley" title="Come visit Megans' Merit Page!" target="_blank" 
+				 	tabindex="0"><img class="d-flex w-100" src="MeganDiploma.PNG" alt="A photo of Megan's Diploma for verification."></img></a>
+			
+			</div>
 
-								<!-- International Women's Day poster image -->
-						   		<img src="WomensDay.png" alt="The promotional poster for the International Women's Day event.">
+				 
+			
+			</div>
+			
+			</div>
 
-								<!-- Brief description of image -->
-					 			<div class="imageDescription">
-									This was the promotional poster for the International Women's Day event. Megans' professors/employers information is cut out due to privacy concerns. 
+			<!-- END OF ACCORDION BODY -->
+			</div>
+			<!-- The section elaborates on my current work -->
+			<div class="accordion-item" >
+			<!-- Title of the section -->
+			<h3 class="accordion-header rounded" >
+				<button class="accordion-button collapsed fs-2 text-center" style="background-color: rgb(78, 78, 78);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
+       				 <strong>Current Work</strong></button></h3>
+
+				<div id="collapseWork" class="accordion-collapse collapse" data-bs-parent="#resumeAccordion">
+      			<div class="accordion-body">
+       
+				<div class="row">
+
+				<div class="col-12 p-5 text-center">
+					<!-- Description of what I am currently up to -->
+				 		<h2 class="fs-2 pb-1" style="text-decoration: underline;"><strong>Current Endeavors</strong></h2>
+							<p class="px-4"> I'm currently focused on job hunting, pursuing relevant certifications, and continuing my volunteer work with NYCWiC (New York Celebration of Women in Computing). As part of this process, 
+								I've revamped both my resume and this portfolio to better reflect my evolving interests and experiences. While my primary focus is on opportunities 
+								in IT, gaming, and engineering, I've recently expanded my search to include marketing roles—largely inspired by the marketing-related work I've taken on with NYCWiC. <br/><br/>
+								Over the past year as a NYCWiC volunteer, I've led several initiatives including launching our community Discord server, creating a centralized Linktree for easier access to our social platforms, and designing promotional materials for the organization. 
+								Since launching our public Discord in November 2024, the community has grown to over 80 members. Our goal is to continue expanding and fostering an inclusive, engaging space for students 
+								and professionals in tech to connect, share resources, and support one another. Besides our Discord, I've also contributed ideas to improve the annual conference experience.  Our 2025 conference was a huge success, 
+								and I'm excited to continue contributing as we begin preparing for 2026. <br/><br/>
+								The slideshow below features highlights of my work: a screenshot of our Discord announcement channel, our Linktree, and a recap video I created using photos from the 2025 event. Looking ahead, 
+								I'm eager to get more involved in managing and promoting NYCWiC's social media presence for next year's conference.
+				 			
+							</p>
+					</div>
+
+					</div>
+		
+						 <div class="row pb-2">
+							<div class="col-xl-3"></div>
+							<!-- Div for Megan's NYCWiC work-->
+					 		<div class="col-12 col-xl-6">
+								<div id="NYCWiCPhotoCarousel" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner rounded border border-2">
+	   									<div class="carousel-item active">
+											<img class="d-block w-100" src="Marketing/announcements discord.png" alt= "A photo of the announcements section of the NYCWiC Discord">
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100" src="Marketing/Linktree NYCWiC.png" alt= "A photo of NYCWiC's Linktree that Megan created">
+										</div>
+
+										<div class="carousel-item">
+											<!-- Video pulled I created for NYCWiC of our 2025 conference -->
+											<iframe class="d-block w-100 active" style="height: 50vh;" src="Marketing/NYCWiC 2025.mp4" title="Video of NYCWiC 2025" 
+												frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+												referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+											</iframe>
+										</div>
+
+
+										<button class="carousel-control-prev bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#NYCWiCPhotoCarousel" data-bs-slide="prev">
+    										<span class="bi bi-chevron-left fs-1 text-white" aria-hidden="true"></span>
+    										<span class="visually-hidden">Previous</span>
+  										</button>
+  										<button class="carousel-control-next bg-dark" style="opacity: 0.2;" type="button" data-bs-target="#NYCWiCPhotoCarousel" data-bs-slide="next">
+    										<span class="bi bi-chevron-right fs-1 text-white" aria-hidden="true"></span>
+    										<span class="visually-hidden">Next</span>
+  										</button>
+									</div>
 								</div>
-
-				   			</div>
-
-						</div>
-
-						<!-- Buttons to switch between the photos in the gallery -->
-				 		<button class="portfolio" onclick="communityPhotos()">Previous</button>
-						<button class="portfolio" onclick="communityPhotos()">Next</button>	
-
-					</div>
-
-				</section>
-
-
-
-				<section id="internSection" class="section1">
-
-					<p class="hiddenForSpace">I think <br> coding is fun.</p>
-						
-					<!-- The header area for this job-->
-					<div class= "jobs clearfix">
-
-						<div class="jobsHeader clearfix">
-
-							<!-- Employer and title -->
-							<div class="jobsTitle clearfix floatLeft">
-							  	<h2 class="employer">University at Albany</h2>
-								<h4 class="jobName">Emerging Technologies Intern</h4>
-							</div>
-
-							<!-- Date that Megan worked at this position -->
-							<div class="jobsDate clearfix floatRight">
-								<h4 class="date">January 2023 -</h4>
-								<h4 class="date">May 2023</h4>
-							</div>
+					  		</div>
 
 						</div>
-								  
-					</div>
-
-					<!-- Div that holds the job description -->
-					<div class="jobsDescription clearfix">
-
-						<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
-
-							<p class="main">
-								This internship dealt primarily with the Makerspace at UAlbany. During this internship, Megan would learn about the structure and uses of emerging technology. 
-								The relevant equipment included 3D printers (specifically Prusa printers), the Cricut (including the mug press, iron on, and engravement options), drones, and more. <br><br>
-								After being taught this equipment, it was Megans' responsibility to teach students who weren't interns how to use the equipment when they visited the Makerspace. 
-								It was also important that each intern be motivated to find solutions to fix these pieces of equipment if they needed repair. In order to do this, Megan and her fellow
-								interns needed to have thorough communication with each other to solve these issues.
-						  </p>
-
-					</div>	
-
-				</section>
-
-		</div>
-
-
-		<!-- The Volunteering portion of Megans' Resume -->
-		<div id="Volunteer">
-			<h2 class="nameOfPage">Volunteering</h2>
-
-			<!-- The section dedicated to Megans' work with NYCWiC -->
-			<section class="section1">
-
-				<p class="hiddenForSpace">I think <br> coding is fun.</p>
-				
-				<!-- Header for this volunteer work-->
-				<div class= "jobs clearfix">
-
-					<div class="jobsHeader clearfix">
-
-						<!-- Company abbreviation and full company name -->
-						<div class="jobsTitle clearfix floatLeft">
-							<h2 class="employer">NYCWiC</h2>
-							<h4 class="jobName">New York Celebration of Women in Computing</h4>
-						</div>
-
-						<!-- Dates that Megan has volunteered here -->
-						<div class="jobsDate clearfix floatRight">
-							<h4 class="date">June 2024 -</h4>
-							<h4 class="date">Present</h4>
-						</div>
-						
-					</div>
-								  
 				</div>
 
-				<!-- Div that holds the description of this volunteer work -->
-				<div class="jobsDescription clearfix">
+					
+			
 
-					<p class="hiddenForSpace">Just a buffer so the text isn't next to the border.</p>
+			  
 
-					<p class="main">
-						Recently, Megan has started to look into volunteering since graduating. The first place Megan has inquired about volunteering is NYCWiC.
-						Megan attended NYCWiC twice while she was in school and thought it would be great to help out a conference that had really impacted her. 
-						She believes NYCWiC is an incredible opportunity for students and is excited to help this conference prosper. <br><br>
-						Currently, Megan is creating a discord server for NYCWiC to increase student engagement. The server would be an ideal place for students to ask questions, 
-						share their NYCWiC experience, and post about projects that they are working on while the conference is not in session. Though Megan has just started her work with NYCWiC, 
-						she is looking forward to having more opportunities to help increase visibility and support for women in computing.
-					</p>
+			
+			</div>
 
-				</div>	
-
-			</section>
-
-		</div>
-
-	</main>
-
-
+			<!-- END OF ACCORDION BODY -->
+			</div>
+    		</div>
+    		</div>
+		  </div>
+		
 	<!-- Start of the footer section -->
-	<footer>
-		
-		<!-- The intrapage link to bring the user back to the top of the page -->
-		<h3 class="footerLink"><a class="pagesTop" href="#backToTop" title="Click me to get back up to the start of this webpage!" tabindex="0">Bop to the Top!</a></h3>
-		
-		<!-- A div containing the logo links to bring users to Megans' various pages -->
-		<div>
-			<a class="footer" title="Click here to go to Megan's LinkedIn!" 
-				href="https://www.linkedin.com/in/megan-lavalley-game-development/" target="_blank" 
-				tabindex="0"><img id="logos" src="LinkedIn.png"></img></a>
-			<a class="footer" title="Click here to go to send Megan an email!" 
-				href="mailto:meganelavalley@gmail.com" tabindex="0"
-				tabindex="0"><img id="logos" src="email.png"></img></a>
-			<a class="footer" title="Click here to go to Megan's GitHub!" 
-				href="https://github.com/meginthevalley" target="_blank" 
-				tabindex="0"><img id="logos" src="Github.png"></img></a>
+	 <footer class="bg-black bg-gradient text-center border-top">
+		<div class="p-4 container-fluid">
+			<div class="row">
+				
+				<!-- A div containing the logo links to bring users to Megans' various pages -->
+			<div class="mb-4">
+				
+			<a  title="Click here to go to Megan's LinkedIn!" 
+				href="https://www.linkedin.com/in/megan-e-lavalley/" target="_blank" >
+				<img src="LinkedIn.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to send Megan an email!" 
+				href="mailto:meganelavalley@gmail.com" tabindex="0">
+				<img  src="email.png" class="m-1" width="40" height="auto"></img></a>
+				
+			<a title="Click here to go to Megan's GitHub!" 
+				href="https://github.com/meginthevalley" target="_blank">
+				<img src="Github.png" class="m-1" width="40" height="auto"></img></a>
+			</div>
+			<!-- The year for the creation of this site... to be updated for future iterations -->
+			<div class= "me-auto text-light fs-5">
+				<p><strong>@2025 Megan LaValley</strong></p>
+			</div>
+			
 		</div>
-
-		<!-- The year for the creation of this site... to be updated for future iterations -->
-		<div>
-			<p>@2024 Megan LaValley</p>
-		</div>	
+		</div>
 
 	</footer>
 
